@@ -5,4 +5,4 @@ Disallow: /css/
 Disallow: /admin/
 Disallow: /private/
 
-Sitemap: https://toolmatic.com/sitemap.xml
+Sitemap: https://toolmatic.site/sitemap.xml
