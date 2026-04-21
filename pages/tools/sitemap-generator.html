@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/svg+xml" href="../../favicon.svg">
+  <title>Sitemap Generator - Free SEO Tool | Toolmatic</title>
+  <meta name="description" content="Create XML sitemaps to help search engines index your website. Free online sitemap generator with download functionality.">
+  <meta name="keywords" content="sitemap generator, XML sitemap, SEO sitemap, search engine indexing, website sitemap creator">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Toolmatic">
+  <link rel="canonical" href="https://toolmatic.com/pages/tools/sitemap-generator.html">
+  
+  <!-- Open Graph Tags -->
+  <meta property="og:title" content="Sitemap Generator - Free SEO Tool | Toolmatic">
+  <meta property="og:description" content="Create XML sitemaps to help search engines index your website. Free online sitemap generator with download functionality.">
+  <meta property="og:url" content="https://toolmatic.com/pages/tools/sitemap-generator.html">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://toolmatic.com/og-image.jpg">
+  
+  <!-- Twitter Card Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Sitemap Generator - Free SEO Tool | Toolmatic">
+  <meta name="twitter:description" content="Create XML sitemaps to help search engines index your website. Free online sitemap generator with download functionality.">
+  <meta name="twitter:image" content="https://toolmatic.com/og-image.jpg">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="stylesheet" href="../../css/navbar.css">
+  <link rel="stylesheet" href="../../css/footer.css">
+  <link rel="stylesheet" href="../../css/tools.css">
+  
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Sitemap Generator",
+    "url": "https://toolmatic.com/pages/tools/sitemap-generator.html",
+    "description": "Create XML sitemaps to help search engines index your website",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    }
+  }
+  </script>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <a href="../../index.html" class="navbar-brand">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+        </svg>
+        Toolmatic
+      </a>
+      
+      <div class="navbar-nav">
+        <a href="../../index.html" class="navbar-link">Home</a>
+        <a href="../seo-tools.html" class="navbar-link">SEO Tools</a>
+        <a href="../calculators.html" class="navbar-link">Calculators</a>
+        <a href="../blog/index.html" class="navbar-link">Blog</a>
+        <a href="../about.html" class="navbar-link">About</a>
+      </div>
+      
+      <a href="../seo-tools.html" class="navbar-cta">All Tools →</a>
+      
+      <button class="navbar-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    
+    <div class="navbar-menu">
+      <a href="../../index.html" class="navbar-menu-link">Home</a>
+      <a href="../seo-tools.html" class="navbar-menu-link">SEO Tools</a>
+      <a href="../calculators.html" class="navbar-menu-link">Calculators</a>
+      <a href="../blog/index.html" class="navbar-menu-link">Blog</a>
+      <a href="../about.html" class="navbar-menu-link">About</a>
+      <a href="../seo-tools.html" class="navbar-menu-cta">All Tools →</a>
+    </div>
+  </nav>
+
+  <!-- Breadcrumb -->
+  <div class="container">
+    <div class="breadcrumb">
+      <a href="../../index.html">Home</a> <span>&gt;</span> <a href="../seo-tools.html">SEO Tools</a> <span>&gt;</span> <span>Sitemap Generator</span>
+    </div>
+  </div>
+
+  <!-- Title Section -->
+  <section class="section section-white tool-header">
+    <div class="tool-header-container">
+      <h1>Sitemap Generator</h1>
+      <p class="tool-intro">Create XML sitemaps to help search engines discover and index all your website pages. Add URLs with priority and change frequency settings.</p>
+    </div>
+  </section>
+
+  <!-- Tool UI -->
+  <section class="section section-white">
+    <div class="container">
+      <div class="tool-ui">
+        <div class="tool-card">
+          <h3 style="margin-bottom: 16px;">Add URL to Sitemap</h3>
+          
+          <div class="tool-form-group">
+            <label for="urlInput">URL *</label>
+            <input type="text" id="urlInput" placeholder="https://example.com/page">
+          </div>
+          
+          <div class="tool-form-group">
+            <label for="lastModified">Last Modified</label>
+            <input type="date" id="lastModified">
+          </div>
+          
+          <div class="tool-form-group">
+            <label for="changeFreq">Change Frequency</label>
+            <select id="changeFreq">
+              <option value="always">always</option>
+              <option value="hourly">hourly</option>
+              <option value="daily" selected>daily</option>
+              <option value="weekly">weekly</option>
+              <option value="monthly">monthly</option>
+              <option value="yearly">yearly</option>
+              <option value="never">never</option>
+            </select>
+          </div>
+          
+          <div class="tool-form-group">
+            <label for="priority">Priority (0.0 - 1.0)</label>
+            <input type="number" id="priority" placeholder="0.5" min="0" max="1" step="0.1" value="0.5">
+          </div>
+          
+          <div class="tool-actions">
+            <button class="btn btn-primary" id="addUrlBtn">Add URL</button>
+          </div>
+          
+          <div id="urlList" class="url-list" style="display: none; margin-top: 24px;">
+            <h3 style="margin-bottom: 12px;">Added URLs</h3>
+            <div id="urlListItems"></div>
+          </div>
+          
+          <div class="tool-actions" style="margin-top: 24px;">
+            <button class="btn btn-primary" id="generateBtn">Generate Sitemap</button>
+            <button class="btn btn-secondary" id="clearBtn">Clear All</button>
+          </div>
+          
+          <div class="tool-output" id="outputArea" style="display: none;">
+            <div class="tool-output-header">
+              <h3>Generated XML Sitemap</h3>
+              <div>
+                <button class="btn btn-primary copy-btn" data-target="outputContent">Copy XML</button>
+                <button class="btn btn-primary download-btn" id="downloadBtn">Download sitemap.xml</button>
+              </div>
+            </div>
+            <pre id="outputContent"></pre>
+          </div>
+          
+          <div id="errorMessage" class="error-message"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How to Use -->
+  <section class="section section-bg tool-how-to">
+    <div class="container">
+      <h2>How to Use</h2>
+      <ol>
+        <li>Enter the full URL of a page you want to include in your sitemap</li>
+        <li>Optionally set the last modified date (defaults to today if left blank)</li>
+        <li>Select the change frequency based on how often the page content updates</li>
+        <li>Set priority (0.0 to 1.0) with 1.0 being most important</li>
+        <li>Click "Add URL" to add the page to your sitemap list</li>
+        <li>Repeat for all pages you want to include</li>
+        <li>Click "Generate Sitemap" to create the XML file</li>
+        <li>Download or copy the XML and upload it to your website's root directory</li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- Example -->
+  <section class="section section-white tool-example">
+    <div class="container">
+      <h2>Example</h2>
+      <div class="example-box">
+        <div class="example-input">
+          <div class="example-label">URL:</div>
+          <div class="example-value">https://example.com/about</div>
+        </div>
+        <div class="example-input">
+          <div class="example-label">Change Frequency:</div>
+          <div class="example-value">monthly</div>
+        </div>
+        <div class="example-input">
+          <div class="example-label">Priority:</div>
+          <div class="example-value">0.8</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About This Tool -->
+  <section class="section section-bg tool-about">
+    <div class="container">
+      <h2>About the Sitemap Generator</h2>
+      
+      <p>An XML sitemap is a file that lists all the important pages of your website. It helps search engines like Google, Bing, and Yahoo discover and index your content more efficiently. Our Sitemap Generator tool makes it easy to create properly formatted XML sitemaps following the sitemap.org protocol.</p>
+      
+      <h3>Why Sitemaps Matter for SEO</h3>
+      
+      <p>Sitemaps are particularly important for large websites, new websites with few external links, and sites with rich media content. They provide search engines with a roadmap of your site, ensuring that all your important pages are discovered and indexed.</p>
+      
+      <p>Without a sitemap, search engines rely on following internal links to discover pages. If some pages are deeply nested or have few internal links pointing to them, they might never be discovered. A sitemap explicitly tells search engines about these pages, improving your site's coverage in search results.</p>
+      
+      <h3>Understanding Sitemap Elements</h3>
+      
+      <p>The <strong>&lt;loc&gt;</strong> element specifies the URL of the page. This must be a complete URL including the protocol (http:// or https://). URLs should be encoded properly and use lowercase for consistency.</p>
+      
+      <p>The <strong>&lt;lastmod&gt;</strong> element indicates when the page was last modified. This helps search engines understand if they need to re-crawl the page. Use the date in YYYY-MM-DD format for compatibility with all search engines.</p>
+      
+      <p>The <strong>&lt;changefreq&gt;</strong> element suggests how frequently the page is likely to change. Values include always, hourly, daily, weekly, monthly, yearly, and never. This is a hint to search engines about how often to recrawl the page, though they may crawl more or less frequently based on their own algorithms.</p>
+      
+      <p>The <strong>&lt;priority&gt;</strong> element indicates the importance of this page relative to other pages on your site. Valid values range from 0.0 to 1.0, with 1.0 being most important. This does not affect your site's ranking in search results but helps search engines prioritize which pages to crawl first.</p>
+      
+      <h3>Best Practices for Sitemaps</h3>
+      
+      <p>Keep your sitemap updated whenever you add or remove important pages. For dynamic sites, consider generating sitemaps automatically. Large sites can split sitemaps into multiple files with a sitemap index file, but our tool is designed for smaller sites with under 50,000 URLs.</p>
+      
+      <p>Only include canonical URLs in your sitemap. Don't include duplicate content, redirected pages, or pages blocked by robots.txt. Focus on pages that provide value to users and that you want appearing in search results.</p>
+      
+      <p>Submit your sitemap to search engines through their webmaster tools. Google Search Console, Bing Webmaster Tools, and other platforms allow you to submit sitemaps directly, which can speed up the discovery and indexing process.</p>
+      
+      <h3>Who Should Use This Tool</h3>
+      
+      <p>Every website can benefit from having an XML sitemap, but it's especially important for new sites, large e-commerce sites, news websites, and any site with complex navigation structures. Webmasters, SEO professionals, and developers managing websites should use this tool to ensure proper sitemap creation.</p>
+      
+      <p>Small business websites can use sitemaps to ensure all their service and product pages are indexed. Bloggers can include all posts and categories. E-commerce sites can list all product pages to ensure they appear in search results.</p>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="section section-white tool-faq">
+    <div class="container">
+      <h2>Frequently Asked Questions</h2>
+      
+      <div class="accordion-item">
+        <div class="accordion-header">
+          How many URLs can I include in a sitemap?
+          <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="6 9 12 15 18 9"/>
+          </svg>
+        </div>
+        <div class="accordion-content">
+          A single XML sitemap can contain up to 50,000 URLs and must be no larger than 50MB uncompressed. If you have more URLs, you need to split them into multiple sitemaps and create a sitemap index file.
+        </div>
+      </div>
+      
+      <div class="accordion-item">
+        <div class="accordion-header">
+          Where should I place the sitemap.xml file?
+          <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="6 9 12 15 18 9"/>
+          </svg>
+        </div>
+        <div class="accordion-content">
+          The sitemap.xml file should be placed in the root directory of your website, making it accessible at https://yourdomain.com/sitemap.xml. This is the standard location that search engines expect and automatically check.
+        </div>
+      </div>
+      
+      <div class="accordion-item">
+        <div class="accordion-header">
+          Do I need a sitemap if my site is small?
+          <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="6 9 12 15 18 9"/>
+          </svg>
+        </div>
+        <div class="accordion-content">
+          Even small sites benefit from having a sitemap. If your site has good internal linking and all pages are easily accessible, a sitemap may not be strictly necessary, but it's still recommended as it helps search engines discover your content faster.
+        </div>
+      </div>
+      
+      <div class="accordion-item">
+        <div class="accordion-header">
+          What priority should I set for my homepage?
+          <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="6 9 12 15 18 9"/>
+          </svg>
+        </div>
+        <div class="accordion-content">
+          Your homepage typically deserves the highest priority, usually 1.0. Important category or landing pages might be set to 0.8-0.9, while individual content pages are often set to 0.5-0.7. The priority is relative to your own site, not other sites.
+        </div>
+      </div>
+      
+      <div class="accordion-item">
+        <div class="accordion-header">
+          How often should I update my sitemap?
+          <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="6 9 12 15 18 9"/>
+          </svg>
+        </div>
+        <div class="accordion-content">
+          Update your sitemap whenever you add or remove important pages from your website. For sites with frequent content updates, consider regenerating the sitemap weekly or monthly. For static sites, updating when you make structural changes is sufficient.
+        </div>
+      </div>
+      
+      <!-- Schema.org FAQ JSON-LD -->
+      <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How many URLs can I include in a sitemap?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A single XML sitemap can contain up to 50,000 URLs and must be no larger than 50MB uncompressed."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Where should I place the sitemap.xml file?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The sitemap.xml file should be placed in the root directory of your website, accessible at https://yourdomain.com/sitemap.xml."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do I need a sitemap if my site is small?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Even small sites benefit from having a sitemap. It helps search engines discover your content faster."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What priority should I set for my homepage?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Your homepage typically deserves the highest priority, usually 1.0. Priority is relative to your own site."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How often should I update my sitemap?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Update your sitemap whenever you add or remove important pages. For dynamic sites, consider regenerating weekly or monthly."
+            }
+          }
+        ]
+      }
+      </script>
+    </div>
+  </section>
+
+  <!-- Related Tools -->
+  <section class="section section-bg related-tools">
+    <div class="container">
+      <h2>You Might Also Like</h2>
+      <div class="grid-3">
+        <div class="card">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-bottom: 12px;">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+          </svg>
+          <h3>Robots.txt Generator</h3>
+          <p class="text-secondary small">Generate robots.txt files to control search engine crawler access.</p>
+          <a href="robots-txt-generator.html" class="text-accent" style="font-size: 0.875rem; font-weight: 500;">Open Tool →</a>
+        </div>
+        <div class="card">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-bottom: 12px;">
+            <path d="M12 2H2v10l9.29 9.29c.94.94 2.48.94 3.42 0l6.58-6.58c.94-.94.94-2.48 0-3.42L12 2Z"/>
+            <path d="M7 7h.01"/>
+          </svg>
+          <h3>Meta Tag Generator</h3>
+          <p class="text-secondary small">Generate complete HTML meta tags for better SEO.</p>
+          <a href="meta-tag-generator.html" class="text-accent" style="font-size: 0.875rem; font-weight: 500;">Open Tool →</a>
+        </div>
+        <div class="card">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-bottom: 12px;">
+            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+            <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+          </svg>
+          <h3>Word Counter</h3>
+          <p class="text-secondary small">Count words, characters, sentences, and analyze reading time.</p>
+          <a href="word-counter.html" class="text-accent" style="font-size: 0.875rem; font-weight: 500;">Open Tool →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ad Slot -->
+  <div class="container">
+    <div class="ad-slot">
+      <!-- AdSense Ad Unit: Replace with your AdSense code -->
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-brand-logo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+            </svg>
+            Toolmatic
+          </div>
+          <p class="footer-brand-tagline">Free online tools for SEO and productivity.</p>
+          <p class="footer-copyright">© 2024 Toolmatic. All rights reserved.</p>
+        </div>
+        
+        <div>
+          <h4 class="footer-heading">SEO Tools</h4>
+          <div class="footer-links">
+            <a href="meta-tag-generator.html" class="footer-link">Meta Tag Generator</a>
+            <a href="open-graph-generator.html" class="footer-link">Open Graph Generator</a>
+            <a href="keyword-density-checker.html" class="footer-link">Keyword Density Checker</a>
+            <a href="robots-txt-generator.html" class="footer-link">Robots.txt Generator</a>
+            <a href="sitemap-generator.html" class="footer-link">Sitemap Generator</a>
+            <a href="word-counter.html" class="footer-link">Word Counter</a>
+          </div>
+        </div>
+        
+        <div>
+          <h4 class="footer-heading">Calculators</h4>
+          <div class="footer-links">
+            <a href="percentage-calculator.html" class="footer-link">Percentage Calculator</a>
+            <a href="age-calculator.html" class="footer-link">Age Calculator</a>
+            <a href="bmi-calculator.html" class="footer-link">BMI Calculator</a>
+            <a href="emi-calculator.html" class="footer-link">EMI Calculator</a>
+            <a href="discount-calculator.html" class="footer-link">Discount Calculator</a>
+            <a href="tax-calculator.html" class="footer-link">Tax Calculator</a>
+          </div>
+        </div>
+        
+        <div>
+          <h4 class="footer-heading">Company</h4>
+          <div class="footer-links">
+            <a href="../../index.html" class="footer-link">Home</a>
+            <a href="../blog/index.html" class="footer-link">Blog</a>
+            <a href="../about.html" class="footer-link">About</a>
+            <a href="../contact.html" class="footer-link">Contact</a>
+            <a href="../privacy-policy.html" class="footer-link">Privacy Policy</a>
+            <a href="../terms-of-service.html" class="footer-link">Terms of Service</a>
+            <a href="../disclaimer.html" class="footer-link">Disclaimer</a>
+            <a href="../../sitemap.xml" class="footer-link">Sitemap</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <span>Designed & Developed by <a href="https://zubaircodes.site" target="_blank">ZubairCodes.site</a></span>
+        <span>Built with ❤️ for the web</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="../../js/main.js"></script>
+  <script src="../../js/tools/sitemap-generator.js"></script>
+</body>
+</html>

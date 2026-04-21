@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/svg+xml" href="../../favicon.svg">
+  <title>Tax Calculator - Free Online Calculator | Toolmatic</title>
+  <meta name="description" content="Add or remove tax from any amount with any tax rate. Calculate tax amount and total price. Free online tax calculator for sales tax, VAT, and GST.">
+  <meta name="keywords" content="tax calculator, sales tax calculator, VAT calculator, GST calculator, add tax, remove tax, tax calculation">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Toolmatic">
+  <link rel="canonical" href="https://toolmatic.com/pages/tools/tax-calculator.html">
+  
+  <!-- Open Graph Tags -->
+  <meta property="og:title" content="Tax Calculator - Free Online Calculator | Toolmatic">
+  <meta property="og:description" content="Add or remove tax from any amount with any tax rate. Calculate tax amount and total price. Free online tax calculator for sales tax, VAT, and GST.">
+  <meta property="og:url" content="https://toolmatic.com/pages/tools/tax-calculator.html">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://toolmatic.com/og-image.jpg">
+  
+  <!-- Twitter Card Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Tax Calculator - Free Online Calculator | Toolmatic">
+  <meta name="twitter:description" content="Add or remove tax from any amount with any tax rate. Calculate tax amount and total price. Free online tax calculator for sales tax, VAT, and GST.">
+  <meta name="twitter:image" content="https://toolmatic.com/og-image.jpg">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="stylesheet" href="../../css/navbar.css">
+  <link rel="stylesheet" href="../../css/footer.css">
+  <link rel="stylesheet" href="../../css/tools.css">
+  
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Tax Calculator",
+    "url": "https://toolmatic.com/pages/tools/tax-calculator.html",
+    "description": "Add or remove tax from any amount with any tax rate",
+    "applicationCategory": "FinanceApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    }
+  }
+  </script>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <a href="../../index.html" class="navbar-brand">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+        </svg>
+        Toolmatic
+      </a>
+      
+      <div class="navbar-nav">
+        <a href="../../index.html" class="navbar-link">Home</a>
+        <a href="../seo-tools.html" class="navbar-link">SEO Tools</a>
+        <a href="../calculators.html" class="navbar-link">Calculators</a>
+        <a href="../blog/index.html" class="navbar-link">Blog</a>
+        <a href="../about.html" class="navbar-link">About</a>
+      </div>
+      
+      <a href="../calculators.html" class="navbar-cta">All Tools →</a>
+      
+      <button class="navbar-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    
+    <div class="navbar-menu">
+      <a href="../../index.html" class="navbar-menu-link">Home</a>
+      <a href="../seo-tools.html" class="navbar-menu-link">SEO Tools</a>
+      <a href="../calculators.html" class="navbar-menu-link">Calculators</a>
+      <a href="../blog/index.html" class="navbar-menu-link">Blog</a>
+      <a href="../about.html" class="navbar-menu-link">About</a>
+      <a href="../calculators.html" class="navbar-menu-cta">All Tools →</a>
+    </div>
+  </nav>
+
+  <!-- Breadcrumb -->
+  <div class="container">
+    <div class="breadcrumb">
+      <a href="../../index.html">Home</a> <span>&gt;</span> <a href="../calculators.html">Calculators</a> <span>&gt;</span> <span>Tax Calculator</span>
+    </div>
+  </div>
+
+  <!-- Title Section -->
+  <section class="section section-white tool-header">
+    <div class="tool-header-container">
+      <h1>Tax Calculator</h1>
+      <p class="tool-intro">Add or remove tax from any amount with support for any tax rate. Calculate tax amount, total amount including tax, or original price before tax.</p>
+    </div>
+  </section>
+
+  <!-- Tool UI -->
+  <section class="section section-white">
+    <div class="container">
+      <div class="tool-ui">
+        <div class="tool-card">
+          <div class="tool-form-group">
+            <label for="taxMode">Tax Mode</label>
+            <select id="taxMode">
+              <option value="add">Add Tax</option>
+              <option value="remove">Remove Tax</option>
+            </select>
+          </div>
+          
+          <div class="tool-form-group">
+            <label for="amount">Amount</label>
+            <input type="number" id="amount" placeholder="e.g., 100" step="0.01" min="0">
+          </div>
+          
+          <div class="tool-form-group">
+            <label for="taxRate">Tax Rate (%)</label>
+            <input type="number" id="taxRate" placeholder="e.g., 8.5" step="0.01" min="0">
+          </div>
+          
+          <div class="tool-actions">
+            <button class="btn btn-primary" id="calculateBtn">Calculate</button>
+            <button class="btn btn-secondary" id="clearBtn">Clear</button>
+          </div>
+          
+          <div class="tool-output" id="outputArea" style="display: none;">
+            <h3>Results</h3>
+            <div class="tool-stats">
+              <div class="stat-card">
+                <div class="stat-value" id="taxAmount">0</div>
+                <div class="stat-label">Tax Amount</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-value" id="totalAmount">0</div>
+                <div class="stat-label">Total Amount</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-value" id="originalAmount">0</div>
+                <div class="stat-label">Original Amount</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How to Use -->
+  <section class="section section-bg tool-how-to">
+    <div class="container">
+      <h2>How to Use</h2>
+      <ol>
+        <li>Select "Add Tax" to calculate total including tax, or "Remove Tax" to find original price before tax</li>
+        <li>Enter the amount (price before tax for Add mode, or total including tax for Remove mode)</li>
+        <li>Enter the tax rate percentage (e.g., 8.5 for 8.5%)</li>
+        <li>Click "Calculate" to see your results</li>
+        <li>View the tax amount, total amount, and original amount breakdown</li>
+        <li>All results are displayed to 2 decimal places for accuracy</li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- Example -->
+  <section class="section section-white tool-example">
+    <div class="container">
+      <h2>Example</h2>
+      <div class="example-box">
+        <div class="example-input">
+          <div class="example-label">Add Tax: Amount $100, Tax Rate 8.5%</div>
+          <div class="example-value">Result: Tax $8.50, Total $108.50</div>
+        </div>
+        <div class="example-input">
+          <div class="example-label">Remove Tax: Total $108.50, Tax Rate 8.5%</div>
+          <div class="example-value">Result: Original $100.00, Tax $8.50</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About This Tool -->
+  <section class="section section-bg tool-about">
+    <div class="container">
+      <h2>About the Tax Calculator</h2>
+      
+      <p>Our Tax Calculator helps you quickly add or remove tax from any amount. Whether you're calculating sales tax on a purchase, determining VAT for business purposes, or figuring out the pre-tax price from a total, this tool provides instant, accurate results for any tax rate.</p>
+      
+      <h3>Understanding Tax Calculations</h3>
+      
+      <p>The <strong>Add Tax</strong> mode calculates the tax amount and total price when you know the pre-tax amount. The formula is: Tax Amount = Amount × (Tax Rate / 100), and Total Amount = Amount + Tax Amount. This is commonly used when you know the base price and need to calculate the final price including tax.</p>
+      
+      <p>The <strong>Remove Tax</strong> mode calculates the original pre-tax amount when you know the total including tax. The formula is: Original Amount = Total Amount / (1 + Tax Rate / 100), and Tax Amount = Total Amount - Original Amount. This is useful when you have a total price including tax and want to know the base price and tax component.</p>
+      
+      <h3>Types of Taxes</h3>
+      
+      <p><strong>Sales Tax:</strong> A consumption tax imposed by governments on the sale of goods and services. Sales tax rates vary by jurisdiction, typically ranging from 0% to over 10% in the US. Our calculator works with any sales tax rate.</p>
+      
+      <p><strong>VAT (Value Added Tax):</strong> A consumption tax used in many countries outside the US. VAT rates are often higher than sales tax rates, commonly 15-25%. The calculation method is the same—use our calculator with your local VAT rate.</p>
+      
+      <p><strong>GST (Goods and Services Tax):</strong> Similar to VAT, used in countries like Canada, India, Australia, and others. GST rates vary by country and sometimes by product category. Our calculator handles any GST percentage.</p>
+      
+      <h3>Real-World Applications</h3>
+      
+      <p>For shoppers, tax calculators help understand the final price of purchases. When browsing online, prices are often shown without tax, and the final total at checkout includes sales tax. Knowing the tax amount helps you budget accurately and compare true prices across different jurisdictions with different tax rates.</p>
+      
+      <p>For business owners, tax calculations are essential for pricing, invoicing, and financial reporting. Businesses must collect and remit sales tax to governments, so accurate calculation is critical for compliance. Our calculator helps verify tax calculations on invoices and receipts.</p>
+      
+      <p>For international transactions, understanding VAT and GST is crucial. When importing goods, you may need to calculate import duties and taxes. When exporting, you may need to determine whether VAT applies and how to handle it. Our calculator supports any tax rate for these calculations.</p>
+      
+      <h3>Tax Rate Variations</h3>
+      
+      <p>Tax rates vary significantly by location and sometimes by product type. In the US, sales tax rates range from 0% in states like Oregon and Delaware to over 10% in some California cities. Local jurisdictions often add their own sales tax on top of state rates.</p>
+      
+      <p>Some products have reduced or zero tax rates. Essential items like food and medicine may have lower tax rates or be exempt. Luxury items may have higher rates. Always verify the applicable tax rate for your specific location and product type.</p>
+      
+      <p>For international VAT, rates can differ for standard-rated, reduced-rated, and zero-rated goods. Standard VAT rates in EU countries are typically around 20%, while reduced rates for essentials might be 5-10%. Our calculator works with any of these rates.</p>
+      
+      <h3>Tax-Inclusive vs Tax-Exclusive Pricing</h3>
+      
+      <p>In some countries, prices are displayed tax-inclusive (the price shown includes all taxes). In others, prices are tax-exclusive (tax is added at checkout). Our calculator handles both scenarios—use "Remove Tax" when you have a tax-inclusive price and need to find the pre-tax amount.</p>
+      
+      <p>Understanding which pricing model applies in your region is important for accurate comparisons. Tax-inclusive pricing can make prices appear higher, but the final cost is the same. Our calculator helps you break down the tax component regardless of the pricing model.</p>
+      
+      <h3>Who Should Use This Tool</h3>
+      
+      <p>Shoppers calculating final prices or comparing costs across different tax jurisdictions will find this tool essential. It's particularly useful for budgeting large purchases where tax can significantly impact the total cost.</p>
+      
+      <p>Business owners calculating sales tax for invoicing, pricing products, or verifying supplier invoices can use this tool for quick, accurate tax calculations. It's also helpful for businesses operating in multiple tax jurisdictions.</p>
+      
+      <p>Accountants and financial professionals can use this calculator to verify tax calculations, prepare financial reports, and ensure compliance with tax regulations. The ability to both add and remove tax makes it versatile for various accounting scenarios.</p>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="section section-white tool-faq">
+    <div class="container">
+      <h2>Frequently Asked Questions</h2>
+      
+      <div class="accordion-item">
+        <div class="accordion-header">
+          How do I remove tax from a total amount?
+          <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="6 9 12 15 18 9"/>
+          </svg>
+        </div>
+        <div class="accordion-content">
+          To remove tax: Original Amount = Total Amount / (1 + Tax Rate/100). For example, if the total is $108.50 with 8.5% tax: 108.50 / 1.085 = $100 original price. The tax amount is the difference between total and original.
+        </div>
+      </div>
+      
+      <div class="accordion-item">
+        <div class="accordion-header">
+          Can I use this for VAT and GST?
+          <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="6 9 12 15 18 9"/>
+          </svg>
+        </div>
+        <div class="accordion-content">
+          Yes, this calculator works for any percentage-based tax system including VAT (Value Added Tax) and GST (Goods and Services Tax). Simply enter your local VAT or GST rate percentage to calculate the tax amount.
+        </div>
+      </div>
+      
+      <div class="accordion-item">
+        <div class="accordion-header">
+          What's the difference between tax-inclusive and tax-exclusive pricing?
+          <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="6 9 12 15 18 9"/>
+          </svg>
+        </div>
+        <div class="accordion-content">
+          Tax-inclusive pricing shows the final price including all taxes. Tax-exclusive pricing shows the base price before tax, with tax added at checkout. Use "Remove Tax" mode to find the pre-tax price from tax-inclusive pricing.
+        </div>
+      </div>
+      
+      <div class="accordion-item">
+        <div class="accordion-header">
+          How accurate are the calculations for currency?
+          <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="6 9 12 15 18 9"/>
+          </svg>
+        </div>
+        <div class="accordion-content">
+          The calculations are mathematically accurate to 2 decimal places for any currency. You can use this calculator for USD, EUR, GBP, INR, or any other currency. Just ensure you're consistent with the currency symbol and tax rate for your region.
+        </div>
+      </div>
+      
+      <div class="accordion-item">
+        <div class="accordion-header">
+          Why might the removed tax not match the listed tax?
+          <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="6 9 12 15 18 9"/>
+          </svg>
+        </div>
+        <div class="accordion-content">
+          Some jurisdictions have compound tax calculations, multiple tax types, or rounding rules that can cause small differences. This calculator uses standard percentage calculation. For official tax purposes, consult your local tax authority's guidelines.
+        </div>
+      </div>
+      
+      <!-- Schema.org FAQ JSON-LD -->
+      <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How do I remove tax from a total amount?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Original Amount = Total Amount / (1 + Tax Rate/100). For example, $108.50 with 8.5% tax: 108.50 / 1.085 = $100 original."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I use this for VAT and GST?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, this calculator works for any percentage-based tax system including VAT and GST. Enter your local VAT or GST rate percentage."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What's the difference between tax-inclusive and tax-exclusive pricing?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Tax-inclusive pricing shows the final price including all taxes. Tax-exclusive pricing shows the base price before tax, with tax added at checkout."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How accurate are the calculations for currency?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The calculations are mathematically accurate to 2 decimal places for any currency. Use this for USD, EUR, GBP, INR, or any other currency."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why might the removed tax not match the listed tax?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Some jurisdictions have compound tax calculations, multiple tax types, or rounding rules that can cause differences. This calculator uses standard percentage calculation."
+            }
+          }
+        ]
+      }
+      </script>
+    </div>
+  </section>
+
+  <!-- Related Tools -->
+  <section class="section section-bg related-tools">
+    <div class="container">
+      <h2>You Might Also Like</h2>
+      <div class="grid-3">
+        <div class="card">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-bottom: 12px;">
+            <path d="M12 2v20"/>
+            <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+          </svg>
+          <h3>Percentage Calculator</h3>
+          <p class="text-secondary small">Calculate percentages, percentage change, and more.</p>
+          <a href="percentage-calculator.html" class="text-accent" style="font-size: 0.875rem; font-weight: 500;">Open Tool →</a>
+        </div>
+        <div class="card">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-bottom: 12px;">
+            <path d="M12 2v20"/>
+            <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+          </svg>
+          <h3>Discount Calculator</h3>
+          <p class="text-secondary small">Calculate discounted prices and discount percentages.</p>
+          <a href="discount-calculator.html" class="text-accent" style="font-size: 0.875rem; font-weight: 500;">Open Tool →</a>
+        </div>
+        <div class="card">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-bottom: 12px;">
+            <rect x="2" y="5" width="20" height="14" rx="2"/>
+            <line x1="2" y1="10" x2="22" y2="10"/>
+          </svg>
+          <h3>EMI Calculator</h3>
+          <p class="text-secondary small">Calculate loan EMI, total payment, and interest breakdown.</p>
+          <a href="emi-calculator.html" class="text-accent" style="font-size: 0.875rem; font-weight: 500;">Open Tool →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ad Slot -->
+  <div class="container">
+    <div class="ad-slot">
+      <!-- AdSense Ad Unit: Replace with your AdSense code -->
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-brand-logo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+            </svg>
+            Toolmatic
+          </div>
+          <p class="footer-brand-tagline">Free online tools for SEO and productivity.</p>
+          <p class="footer-copyright">© 2024 Toolmatic. All rights reserved.</p>
+        </div>
+        
+        <div>
+          <h4 class="footer-heading">SEO Tools</h4>
+          <div class="footer-links">
+            <a href="meta-tag-generator.html" class="footer-link">Meta Tag Generator</a>
+            <a href="open-graph-generator.html" class="footer-link">Open Graph Generator</a>
+            <a href="keyword-density-checker.html" class="footer-link">Keyword Density Checker</a>
+            <a href="robots-txt-generator.html" class="footer-link">Robots.txt Generator</a>
+            <a href="sitemap-generator.html" class="footer-link">Sitemap Generator</a>
+            <a href="word-counter.html" class="footer-link">Word Counter</a>
+          </div>
+        </div>
+        
+        <div>
+          <h4 class="footer-heading">Calculators</h4>
+          <div class="footer-links">
+            <a href="percentage-calculator.html" class="footer-link">Percentage Calculator</a>
+            <a href="age-calculator.html" class="footer-link">Age Calculator</a>
+            <a href="bmi-calculator.html" class="footer-link">BMI Calculator</a>
+            <a href="emi-calculator.html" class="footer-link">EMI Calculator</a>
+            <a href="discount-calculator.html" class="footer-link">Discount Calculator</a>
+            <a href="tax-calculator.html" class="footer-link">Tax Calculator</a>
+          </div>
+        </div>
+        
+        <div>
+          <h4 class="footer-heading">Company</h4>
+          <div class="footer-links">
+            <a href="../../index.html" class="footer-link">Home</a>
+            <a href="../blog/index.html" class="footer-link">Blog</a>
+            <a href="../about.html" class="footer-link">About</a>
+            <a href="../contact.html" class="footer-link">Contact</a>
+            <a href="../privacy-policy.html" class="footer-link">Privacy Policy</a>
+            <a href="../terms-of-service.html" class="footer-link">Terms of Service</a>
+            <a href="../disclaimer.html" class="footer-link">Disclaimer</a>
+            <a href="../../sitemap.xml" class="footer-link">Sitemap</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <span>Designed & Developed by <a href="https://zubaircodes.site" target="_blank">ZubairCodes.site</a></span>
+        <span>Built with ❤️ for the web</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="../../js/main.js"></script>
+  <script src="../../js/tools/tax-calculator.js"></script>
+</body>
+</html>
