@@ -1,4 +1,54 @@
 {
   "cleanUrls": true,
-  "trailingSlash": false
+  "trailingSlash": false,
+  "rewrites": [
+    {
+      "source": "/resume-builder",
+      "destination": "/resume-builder.html"
+    },
+    {
+      "source": "/image-to-text",
+      "destination": "/image-to-text.html"
+    },
+    {
+      "source": "/pdf-to-word",
+      "destination": "/pdf-to-word.html"
+    },
+    {
+      "source": "/about",
+      "destination": "/pages/about.html"
+    },
+    {
+      "source": "/calculators",
+      "destination": "/pages/calculators.html"
+    },
+    {
+      "source": "/contact",
+      "destination": "/pages/contact.html"
+    },
+    {
+      "source": "/disclaimer",
+      "destination": "/pages/disclaimer.html"
+    },
+    {
+      "source": "/privacy-policy",
+      "destination": "/pages/privacy-policy.html"
+    },
+    {
+      "source": "/terms-of-service",
+      "destination": "/pages/terms-of-service.html"
+    },
+    {
+      "source": "/seo-tools",
+      "destination": "/pages/seo-tools.html"
+    },
+    {
+      "source": "/tools/:path*",
+      "destination": "/pages/tools/:path*"
+    },
+    {
+      "source": "/blog/:path*",
+      "destination": "/pages/blog/:path*"
+    }
+  ]
 }
