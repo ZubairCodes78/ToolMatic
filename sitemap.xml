@@ -2,9 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://toolmatic.site/</loc>
-    <lastmod>2024-04-21</lastmod>
+    <lastmod>2024-04-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://toolmatic.site/image-to-text.html</loc>
+    <lastmod>2024-04-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://toolmatic.site/pdf-to-word.html</loc>
+    <lastmod>2024-04-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://toolmatic.site/resume-builder.html</loc>
+    <lastmod>2024-04-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://toolmatic.site/pages/seo-tools.html</loc>
@@ -113,6 +131,24 @@
     <lastmod>2024-04-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://toolmatic.site/pages/blog/resume-builder-guide.html</loc>
+    <lastmod>2024-04-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://toolmatic.site/pages/blog/pdf-to-word-guide.html</loc>
+    <lastmod>2024-04-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://toolmatic.site/pages/blog/image-to-text-guide.html</loc>
+    <lastmod>2024-04-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://toolmatic.site/pages/blog/free-plagiarism-checker-online-check-duplicate-content-easily.html</loc>
