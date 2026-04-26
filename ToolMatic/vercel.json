@@ -1,0 +1,106 @@
+{
+  "cleanUrls": false,
+  "trailingSlash": false,
+  "rewrites": [
+    {
+      "source": "/",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/resume-builder",
+      "destination": "/resume-builder.html"
+    },
+    {
+      "source": "/resume-builder.html",
+      "destination": "/resume-builder.html"
+    },
+    {
+      "source": "/image-to-text",
+      "destination": "/image-to-text.html"
+    },
+    {
+      "source": "/image-to-text.html",
+      "destination": "/image-to-text.html"
+    },
+    {
+      "source": "/pdf-to-word",
+      "destination": "/pdf-to-word.html"
+    },
+    {
+      "source": "/pdf-to-word.html",
+      "destination": "/pdf-to-word.html"
+    },
+    {
+      "source": "/about",
+      "destination": "/pages/about.html"
+    },
+    {
+      "source": "/about.html",
+      "destination": "/pages/about.html"
+    },
+    {
+      "source": "/calculators",
+      "destination": "/pages/calculators.html"
+    },
+    {
+      "source": "/calculators.html",
+      "destination": "/pages/calculators.html"
+    },
+    {
+      "source": "/contact",
+      "destination": "/pages/contact.html"
+    },
+    {
+      "source": "/contact.html",
+      "destination": "/pages/contact.html"
+    },
+    {
+      "source": "/disclaimer",
+      "destination": "/pages/disclaimer.html"
+    },
+    {
+      "source": "/disclaimer.html",
+      "destination": "/pages/disclaimer.html"
+    },
+    {
+      "source": "/privacy-policy",
+      "destination": "/pages/privacy-policy.html"
+    },
+    {
+      "source": "/privacy-policy.html",
+      "destination": "/pages/privacy-policy.html"
+    },
+    {
+      "source": "/terms-of-service",
+      "destination": "/pages/terms-of-service.html"
+    },
+    {
+      "source": "/terms-of-service.html",
+      "destination": "/pages/terms-of-service.html"
+    },
+    {
+      "source": "/seo-tools",
+      "destination": "/pages/seo-tools.html"
+    },
+    {
+      "source": "/seo-tools.html",
+      "destination": "/pages/seo-tools.html"
+    },
+    {
+      "source": "/blog",
+      "destination": "/pages/blog/index.html"
+    },
+    {
+      "source": "/blog/",
+      "destination": "/pages/blog/index.html"
+    },
+    {
+      "source": "/blog/:path*",
+      "destination": "/pages/blog/:path*.html"
+    },
+    {
+      "source": "/tools/:path*",
+      "destination": "/pages/tools/:path*.html"
+    }
+  ]
+}

@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3K5EHMCYEV"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-3K5EHMCYEV');
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/svg+xml" href="../../favicon.svg">
+  <title>What Is robots.txt and How to Create One Correctly | Toolmatic Blog</title>
+  <meta name="description" content="Understand how robots.txt controls crawler access to your website and learn to create it correctly for better SEO.">
+  <meta name="keywords" content="robots.txt, SEO, crawler control, search engine crawler, website robots file">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Toolmatic">
+  <link rel="canonical" href="https://toolmatic.site/blog/what-is-robots-txt.html">
+  
+  <!-- Open Graph Tags -->
+  <meta property="og:title" content="What Is robots.txt and How to Create One Correctly | Toolmatic Blog">
+  <meta property="og:description" content="Understand how robots.txt controls crawler access to your website and learn to create it correctly for better SEO.">
+  <meta property="og:url" content="https://toolmatic.site/blog/what-is-robots-txt.html">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="https://toolmatic.site/preview.png">
+  
+  <!-- Twitter Card Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="What Is robots.txt and How to Create One Correctly | Toolmatic Blog">
+  <meta name="twitter:description" content="Understand how robots.txt controls crawler access to your website and learn to create it correctly for better SEO.">
+  <meta name="twitter:image" content="https://toolmatic.site/preview.png">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="stylesheet" href="../../css/navbar.css">
+  <link rel="stylesheet" href="../../css/footer.css">
+  <link rel="stylesheet" href="../../css/blog.css">
+  
+  <!-- Google AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8943765451617871"
+       crossorigin="anonymous"></script>
+  
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "What Is robots.txt and How to Create One Correctly",
+    "url": "https://toolmatic.site/blog/what-is-robots-txt.html",
+    "datePublished": "2024-04-05",
+    "dateModified": "2024-04-26",
+    "description": "Understand how robots.txt controls crawler access to your website and learn to create it correctly for better SEO.",
+    "author": {
+      "@type": "Organization",
+      "name": "Toolmatic",
+      "url": "https://toolmatic.site/"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Toolmatic",
+      "url": "https://toolmatic.site/"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is robots.txt?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Robots.txt is a text file that tells search engine crawlers which pages or files they can or can't request from your site. It's used to control crawler access and optimize SEO by preventing indexing of certain areas."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Where do I put the robots.txt file?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The robots.txt file must be placed in the root directory of your website (e.g., yoursite.com/robots.txt). Search engines automatically look for this file in the root directory when they visit your site."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I create a robots.txt file?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "You can create a robots.txt file using a simple text editor or use Toolmatic's free robots.txt generator. The file uses specific syntax with User-agent, Disallow, and Allow directives to control crawler behavior."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What happens if I don't have a robots.txt file?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "If you don't have a robots.txt file, search engine crawlers will assume they can crawl all pages on your site. While this is generally fine, having a robots.txt file gives you control over crawler access and can prevent indexing of sensitive areas."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can robots.txt block search engines completely?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, you can block all search engines by using Disallow: / for all user-agents. However, this will prevent your site from being indexed in search results. Use this carefully and ensure you want your site completely hidden from search engines."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <a href="../../index.html" class="navbar-brand">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+        </svg>
+        Toolmatic
+      </a>
+      
+      <div class="navbar-nav">
+        <a href="../../index.html" class="navbar-link">Home</a>
+        <a href="../seo-tools.html" class="navbar-link">SEO Tools</a>
+        <a href="../calculators.html" class="navbar-link">Calculators</a>
+        <a href="index.html" class="navbar-link active">Blog</a>
+        <a href="../about.html" class="navbar-link">About</a>
+      </div>
+      
+      <a href="../seo-tools.html" class="navbar-cta">All Tools →</a>
+      
+      <button class="navbar-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    
+    <div class="navbar-menu">
+      <a href="../../index.html" class="navbar-menu-link">Home</a>
+      <a href="../seo-tools.html" class="navbar-menu-link">SEO Tools</a>
+      <a href="../calculators.html" class="navbar-menu-link">Calculators</a>
+      <a href="index.html" class="navbar-menu-link">Blog</a>
+      <a href="../about.html" class="navbar-menu-link">About</a>
+      <a href="../seo-tools.html" class="navbar-menu-cta">All Tools →</a>
+    </div>
+  </nav>
+
+  <!-- Blog Post -->
+  <section class="section section-white">
+    <div class="container">
+      <div class="blog-post">
+        <div class="blog-post-header">
+          <span class="blog-post-category">Technical SEO</span>
+          <h1>What Is robots.txt and How to Create One Correctly</h1>
+          <p class="blog-post-meta">April 5, 2024 • 7 min read</p>
+        </div>
+        
+        <div class="blog-post-content">
+          <p>The robots.txt file is a fundamental component of website SEO that controls how search engine crawlers access your site. Despite its simplicity, a properly configured robots.txt file is essential for directing crawler traffic, protecting sensitive content, and optimizing your crawl budget. This guide explains what robots.txt is, how it works, and how to create one correctly for your website.</p>
+          
+          <h2>What Is robots.txt?</h2>
+          
+          <p>Robots.txt is a text file that webmasters create to instruct web robots (typically search engine crawlers) how to crawl pages on their website. The file is part of the Robots Exclusion Protocol (REP), a group of web standards that regulate how robots crawl the web, access and index content, and serve that content up to users.</p>
+          
+          <p>When a crawler visits your site, it checks for the robots.txt file before accessing any other content. The file tells the crawler which parts of the site it can access and which parts it should avoid. This is particularly important for large websites with administrative sections, duplicate content, or pages that shouldn't appear in search results.</p>
+          
+          <p>The robots.txt file must be placed in the root directory of your website, making it accessible at yourdomain.com/robots.txt. This is the standard location that all search engines expect and automatically check. Placing it anywhere else will prevent crawlers from finding it.</p>
+          
+          <h2>How robots.txt Works</h2>
+          
+          <p>The robots.txt file uses a simple syntax with two main directives: User-agent and Disallow. The User-agent directive specifies which robot the rule applies to, while the Disallow directive specifies which paths the robot should not access.</p>
+          
+          <p>Here's a basic example:</p>
+          
+          <pre>User-agent: *
+Disallow: /admin/
+Disallow: /private/</pre>
+          
+          <p>This file tells all crawlers (indicated by the asterisk) to avoid the /admin/ and /private/ directories. All other parts of the site remain accessible for crawling.</p>
+          
+          <p>Crawlers obey robots.txt by convention, not by technical enforcement. Malicious crawlers may ignore robots.txt entirely, which is why robots.txt should be used for controlling crawler access, not for securing sensitive information. For true security, use authentication and encryption.</p>
+          
+          <h2>Understanding User-Agent Directives</h2>
+          
+          <p>The User-agent line specifies which crawler the rule applies to. Using an asterisk (*) means the rule applies to all robots. This is the most common approach for general crawler control. However, you can specify individual crawlers like Googlebot or Bingbot to give different instructions to different search engines.</p>
+          
+          <p>For example, you might want to allow Google to crawl your entire site while blocking other crawlers from certain sections:</p>
+          
+          <pre>User-agent: Googlebot
+Disallow:
+
+User-agent: *
+Disallow: /admin/</pre>
+          
+          <p>This configuration allows Googlebot full access while blocking other crawlers from the admin directory. Use this approach carefully, as overly restrictive rules can prevent legitimate crawlers from accessing important content.</p>
+          
+          <h2>The Disallow Directive Explained</h2>
+          
+          <p>The Disallow directive tells robots which paths they should not crawl. Each path starts with a forward slash (/) and represents a directory or file on your website. Using Disallow: / blocks the entire site, while Disallow: /admin/ blocks only the admin directory.</p>
+          
+          <p>Here are some common Disallow patterns:</p>
+          
+          <pre>Disallow: /private/ - Blocks the private directory
+Disallow: /tmp - Blocks the tmp file
+Disallow: /admin/*.pdf - Blocks all PDF files in admin
+Disallow: / - Blocks the entire site</pre>
+          
+          <p>Be careful with Disallow directives. Blocking important pages can prevent them from being indexed, which will harm your SEO. Only block pages that genuinely shouldn't appear in search results, such as admin panels, user account pages, or duplicate content.</p>
+          
+          <h2>The Allow Directive</h2>
+          
+          <p>The Allow directive explicitly permits access to specific paths. This is useful when you want to disallow a directory but allow specific files within it. For example, you might disallow /private/ but allow /private/public-file.pdf.</p>
+          
+          <pre>User-agent: *
+Disallow: /private/
+Allow: /private/public-file.pdf</pre>
+          
+          <p>The Allow directive is less commonly used than Disallow but provides granular control when needed. Google's crawler respects Allow directives, but not all crawlers do, so don't rely on it for critical access control.</p>
+          
+          <h2>Crawl-Delay Directive</h2>
+          
+          <p>The Crawl-delay directive specifies how many seconds a crawler should wait between requests. This can help prevent server overload from aggressive crawling. For example, Crawl-delay: 10 tells the crawler to wait 10 seconds between requests.</p>
+          
+          <pre>User-agent: *
+Crawl-delay: 10</pre>
+          
+          <p>However, not all crawlers respect this directive. Google, for example, doesn't use crawl-delay and instead determines crawl rate based on server response times and other factors. For controlling Google's crawl rate, use Google Search Console's crawl rate settings instead.</p>
+          
+          <h2>Sitemap Directive</h2>
+          
+          <p>The Sitemap directive provides the location of your XML sitemap. Including this helps search engines discover all your pages more efficiently, especially for large sites with complex structures.</p>
+          
+          <pre>Sitemap: https://yourdomain.com/sitemap.xml</pre>
+          
+          <p>While you can also submit your sitemap through search engine webmaster tools, including it in robots.txt provides an additional discovery method. This is particularly useful for new sites or sites that have recently added many new pages.</p>
+          
+          <h2>Common robots.txt Mistakes</h2>
+          
+          <p>One common mistake is blocking CSS and JavaScript files. Modern search engines render pages like browsers do, so they need access to these files to understand your site completely. Blocking them can result in poor indexing and lower rankings.</p>
+          
+          <p>Another mistake is using robots.txt to hide sensitive information. Remember that robots.txt is publicly visible to anyone who visits yourdomain.com/robots.txt. Don't use it to hide URLs you don't want humans to find—for that, use password protection or noindex meta tags.</p>
+          
+          <p>Don't use robots.txt to handle duplicate content. While you can block duplicate pages, it's better to use canonical tags to tell search engines which version to index. Blocking pages with robots.txt prevents them from being crawled, but canonical tags preserve link equity and handle the issue more elegantly.</p>
+          
+          <h2>Testing Your robots.txt File</h2>
+          
+          <p>Before deploying a robots.txt file, test it using search engine tools. Google provides the Robots.txt Tester in Search Console, and Bing offers similar tools. These tools show you exactly how crawlers will interpret your file and help identify syntax errors.</p>
+          
+          <p>After deploying your robots.txt, monitor your site's crawl behavior in Search Console. Look for blocked URLs that should be accessible, and ensure important pages are being crawled and indexed. Adjust your robots.txt as needed based on this data.</p>
+          
+          <h2>Advanced robots.txt Techniques</h2>
+          
+          <p>For large sites, you might use multiple User-agent blocks to give different instructions to different crawlers. This is particularly useful if you want to allow certain search engines full access while restricting others.</p>
+          
+          <p>Pattern matching with wildcards can create complex rules. For example, Disallow: /*.pdf blocks all PDF files across your site. However, keep your robots.txt simple—complex files are harder to maintain and more prone to errors.</p>
+          
+          <h2>When Not to Use robots.txt</h2>
+          
+          <p>Don't use robots.txt if you want pages removed from search results. Blocking pages with robots.txt prevents crawling, not indexing. If a page is already indexed or has links from other sites, it may still appear in search results. To remove pages from search results, use the noindex meta tag or password protection.</p>
+          
+          <p>Don't use robots.txt for security purposes. It doesn't prevent access by humans or malicious bots. Use authentication, encryption, and proper security measures to protect sensitive content.</p>
+          
+          <h2>Conclusion</h2>
+          
+          <p>The robots.txt file is a powerful tool for controlling crawler access to your website. When used correctly, it helps search engines focus their crawl budget on your most important content, protects sensitive areas from unnecessary crawling, and improves overall SEO performance. Create your robots.txt file carefully, test it thoroughly, and monitor its impact on your site's crawl behavior. With proper robots.txt configuration, you can ensure that search engines discover and index your most valuable content while avoiding unnecessary crawler traffic.</p>
+        </div>
+        
+        <div class="blog-post-footer">
+          <a href="../tools/robots-txt-generator.html" class="btn btn-primary">Try Robots.txt Generator →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-brand-logo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+            </svg>
+            Toolmatic
+          </div>
+          <p class="footer-brand-tagline">Free online tools for SEO and productivity.</p>
+          <p class="footer-copyright">© 2024 Toolmatic. All rights reserved.</p>
+        </div>
+        
+        <div>
+          <h4 class="footer-heading">SEO Tools</h4>
+          <div class="footer-links">
+            <a href="../tools/meta-tag-generator.html" class="footer-link">Meta Tag Generator</a>
+            <a href="../tools/open-graph-generator.html" class="footer-link">Open Graph Generator</a>
+            <a href="../tools/keyword-density-checker.html" class="footer-link">Keyword Density Checker</a>
+            <a href="../tools/robots-txt-generator.html" class="footer-link">Robots.txt Generator</a>
+            <a href="../tools/sitemap-generator.html" class="footer-link">Sitemap Generator</a>
+            <a href="../tools/word-counter.html" class="footer-link">Word Counter</a>
+          </div>
+        </div>
+        
+        <div>
+          <h4 class="footer-heading">Calculators</h4>
+          <div class="footer-links">
+            <a href="../tools/percentage-calculator.html" class="footer-link">Percentage Calculator</a>
+            <a href="../tools/age-calculator.html" class="footer-link">Age Calculator</a>
+            <a href="../tools/bmi-calculator.html" class="footer-link">BMI Calculator</a>
+            <a href="../tools/emi-calculator.html" class="footer-link">EMI Calculator</a>
+            <a href="../tools/discount-calculator.html" class="footer-link">Discount Calculator</a>
+            <a href="../tools/tax-calculator.html" class="footer-link">Tax Calculator</a>
+          </div>
+        </div>
+        
+        <div>
+          <h4 class="footer-heading">Company</h4>
+          <div class="footer-links">
+            <a href="../../index.html" class="footer-link">Home</a>
+            <a href="index.html" class="footer-link">Blog</a>
+            <a href="../about.html" class="footer-link">About</a>
+            <a href="../contact.html" class="footer-link">Contact</a>
+            <a href="../privacy-policy.html" class="footer-link">Privacy Policy</a>
+            <a href="../terms-of-service.html" class="footer-link">Terms of Service</a>
+            <a href="../disclaimer.html" class="footer-link">Disclaimer</a>
+            <a href="../../sitemap.xml" class="footer-link">Sitemap</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <span>Designed & Developed by <a href="https://zubaircodes.site" target="_blank">ZubairCodes.site</a></span>
+        <span>Built with ❤️ for the web</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="../../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3K5EHMCYEV"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-3K5EHMCYEV');
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/svg+xml" href="../../favicon.svg">
+  <title>EMI Calculator - Free Online Calculator | Toolmatic</title>
+  <meta name="description" content="Calculate loan EMI, total payment, and interest breakdown. Free online EMI calculator with amortization schedule for home loans, car loans, and personal loans.">
+  <meta name="keywords" content="EMI calculator, loan calculator, calculate EMI, home loan EMI, car loan EMI, personal loan EMI, amortization schedule">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Toolmatic">
+  <link rel="canonical" href="https://toolmatic.site/tools/emi-calculator.html">
+  
+  <!-- Open Graph Tags -->
+  <meta property="og:title" content="EMI Calculator - Free Online Calculator | Toolmatic">
+  <meta property="og:description" content="Calculate loan EMI, total payment, and interest breakdown. Free online EMI calculator with amortization schedule for home loans, car loans, and personal loans.">
+  <meta property="og:url" content="https://toolmatic.site/tools/emi-calculator.html">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://toolmatic.site/preview.png">
+  
+  <!-- Twitter Card Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="EMI Calculator - Free Online Calculator | Toolmatic">
+  <meta name="twitter:description" content="Calculate loan EMI, total payment, and interest breakdown. Free online EMI calculator with amortization schedule for home loans, car loans, and personal loans.">
+  <meta name="twitter:image" content="https://toolmatic.site/preview.png">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="stylesheet" href="../../css/navbar.css">
+  <link rel="stylesheet" href="../../css/footer.css">
+  <link rel="stylesheet" href="../../css/tools.css">
+  
+  <!-- Google AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8943765451617871"
+       crossorigin="anonymous"></script>
+  
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "EMI Calculator",
+    "url": "https://toolmatic.site/tools/emi-calculator.html",
+    "description": "Calculate loan EMI, total payment, and interest breakdown. Free online EMI calculator with amortization schedule for home loans, car loans, and personal loans.",
+    "applicationCategory": "FinanceApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "EMI Calculator - Free Online Calculator",
+    "url": "https://toolmatic.site/tools/emi-calculator.html",
+    "description": "Calculate loan EMI, total payment, and interest breakdown. Free online EMI calculator with amortization schedule for home loans, car loans, and personal loans.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Toolmatic",
+      "url": "https://toolmatic.site/"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is EMI?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "EMI (Equated Monthly Installment) is a fixed payment amount made by a borrower to a lender at a specified date each calendar month. EMIs are used to pay off both interest and principal each month so that over a specified number of years, the loan is paid off in full."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How is EMI calculated?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "EMI is calculated using the formula: EMI = [P x R x (1+R)^N]/[(1+R)^N-1], where P is the principal loan amount, R is the monthly interest rate, and N is the loan tenure in months. Our free EMI calculator does this calculation automatically for you."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What types of loans can I calculate with this tool?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Our free EMI calculator works for all types of loans including home loans, car loans, personal loans, education loans, and any other fixed-rate installment loans. Simply enter your loan amount, interest rate, and tenure."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is an amortization schedule?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "An amortization schedule is a complete table of periodic loan payments, showing the amount of principal and interest that comprise each payment until the loan is paid off. Our EMI calculator provides a detailed amortization schedule to help you understand your loan repayment."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is this EMI calculator free to use?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, Toolmatic's EMI calculator is completely free with no signup required. Calculate unlimited loan EMIs without any charges or registration."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <a href="../../index.html" class="navbar-brand">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+        </svg>
+        Toolmatic
+      </a>
+      
+      <div class="navbar-nav">
+        <a href="../../index.html" class="navbar-link">Home</a>
+        <a href="../seo-tools.html" class="navbar-link">SEO Tools</a>
+        <a href="../calculators.html" class="navbar-link">Calculators</a>
+        <a href="../blog/index.html" class="navbar-link">Blog</a>
+        <a href="../about.html" class="navbar-link">About</a>
+      </div>
+      
+      <a href="../calculators.html" class="navbar-cta">All Tools →</a>
+      
+      <button class="navbar-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    
+    <div class="navbar-menu">
+      <a href="../../index.html" class="navbar-menu-link">Home</a>
+      <a href="../seo-tools.html" class="navbar-menu-link">SEO Tools</a>
+      <a href="../calculators.html" class="navbar-menu-link">Calculators</a>
+      <a href="../blog/index.html" class="navbar-menu-link">Blog</a>
+      <a href="../about.html" class="navbar-menu-link">About</a>
+      <a href="../calculators.html" class="navbar-menu-cta">All Tools →</a>
+    </div>
+  </nav>
+
+  <!-- Breadcrumb -->
+  <div class="container">
+    <div class="breadcrumb">
+      <a href="../../index.html">Home</a> <span>&gt;</span> <a href="../calculators.html">Calculators</a> <span>&gt;</span> <span>EMI Calculator</span>
+    </div>
+  </div>
+
+  <!-- Title Section -->
+  <section class="section section-white tool-header">
+    <div class="tool-header-container">
+      <h1>EMI Calculator</h1>
+      <p class="tool-intro">Calculate your Equated Monthly Installment (EMI) for home loans, car loans, and personal loans. View total payment, interest payable, and amortization schedule breakdown.</p>
+    </div>
+  </section>
+
+  <!-- Tool UI -->
+  <section class="section section-white">
+    <div class="container">
+      <div class="tool-ui">
+        <div class="tool-card">
+          <div class="tool-form-group">
+            <label for="loanAmount">Loan Amount</label>
+            <input type="number" id="loanAmount" placeholder="e.g., 500000" step="1000" min="1000">
+          </div>
+          
+          <div class="tool-form-group">
+            <label for="interestRate">Annual Interest Rate (%)</label>
+            <input type="number" id="interestRate" placeholder="e.g., 8.5" step="0.1" min="0.1">
+          </div>
+          
+          <div class="tool-form-group">
+            <label for="loanTenure">Loan Tenure</label>
+            <div style="display: flex; gap: 16px; margin-bottom: 8px;">
+              <label style="display: flex; align-items: center; gap: 8px;">
+                <input type="radio" name="tenureType" value="months" checked> Months
+              </label>
+              <label style="display: flex; align-items: center; gap: 8px;">
+                <input type="radio" name="tenureType" value="years"> Years
+              </label>
+            </div>
+            <input type="number" id="loanTenure" placeholder="e.g., 240" step="1" min="1">
+          </div>
+          
+          <div class="tool-actions">
+            <button class="btn btn-primary" id="calculateBtn">Calculate EMI</button>
+            <button class="btn btn-secondary" id="clearBtn">Clear</button>
+          </div>
+          
+          <div class="tool-output" id="outputArea" style="display: none;">
+            <h3>EMI Results</h3>
+            
+            <div class="tool-stats">
+              <div class="stat-card">
+                <div class="stat-value" id="emiResult">0</div>
+                <div class="stat-label">Monthly EMI</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-value" id="totalPayment">0</div>
+                <div class="stat-label">Total Payment</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-value" id="totalInterest">0</div>
+                <div class="stat-label">Total Interest</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-value" id="principalAmount">0</div>
+                <div class="stat-label">Principal Amount</div>
+              </div>
+            </div>
+            
+            <h3 style="margin-top: 32px; margin-bottom: 16px;">Amortization Schedule (First 12 Months)</h3>
+            <table>
+              <thead>
+                <tr>
+                  <th>Month</th>
+                  <th>Principal</th>
+                  <th>Interest</th>
+                  <th>Balance</th>
+                </tr>
+              </thead>
+              <tbody id="amortizationTable">
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How to Use -->
+  <section class="section section-bg tool-how-to">
+    <div class="container">
+      <h2>How to Use</h2>
+      <ol>
+        <li>Enter the loan amount you wish to borrow</li>
+        <li>Enter the annual interest rate offered by the lender</li>
+        <li>Select tenure type (months or years) and enter the loan duration</li>
+        <li>Click "Calculate EMI" to see your monthly payment</li>
+        <li>Review the total payment and total interest payable over the loan term</li>
+        <li>Check the amortization schedule to see how each payment is split between principal and interest</li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- Example -->
+  <section class="section section-white tool-example">
+    <div class="container">
+      <h2>Example</h2>
+      <div class="example-box">
+        <div class="example-input">
+          <div class="example-label">Loan Amount:</div>
+          <div class="example-value">500,000</div>
+        </div>
+        <div class="example-input">
+          <div class="example-label">Interest Rate:</div>
+          <div class="example-value">8.5% annually</div>
+        </div>
+        <div class="example-input">
+          <div class="example-label">Tenure:</div>
+          <div class="example-value">20 years (240 months)</div>
+        </div>
+        <div class="example-input">
+          <div class="example-label">Result:</div>
+          <div class="example-value">EMI: 4,350.58 | Total Interest: 544,139 | Total Payment: 1,044,139</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About This Tool -->
+  <section class="section section-bg tool-about">
+    <div class="container">
+      <h2>About the EMI Calculator</h2>
+      
+      <p>EMI (Equated Monthly Installment) is the fixed payment amount made by a borrower to a lender at a specified date each calendar month. Our EMI Calculator helps you plan your loan repayment by showing your monthly payment, total interest payable, and how each payment is split between principal and interest over time.</p>
+      
+      <h3>Understanding EMI Calculation</h3>
+      
+      <p>EMI is calculated using the formula: EMI = [P × r × (1+r)^n] / [(1+r)^n - 1], where P is the principal loan amount, r is the monthly interest rate (annual rate divided by 12 and divided by 100), and n is the loan tenure in months. This formula ensures that each EMI payment is the same amount throughout the loan term.</p>
+      
+      <p>While the EMI amount remains constant, the proportion of principal and interest in each payment changes over time. In the early years, a larger portion of each EMI goes toward interest payment. As the loan matures, more of each payment goes toward principal repayment.</p>
+      
+      <h3>What the Results Mean</h3>
+      
+      <p>The <strong>Monthly EMI</strong> is the fixed amount you'll pay each month for the duration of the loan. This is the most important figure for budgeting your monthly expenses and ensuring you can afford the loan.</p>
+      
+      <p>The <strong>Total Payment</strong> is the sum of all EMI payments over the entire loan term. This includes both the principal amount borrowed and all interest charged. This figure shows the true cost of the loan.</p>
+      
+      <p>The <strong>Total Interest</strong> is the amount you'll pay in interest over the loan term. This is the difference between the total payment and the principal amount. Lower interest rates or shorter tenures can significantly reduce this amount.</p>
+      
+      <p>The <strong>Principal Amount</strong> is the original loan amount you borrowed. This figure remains constant for comparison purposes.</p>
+      
+      <h3>Amortization Schedule Explained</h3>
+      
+      <p>The amortization schedule shows how each EMI payment is split between principal and interest. In the first month, most of your payment goes toward interest because the outstanding principal is highest. As you make payments, the principal decreases, so less interest accrues, and more of each payment goes toward principal repayment.</p>
+      
+      <p>This schedule helps you understand how your loan balance decreases over time. You can see that in the early years, you're primarily paying interest, while in the later years, you're paying down the principal more quickly. This insight can help you decide whether to make prepayments to reduce your interest burden.</p>
+      
+      <h3>Factors Affecting EMI</h3>
+      
+      <p><strong>Loan Amount:</strong> Higher loan amounts result in higher EMIs. The relationship is linear—doubling the loan amount roughly doubles the EMI, assuming other factors remain constant.</p>
+      
+      <p><strong>Interest Rate:</strong> Higher interest rates increase your EMI and total interest payable. Even a small difference in interest rate can significantly impact your total payment over a long loan term.</p>
+      
+      <p><strong>Loan Tenure:</strong> Longer tenures reduce your monthly EMI but increase total interest payable. Shorter tenures mean higher EMIs but lower total interest. Choose a tenure that balances affordable monthly payments with reasonable total cost.</p>
+      
+      <h3>Tips for Loan Planning</h3>
+      
+      <p>Use the EMI calculator before applying for a loan to ensure the monthly payment fits your budget. Financial experts recommend that your EMI should not exceed 40-50% of your monthly income to avoid financial stress.</p>
+      
+      <p>Consider making prepayments when possible. Extra payments toward principal reduce your outstanding balance faster, which reduces the interest portion of future payments and can shorten your loan term.</p>
+      
+      <p>Compare offers from multiple lenders. Even a 0.5% difference in interest rate can save thousands over the life of a loan. Use our calculator to compare different offers and choose the most cost-effective option.</p>
+      
+      <h3>Who Should Use This Tool</h3>
+      
+      <p>Anyone considering a loan can benefit from this calculator. It's particularly useful for homebuyers comparing mortgage offers, car buyers evaluating financing options, and individuals planning personal loans for education, weddings, or other major expenses.</p>
+      
+      <p>Existing borrowers can use this tool to understand their current loan structure and evaluate whether refinancing at a lower interest rate would be beneficial. Financial advisors can use it to help clients plan loan repayment strategies.</p>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="section section-white tool-faq">
+    <div class="container">
+      <h2>Frequently Asked Questions</h2>
+      
+      <div class="accordion-item">
+        <div class="accordion-header">
+          What is EMI?
+          <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="6 9 12 15 18 9"/>
+          </svg>
+        </div>
+        <div class="accordion-content">
+          EMI stands for Equated Monthly Installment. It's a fixed payment amount made by a borrower to a lender at a specified date each calendar month. EMIs are used to pay off both interest and principal over a specified loan term.
+        </div>
+      </div>
+      
+      <div class="accordion-item">
+        <div class="accordion-header">
+          How is EMI calculated?
+          <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="6 9 12 15 18 9"/>
+          </svg>
+        </div>
+        <div class="accordion-content">
+          EMI is calculated using the formula: EMI = [P × r × (1+r)^n] / [(1+r)^n - 1], where P is the principal amount, r is the monthly interest rate, and n is the loan tenure in months. Our calculator performs this calculation automatically.
+        </div>
+      </div>
+      
+      <div class="accordion-item">
+        <div class="accordion-header">
+          Should I choose a longer or shorter loan tenure?
+          <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="6 9 12 15 18 9"/>
+          </svg>
+        </div>
+        <div class="accordion-content">
+          Shorter tenures mean higher EMIs but lower total interest paid. Longer tenures reduce monthly payments but increase total cost. Choose based on your budget—ensure the EMI is affordable while minimizing total interest where possible.
+        </div>
+      </div>
+      
+      <div class="accordion-item">
+        <div class="accordion-header">
+          Can I prepay my loan to reduce interest?
+          <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="6 9 12 15 18 9"/>
+          </svg>
+        </div>
+        <div class="accordion-content">
+          Yes, making prepayments reduces your outstanding principal, which reduces future interest charges. This can significantly lower your total interest payable and potentially shorten your loan term. Check with your lender about prepayment terms and any applicable fees.
+        </div>
+      </div>
+      
+      <div class="accordion-item">
+        <div class="accordion-header">
+          What percentage of income should my EMI be?
+          <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="6 9 12 15 18 9"/>
+          </svg>
+        </div>
+        <div class="accordion-content">
+          Financial experts recommend that your EMI should not exceed 40-50% of your monthly income. Keeping EMI within this range ensures you have enough income for other expenses and emergencies. Higher EMI ratios increase financial stress and default risk.
+        </div>
+      </div>
+      
+      <!-- Schema.org FAQ JSON-LD -->
+      <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is EMI?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "EMI stands for Equated Monthly Installment. It's a fixed payment amount made by a borrower to a lender at a specified date each calendar month."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How is EMI calculated?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "EMI is calculated using the formula: EMI = [P × r × (1+r)^n] / [(1+r)^n - 1], where P is the principal amount, r is the monthly interest rate, and n is the loan tenure in months."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Should I choose a longer or shorter loan tenure?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Shorter tenures mean higher EMIs but lower total interest. Longer tenures reduce monthly payments but increase total cost. Choose based on your budget."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I prepay my loan to reduce interest?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, making prepayments reduces your outstanding principal, which reduces future interest charges. This can lower total interest and potentially shorten your loan term."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What percentage of income should my EMI be?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Financial experts recommend that your EMI should not exceed 40-50% of your monthly income. Keeping EMI within this range ensures financial stability."
+            }
+          }
+        ]
+      }
+      </script>
+    </div>
+  </section>
+
+  <!-- Related Tools -->
+  <section class="section section-bg related-tools">
+    <div class="container">
+      <h2>You Might Also Like</h2>
+      <div class="grid-3">
+        <div class="card">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-bottom: 12px;">
+            <path d="M12 2v20"/>
+            <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+          </svg>
+          <h3>Percentage Calculator</h3>
+          <p class="text-secondary small">Calculate percentages, percentage change, and more.</p>
+          <a href="percentage-calculator.html" class="text-accent" style="font-size: 0.875rem; font-weight: 500;">Open Tool →</a>
+        </div>
+        <div class="card">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-bottom: 12px;">
+            <path d="M12 2v20"/>
+            <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+          </svg>
+          <h3>Discount Calculator</h3>
+          <p class="text-secondary small">Calculate discounted prices and discount percentages.</p>
+          <a href="discount-calculator.html" class="text-accent" style="font-size: 0.875rem; font-weight: 500;">Open Tool →</a>
+        </div>
+        <div class="card">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-bottom: 12px;">
+            <circle cx="12" cy="12" r="10"/>
+            <polyline points="12 6 12 12 16 14"/>
+          </svg>
+          <h3>Age Calculator</h3>
+          <p class="text-secondary small">Calculate your exact age in years, months, and days.</p>
+          <a href="age-calculator.html" class="text-accent" style="font-size: 0.875rem; font-weight: 500;">Open Tool →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ad Slot -->
+  <div class="container">
+    <div class="ad-slot">
+      <!-- AdSense Ad Unit: Replace with your AdSense code -->
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-brand-logo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+            </svg>
+            Toolmatic
+          </div>
+          <p class="footer-brand-tagline">Free online tools for SEO and productivity.</p>
+          <p class="footer-copyright">© 2024 Toolmatic. All rights reserved.</p>
+        </div>
+        
+        <div>
+          <h4 class="footer-heading">SEO Tools</h4>
+          <div class="footer-links">
+            <a href="meta-tag-generator.html" class="footer-link">Meta Tag Generator</a>
+            <a href="open-graph-generator.html" class="footer-link">Open Graph Generator</a>
+            <a href="keyword-density-checker.html" class="footer-link">Keyword Density Checker</a>
+            <a href="robots-txt-generator.html" class="footer-link">Robots.txt Generator</a>
+            <a href="sitemap-generator.html" class="footer-link">Sitemap Generator</a>
+            <a href="word-counter.html" class="footer-link">Word Counter</a>
+          </div>
+        </div>
+        
+        <div>
+          <h4 class="footer-heading">Calculators</h4>
+          <div class="footer-links">
+            <a href="percentage-calculator.html" class="footer-link">Percentage Calculator</a>
+            <a href="age-calculator.html" class="footer-link">Age Calculator</a>
+            <a href="bmi-calculator.html" class="footer-link">BMI Calculator</a>
+            <a href="emi-calculator.html" class="footer-link">EMI Calculator</a>
+            <a href="discount-calculator.html" class="footer-link">Discount Calculator</a>
+            <a href="tax-calculator.html" class="footer-link">Tax Calculator</a>
+          </div>
+        </div>
+        
+        <div>
+          <h4 class="footer-heading">Company</h4>
+          <div class="footer-links">
+            <a href="../../index.html" class="footer-link">Home</a>
+            <a href="../blog/index.html" class="footer-link">Blog</a>
+            <a href="../about.html" class="footer-link">About</a>
+            <a href="../contact.html" class="footer-link">Contact</a>
+            <a href="../privacy-policy.html" class="footer-link">Privacy Policy</a>
+            <a href="../terms-of-service.html" class="footer-link">Terms of Service</a>
+            <a href="../disclaimer.html" class="footer-link">Disclaimer</a>
+            <a href="../../sitemap.xml" class="footer-link">Sitemap</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <span>Designed & Developed by <a href="https://zubaircodes.site" target="_blank">ZubairCodes.site</a></span>
+        <span>Built with ❤️ for the web</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="../../js/main.js"></script>
+  <script src="../../js/tools/emi-calculator.js"></script>
+</body>
+</html>
