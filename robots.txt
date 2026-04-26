@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: /js/
+Disallow: /css/
+Disallow: /admin/
+Disallow: /private/
+
+Sitemap: https://toolmatic.site/sitemap.xml
