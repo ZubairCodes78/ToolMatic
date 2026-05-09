@@ -196,3 +196,4 @@ document.addEventListener('DOMContentLoaded', function() {
     uploadArea.style.display = 'block';
   });
 });
+

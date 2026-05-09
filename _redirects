@@ -32,3 +32,4 @@
 
 # Tools
 /tools/* /pages/tools/:splat.html 200
+

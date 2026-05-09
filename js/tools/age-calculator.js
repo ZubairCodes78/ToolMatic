@@ -100,3 +100,4 @@ document.addEventListener('DOMContentLoaded', function() {
     return `${year}-${month}-${day}`;
   }
 });
+

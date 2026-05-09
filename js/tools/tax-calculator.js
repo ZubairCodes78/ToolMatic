@@ -56,3 +56,4 @@ document.addEventListener('DOMContentLoaded', function() {
     outputArea.style.display = 'none';
   });
 });
+

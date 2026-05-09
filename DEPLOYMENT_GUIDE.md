@@ -7,7 +7,7 @@
 
 ## Step 1: Update Domain References
 
-Before deploying, update all domain references from `toolmatic.com` to your actual domain:
+Before deploying, update all domain references from `toolmatic.site` to your actual domain:
 
 **Files to update:**
 1. `index.html` - Update canonical URL, Open Graph, Twitter cards
@@ -18,7 +18,7 @@ Before deploying, update all domain references from `toolmatic.com` to your actu
 6. `robots.txt` - Update sitemap URL
 
 **Example:**
-Replace `https://toolmatic.com/` with `https://yourdomain.com/`
+Replace `https://toolmatic.site/` with `https://yourdomain.com/`
 
 ## Step 2: Create GitHub Repository
 
@@ -229,3 +229,4 @@ After successful deployment:
    - Regular blog posts
    - Tool improvements
    - User feedback collection
+

@@ -88,3 +88,4 @@ document.addEventListener('DOMContentLoaded', function() {
     output2.style.display = 'none';
   });
 });
+

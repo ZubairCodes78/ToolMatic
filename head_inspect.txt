@@ -1,0 +1,128 @@
+--- pages/about.html
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3K5EHMCYEV"></script>
+<script>
+</script>
+<link rel="icon" type="image/svg+xml" href="../favicon.svg">
+<meta name="description" content="Explore Toolmatic's story, mission, and free online tools for SEO, conversions, and productivity. Learn how our 2026 web utilities help you grow faster.">
+<link rel="canonical" href="https://toolmatic.site/pages/about.html">
+<meta property="og:description" content="Learn about Toolmatic - your source for free online SEO tools and calculators.">
+<meta name="twitter:description" content="Learn about Toolmatic - your source for free online SEO tools and calculators.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/navbar.css">
+<link rel="stylesheet" href="../css/footer.css">
+<link rel="stylesheet" href="tools/tools.css">
+<script type="application/ld+json">
+"description": "Free online tools for SEO and productivity",
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8943765451617871"
+crossorigin="anonymous"></script>
+--- pages/calculators.html
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3K5EHMCYEV"></script>
+<script>
+</script>
+<link rel="icon" type="image/svg+xml" href="../favicon.svg">
+<meta name="description" content="Free online calculators for percentage, age, BMI, EMI, discount, tax, and more. Get instant results, accurate answers, and easy tools for 2026 with no signup.">
+<link rel="canonical" href="https://toolmatic.site/pages/calculators.html">
+<meta property="og:description" content="Free online calculators including percentage calculator, age calculator, BMI calculator, EMI calculator, discount calculator, and tax calculator.">
+<meta name="twitter:description" content="Free online calculators including percentage calculator, age calculator, BMI calculator, EMI calculator, discount calculator, and tax calculator.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/navbar.css">
+<link rel="stylesheet" href="../css/footer.css">
+<link rel="stylesheet" href="tools/.css">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8943765451617871"
+crossorigin="anonymous"></script>
+--- pages/contact.html
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3K5EHMCYEV"></script>
+<script>
+</script>
+<link rel="icon" type="image/svg+xml" href="../favicon.svg">
+<meta name="description" content="Contact Toolmatic for support, feedback, or questions about our free online SEO tools and calculators. Reach out fast for help with your 2026 website.">
+<link rel="canonical" href="https://toolmatic.site/pages/contact.html">
+<meta property="og:description" content="Get in touch with the Toolmatic team. We'd love to hear your feedback, suggestions, or questions about our tools.">
+<meta name="twitter:description" content="Get in touch with the Toolmatic team. We'd love to hear your feedback, suggestions, or questions about our tools.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/navbar.css">
+<link rel="stylesheet" href="../css/footer.css">
+<link rel="stylesheet" href="tools/.css">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8943765451617871"
+crossorigin="anonymous"></script>
+--- pages/disclaimer.html
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3K5EHMCYEV"></script>
+<script>
+</script>
+<link rel="icon" type="image/svg+xml" href="../favicon.svg">
+<meta name="description" content="Read Toolmatic's disclaimer for free online tools, content accuracy, and user responsibility. Understand limits and expectations for our free 2026 tools.">
+<link rel="canonical" href="https://toolmatic.site/pages/disclaimer.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/navbar.css">
+<link rel="stylesheet" href="../css/footer.css">
+<link rel="stylesheet" href="tools.css">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8943765451617871"
+crossorigin="anonymous"></script>
+--- pages/privacy-policy.html
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3K5EHMCYEV"></script>
+<script>
+</script>
+<link rel="icon" type="image/svg+xml" href="../favicon.svg">
+<meta name="description" content="Read Toolmatic's Privacy Policy to learn how we handle personal data, cookies, analytics, and ad services when you use our free 2026 online SEO tools.">
+<link rel="canonical" href="https://toolmatic.site/pages/privacy-policy.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/navbar.css">
+<link rel="stylesheet" href="../css/footer.css">
+<link rel="stylesheet" href="tools.css">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8943765451617871"
+crossorigin="anonymous"></script>
+--- pages/seo-tools.html
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3K5EHMCYEV"></script>
+<script>
+</script>
+<link rel="icon" type="image/svg+xml" href="../favicon.svg">
+<meta name="description" content="Free online SEO tools including meta tag generator, open graph generator, keyword density checker, robots.txt generator, sitemap generator, and word counter.">
+<link rel="canonical" href="https://toolmatic.site/pages/seo-tools.html">
+<meta property="og:description" content="Free online SEO tools including meta tag generator, open graph generator, keyword density checker, robots.txt generator, sitemap generator, and word counter.">
+<meta name="twitter:description" content="Free online SEO tools including meta tag generator, open graph generator, keyword density checker, robots.txt generator, sitemap generator, and word counter.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/navbar.css">
+<link rel="stylesheet" href="../css/footer.css">
+<link rel="stylesheet" href="tools/tools.css">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8943765451617871"
+crossorigin="anonymous"></script>
+--- pages/blog/index.html
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3K5EHMCYEV"></script>
+<script>
+</script>
+<link rel="icon" type="image/svg+xml" href="../../favicon.svg">
+<meta name="description" content="Read free SEO guides, blog tutorials, and online tool tips for 2026. Learn how to improve your website, use free SEO tools, and optimize content instantly.">
+<link rel="canonical" href="https://toolmatic.site/pages/blog/index.html">
+<meta property="og:description" content="Tips, guides, and insights on SEO, online tools, and digital marketing. Learn how to improve your website's SEO and use online tools effectively.">
+<meta name="twitter:description" content="Tips, guides, and insights on SEO, online tools, and digital marketing. Learn how to improve your website's SEO and use online tools effectively.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../css/style.css">
+<link rel="stylesheet" href="../../css/navbar.css">
+<link rel="stylesheet" href="../../css/footer.css">
+<link rel="stylesheet" href="../../css/blog.css">
+<script type="application/ld+json">
+"description": "Tips, guides, and insights on SEO, online tools, and digital marketing"
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8943765451617871"
+crossorigin="anonymous"></script>

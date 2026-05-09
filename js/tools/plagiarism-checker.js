@@ -353,3 +353,4 @@ document.addEventListener('DOMContentLoaded', function() {
     return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
   }
 });
+
