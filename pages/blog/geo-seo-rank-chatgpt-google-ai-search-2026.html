@@ -20,7 +20,7 @@
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://toolmatic.io/pages/blog/geo-seo-rank-chatgpt-google-ai-search-2026.html">
     <meta property="og:site_name" content="ToolMatic">
-    <meta property="og:image" content="https://toolmatic.io/images/geo-seo-2026-guide.jpg">
+  <meta property="og:image" content="https://toolmatic.site/images/blog/geo-seo-guide.jpg">
     
     <!-- Twitter Card Tags -->
     <meta name="twitter:card" content="summary_large_image">
@@ -30,6 +30,10 @@
     
     <!-- Canonical URL -->
     <link rel="canonical" href="https://toolmatic.io/pages/blog/geo-seo-rank-chatgpt-google-ai-search-2026.html">
+    <link rel="icon" type="image/svg+xml" href="../../favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" as="style" fetchpriority="high" onload="this.onload=null;this.rel='stylesheet'">
     
     <!-- Schema Markup -->
     <script type="application/ld+json">
@@ -53,51 +57,670 @@
     }
     </script>
     
-    <link rel="stylesheet" href="../../css/style.css">
-    <link rel="stylesheet" href="../../css/blog.css">
+    <style>
+/* Toolmatic Global Styles */
+
+/* CSS Variables */
+:root {
+  --bg-white: #FFFFFF;
+  --bg-section: #F8FAFC;
+  --text-primary: #111827;
+  --text-secondary: #6B7280;
+  --border: #E5E7EB;
+  --accent: #2563EB;
+  --accent-hover: #1D4ED8;
+  --success: #16A34A;
+  --error: #DC2626;
+}
+
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.7;
+  color: var(--text-primary);
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: var(--bg-white);
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 64px;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  text-decoration: none;
+}
+
+.navbar-brand svg {
+  color: var(--accent);
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.navbar-link {
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.navbar-link:hover,
+.navbar-link.active {
+  color: var(--accent);
+}
+
+.navbar-cta {
+  background-color: var(--accent);
+  color: white;
+  padding: 8px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.navbar-cta:hover {
+  background-color: var(--accent-hover);
+}
+
+.navbar-toggle {
+  display: none;
+  flex-direction: column;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+}
+
+.navbar-toggle span {
+  width: 20px;
+  height: 2px;
+  background-color: var(--text-primary);
+  margin: 2px 0;
+  transition: 0.3s;
+}
+
+.navbar-toggle.active span:nth-child(1) {
+  transform: rotate(-45deg) translate(-5px, 5px);
+}
+
+.navbar-toggle.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.navbar-toggle.active span:nth-child(3) {
+  transform: rotate(45deg) translate(-5px, -5px);
+}
+
+.navbar-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: var(--bg-white);
+  border-bottom: 1px solid var(--border);
+  padding: 16px;
+}
+
+.navbar-menu.open {
+  display: block;
+}
+
+.navbar-menu-link {
+  display: block;
+  padding: 12px 0;
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-weight: 500;
+  border-bottom: 1px solid var(--border);
+}
+
+.navbar-menu-link:hover {
+  color: var(--accent);
+}
+
+.navbar-menu-cta {
+  display: block;
+  margin-top: 16px;
+  background-color: var(--accent);
+  color: white;
+  padding: 12px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  text-align: center;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/* Sections */
+.section {
+  padding: 64px 0;
+}
+
+.section-white {
+  background-color: var(--bg-white);
+}
+
+.section-bg {
+  background-color: var(--bg-section);
+}
+
+/* Blog Post Styles */
+.blog-post {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 32px 0;
+}
+
+.blog-container {
+  padding: 0 16px;
+}
+
+.blog-post-header,
+.article-header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.blog-post-header h1,
+.article-header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 16px;
+  line-height: 1.2;
+}
+
+.blog-post-meta,
+.article-meta {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  margin-bottom: 24px;
+}
+
+.blog-post-meta span,
+.article-meta span {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.blog-post-category {
+  display: inline-block;
+  padding: 6px 14px;
+  background-color: var(--bg-section);
+  color: var(--accent);
+  font-size: 0.875rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  margin-bottom: 16px;
+}
+
+.blog-post-footer {
+  margin-top: 32px;
+  display: flex;
+  justify-content: center;
+}
+
+.blog-post-header img,
+.article-header img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin: 24px 0;
+}
+
+/* Table of Contents */
+.table-of-contents {
+  background-color: var(--bg-section);
+  padding: 24px;
+  border-radius: 8px;
+  margin-bottom: 32px;
+}
+
+.table-of-contents h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: var(--text-primary);
+}
+
+.table-of-contents ul {
+  list-style: none;
+  padding: 0;
+}
+
+.table-of-contents li {
+  margin-bottom: 8px;
+}
+
+.table-of-contents a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.table-of-contents a:hover {
+  text-decoration: underline;
+}
+
+/* Content Styles */
+.blog-post-content,
+.blog-content {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  color: var(--text-primary);
+}
+
+.blog-post-content h2,
+.blog-content h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 40px 0 20px 0;
+  color: var(--text-primary);
+  scroll-margin-top: 80px;
+}
+
+.blog-post-content h3,
+.blog-content h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 32px 0 16px 0;
+  color: var(--text-primary);
+}
+
+.blog-post-content h4,
+.blog-content h4 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 24px 0 12px 0;
+  color: var(--text-primary);
+}
+
+.blog-post-content p,
+.blog-content p {
+  margin-bottom: 20px;
+}
+
+.blog-post-content ul,
+.blog-post-content ol,
+.blog-content ul,
+.blog-content ol {
+  margin-bottom: 20px;
+  padding-left: 24px;
+}
+
+.blog-post-content li,
+.blog-content li {
+  margin-bottom: 8px;
+}
+
+.blog-post-content blockquote,
+.blog-content blockquote {
+  border-left: 4px solid var(--accent);
+  padding-left: 16px;
+  margin: 24px 0;
+  font-style: italic;
+  color: var(--text-secondary);
+}
+
+.blog-post-content code,
+.blog-content code {
+  background-color: var(--bg-section);
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+  font-size: 0.875rem;
+}
+
+.blog-post-content pre,
+.blog-content pre {
+  background-color: var(--bg-section);
+  padding: 16px;
+  border-radius: 8px;
+  overflow-x: auto;
+  margin: 24px 0;
+}
+
+.blog-post-content pre code,
+.blog-content pre code {
+  background: none;
+  padding: 0;
+}
+
+/* Tables */
+.blog-post-content table,
+.blog-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 24px 0;
+  background-color: var(--bg-white);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.blog-post-content th,
+.blog-post-content td,
+.blog-content th,
+.blog-content td {
+  padding: 12px 16px;
+  text-align: left;
+  border-bottom: 1px solid var(--border);
+}
+
+.blog-post-content th,
+.blog-content th {
+  background-color: var(--bg-section);
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.blog-post-content tr:last-child td,
+.blog-content tr:last-child td {
+  border-bottom: none;
+}
+
+/* Links */
+.blog-post-content a,
+.blog-content a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.blog-post-content a:hover,
+.blog-content a:hover {
+  text-decoration: underline;
+}
+
+/* Images */
+.blog-post-content img,
+.blog-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin: 24px 0;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-weight: 500;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  font-family: inherit;
+  font-size: 1rem;
+  transition: background-color 0.2s;
+  text-decoration: none;
+}
+
+.btn-primary {
+  background-color: var(--accent);
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: var(--accent-hover);
+}
+
+.btn-secondary {
+  background-color: white;
+  color: var(--accent);
+  border: 1px solid var(--accent);
+}
+
+.btn-secondary:hover {
+  background-color: var(--bg-section);
+}
+
+    /* Footer Styles */
+    .footer {
+      background-color: var(--bg-section);
+      border-top: 1px solid var(--border);
+      padding: 32px 0 24px;
+    }
+
+    .footer-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 16px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 32px;
+      margin-bottom: 24px;
+    }
+
+    .footer-brand {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .footer-brand-logo {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: 700;
+      font-size: 1.25rem;
+      color: var(--text-primary);
+    }
+
+    .footer-brand-logo svg {
+      width: 24px;
+      height: 24px;
+      color: var(--accent);
+    }
+
+    .footer-brand-tagline {
+      font-size: 0.875rem;
+      color: var(--text-secondary);
+      line-height: 1.5;
+    }
+
+    .footer-copyright {
+      font-size: 0.875rem;
+      color: var(--text-secondary);
+      margin-top: 16px;
+    }
+
+    .footer-heading {
+      font-weight: 600;
+      font-size: 1rem;
+      color: var(--text-primary);
+      margin-bottom: 16px;
+    }
+
+    .footer-links {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .footer-link {
+      color: var(--text-secondary);
+      text-decoration: none;
+      font-size: 0.875rem;
+      transition: color 0.2s;
+    }
+
+    .footer-link:hover {
+      color: var(--accent);
+    }
+
+    .footer-bottom {
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.875rem;
+      color: var(--text-secondary);
+    }
+
+    .footer-bottom a {
+      color: var(--text-secondary);
+    }
+
+    .footer-bottom a:hover {
+      color: var(--accent);
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .footer-bottom {
+        flex-direction: column;
+        gap: 16px;
+        text-align: center;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+  .article-header h1 {
+    font-size: 2rem;
+  }
+  
+  .blog-content {
+    font-size: 1rem;
+  }
+  
+  .blog-content h2 {
+    font-size: 1.5rem;
+  }
+  
+  .blog-content h3 {
+    font-size: 1.25rem;
+  }
+  
+  .section {
+    padding: 32px 0;
+  }
+
+</style>
 </head>
 <body>
-    <!-- Navigation -->
+    <!-- Navbar -->
     <nav class="navbar">
-        <div class="container">
-            <a href="../../index.html" class="logo">ToolMatic</a>
-            <ul class="nav-links">
-                <li><a href="../../pages/tools/">Tools</a></li>
-                <li><a href="../../pages/blog/">Blog</a></li>
-                <li><a href="../../pages/about.html">About</a></li>
-                <li><a href="../../pages/contact.html">Contact</a></li>
-            </ul>
+      <div class="navbar-inner">
+        <a href="../../index.html" class="navbar-brand">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+          </svg>
+          Toolmatic
+        </a>
+        
+        <div class="navbar-nav">
+          <a href="../../index.html" class="navbar-link">Home</a>
+          <a href="../seo-tools.html" class="navbar-link">SEO Tools</a>
+          <a href="../calculators.html" class="navbar-link">Calculators</a>
+          <a href="index.html" class="navbar-link active">Blog</a>
+          <a href="../about.html" class="navbar-link">About</a>
         </div>
+        
+        <a href="../../resume-builder.html" class="navbar-cta" style="background-color:#3B82F6;color:white;">Resume Builder <span style="background-color:#F59E0B;color:white;padding:2px 8px;border-radius:9999px;font-size:0.75rem;margin-left:6px;">New</span></a>
+        
+        <button class="navbar-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+      
+      <div class="navbar-menu">
+        <a href="../../index.html" class="navbar-menu-link">Home</a>
+        <a href="../seo-tools.html" class="navbar-menu-link">SEO Tools</a>
+        <a href="../calculators.html" class="navbar-menu-link">Calculators</a>
+        <a href="index.html" class="navbar-menu-link">Blog</a>
+        <a href="../about.html" class="navbar-menu-link">About</a>
+        <a href="../../resume-builder.html" class="navbar-menu-cta">Resume Builder <span style="background-color:#F59E0B;color:white;padding:2px 8px;border-radius:9999px;font-size:0.75rem;margin-left:6px;">New</span></a>
+      </div>
     </nav>
 
-    <!-- Article Container -->
-    <article class="blog-post">
-        <div class="container blog-container">
-            <!-- Article Header -->
-            <header class="article-header">
-                <h1>What Is GEO SEO? How to Rank in ChatGPT & Google AI Search (2026 Guide)</h1>
-                <div class="article-meta">
-                    <span class="publish-date">Published: May 14, 2026</span>
-                    <span class="read-time">Reading time: 8 minutes</span>
-                    <span class="category">SEO Strategy</span>
-                </div>
-            </header>
-
-            <!-- Table of Contents -->
+    <!-- Blog Post -->
+    <section class="section section-white">
+      <div class="container">
+        <div class="blog-post">
+          <div class="blog-post-header">
+            <span class="blog-post-category">AI SEO</span>
+            <h1>What Is GEO SEO? How to Rank in ChatGPT & Google AI Search (2026 Guide)</h1>
+            <img src="/images/blog/geo-seo-guide.jpg" alt="GEO SEO strategy illustration for ranking in ChatGPT and Google AI Search" loading="lazy" style="width:100%;max-width:100%;height:auto;display:block;margin:24px 0;">
+            <p class="blog-post-meta">May 14, 2026 • 8 min read</p>
+          </div>
+          
+          <div class="blog-post-content">
             <nav class="table-of-contents">
-                <h3>Table of Contents</h3>
-                <ul>
-                    <li><a href="#introduction">Introduction</a></li>
-                    <li><a href="#what-is-geo-seo">What Is GEO SEO?</a></li>
-                    <li><a href="#difference-aeo-seo">GEO SEO vs AEO SEO</a></li>
-                    <li><a href="#rank-chatgpt">How to Rank in ChatGPT & AI Search Engines</a></li>
-                    <li><a href="#optimization-strategies">7 Proven Strategies for AI Overview Optimization</a></li>
-                    <li><a href="#google-ai-search">Google AI Search vs Traditional Search Results</a></li>
-                    <li><a href="#ai-engines-guide">Ranking in Different AI Search Engines</a></li>
-                    <li><a href="#content-optimization">Content Optimization for AI Readability</a></li>
-                    <li><a href="#tools-resources">Tools & Resources for GEO SEO</a></li>
-                    <li><a href="#faq">FAQ</a></li>
-                </ul>
+              <h3>Table of Contents</h3>
+              <ul>
+                <li><a href="#introduction">Introduction</a></li>
+                <li><a href="#what-is-geo-seo">What Is GEO SEO?</a></li>
+                <li><a href="#difference-aeo-seo">GEO SEO vs AEO SEO</a></li>
+                <li><a href="#rank-chatgpt">How to Rank in ChatGPT & AI Search Engines</a></li>
+                <li><a href="#optimization-strategies">7 Proven Strategies for AI Overview Optimization</a></li>
+                <li><a href="#google-ai-search">Google AI Search vs Traditional Search Results</a></li>
+                <li><a href="#ai-engines-guide">Ranking in Different AI Search Engines</a></li>
+                <li><a href="#content-optimization">Content Optimization for AI Readability</a></li>
+                <li><a href="#tools-resources">Tools & Resources for GEO SEO</a></li>
+                <li><a href="#faq">FAQ</a></li>
+              </ul>
             </nav>
 
             <!-- Article Content -->
@@ -596,71 +1219,76 @@
                 </p>
             </section>
 
-            <!-- Related Posts Section -->
-            <section class="related-posts">
-                <h2>Related Articles</h2>
-                <div class="posts-grid">
-                    <div class="post-card">
-                        <h3><a href="how-to-improve-website-seo-2024.html">How to Improve Website SEO in 2024</a></h3>
-                        <p>Master fundamental SEO strategies including on-page optimization, technical SEO, and link building techniques.</p>
-                    </div>
-                    <div class="post-card">
-                        <h3><a href="what-is-meta-tags-and-why-they-matter.html">What Are Meta Tags and Why They Matter for SEO</a></h3>
-                        <p>Complete guide to meta titles, descriptions, and other meta tags for better search visibility.</p>
-                    </div>
-                    <div class="post-card">
-                        <h3><a href="keyword-density-what-it-is-and-how-to-optimize.html">Keyword Density: What It Is and How to Optimize</a></h3>
-                        <p>Learn the importance of keyword density and how to maintain optimal keyword distribution in your content.</p>
-                    </div>
-                </div>
-            </section>
-        </div>
-    </article>
-
-    <!-- Newsletter Signup -->
-    <section class="newsletter-signup">
-        <div class="container">
-            <h2>Stay Updated on AI SEO Trends</h2>
-            <p>Get the latest GEO SEO strategies and AI search optimization tips delivered to your inbox.</p>
-            <form class="newsletter-form">
-                <input type="email" placeholder="Enter your email address" required>
-                <button type="submit">Subscribe</button>
-            </form>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h4>ToolMatic</h4>
-                    <p>Your complete suite of free online SEO, marketing, and productivity tools.</p>
-                </div>
-                <div class="footer-section">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="../../index.html">Home</a></li>
-                        <li><a href="../../pages/tools/">All Tools</a></li>
-                        <li><a href="../../pages/about.html">About</a></li>
-                        <li><a href="../../pages/contact.html">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Legal</h4>
-                    <ul>
-                        <li><a href="../../pages/privacy-policy.html">Privacy Policy</a></li>
-                        <li><a href="../../pages/terms-of-service.html">Terms of Service</a></li>
-                        <li><a href="../../pages/disclaimer.html">Disclaimer</a></li>
-                    </ul>
-                </div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 ToolMatic. All rights reserved.</p>
+            
+            <div class="blog-post-footer">
+              <a href="../../pages/tools/" class="btn btn-primary">Explore SEO Tools →</a>
             </div>
+          </div>
         </div>
-    </footer>
+      </section>
 
-    <script src="../../js/main.js"></script>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-brand-logo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+            </svg>
+            Toolmatic
+          </div>
+          <p class="footer-brand-tagline">Free online tools for SEO and productivity.</p>
+          <p class="footer-copyright">© 2026 Toolmatic. All rights reserved.</p>
+        </div>
+        
+        <div>
+          <h4 class="footer-heading">SEO Tools</h4>
+          <div class="footer-links">
+            <a href="../tools/meta-tag-generator.html" class="footer-link">Meta Tag Generator</a>
+            <a href="../tools/open-graph-generator.html" class="footer-link">Open Graph Generator</a>
+            <a href="../tools/keyword-density-checker.html" class="footer-link">Keyword Density Checker</a>
+            <a href="../tools/robots-txt-generator.html" class="footer-link">Robots.txt Generator</a>
+            <a href="../tools/sitemap-generator.html" class="footer-link">Sitemap Generator</a>
+            <a href="../tools/word-counter.html" class="footer-link">Word Counter</a>
+          </div>
+        </div>
+        
+        <div>
+          <h4 class="footer-heading">Calculators</h4>
+          <div class="footer-links">
+            <a href="../tools/percentage-calculator.html" class="footer-link">Percentage Calculator</a>
+            <a href="../tools/age-calculator.html" class="footer-link">Age Calculator</a>
+            <a href="../tools/bmi-calculator.html" class="footer-link">BMI Calculator</a>
+            <a href="../tools/emi-calculator.html" class="footer-link">EMI Calculator</a>
+            <a href="../tools/discount-calculator.html" class="footer-link">Discount Calculator</a>
+            <a href="../tools/tax-calculator.html" class="footer-link">Tax Calculator</a>
+          </div>
+        </div>
+        
+        <div>
+          <h4 class="footer-heading">Company</h4>
+          <div class="footer-links">
+            <a href="../../index.html" class="footer-link">Home</a>
+            <a href="index.html" class="footer-link">Blog</a>
+            <a href="../about.html" class="footer-link">About</a>
+            <a href="../contact.html" class="footer-link">Contact</a>
+            <a href="../privacy-policy.html" class="footer-link">Privacy Policy</a>
+            <a href="../terms-of-service.html" class="footer-link">Terms of Service</a>
+            <a href="../disclaimer.html" class="footer-link">Disclaimer</a>
+            <a href="../../sitemap.xml" class="footer-link">Sitemap</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <span>Designed & Developed by <a href="https://zubaircodes.site" target="_blank">ZubairCodes.site</a></span>
+        <span>Built with â for the web</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../../js/main.js"></script>
 </body>
 </html>

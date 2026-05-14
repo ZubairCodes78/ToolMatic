@@ -792,52 +792,64 @@ table tr:hover {
 
 .blog-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 32px;
-  margin-top: 24px;
+  margin-top: 32px;
 }
 
 .blog-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100%;
   border: 1px solid var(--border);
-  border-radius: 8px;
+  border-radius: 12px;
   padding: 24px;
   background-color: white;
-  transition: border-color 0.2s;
+  transition: transform 0.24s ease, border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
 .blog-card:hover {
+  transform: translateY(-3px);
   border-color: var(--accent);
+  box-shadow: 0 20px 40px rgba(15, 23, 42, 0.08);
 }
 
 .blog-card-featured {
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px;
+  margin-bottom: 18px;
+  aspect-ratio: 16 / 9;
   background-color: var(--bg-section);
-  padding: 16px;
-  border-radius: 6px;
-  margin-bottom: 16px;
-  min-height: 120px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--text-secondary);
-  font-size: 0.875rem;
+}
+
+.blog-card-featured img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
 }
 
 .blog-card-category {
-  display: inline-block;
-  padding: 4px 12px;
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 14px;
   background-color: var(--bg-section);
   color: var(--accent);
-  font-size: 0.75rem;
-  font-weight: 600;
-  border-radius: 4px;
-  margin-bottom: 12px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  border-radius: 9999px;
+  margin-bottom: 14px;
 }
 
 .blog-card-title {
-  font-size: 1.25rem;
+  font-size: 1.35rem;
   font-weight: 600;
-  margin-bottom: 12px;
+  margin-bottom: 14px;
   color: var(--text-primary);
+  line-height: 1.25;
 }
 
 .blog-card-title a {
@@ -850,15 +862,17 @@ table tr:hover {
 
 .blog-card-excerpt {
   color: var(--text-secondary);
-  font-size: 0.875rem;
-  line-height: 1.6;
-  margin-bottom: 16px;
+  font-size: 0.95rem;
+  line-height: 1.75;
+  margin-bottom: 20px;
 }
 
 .blog-card-meta {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
   font-size: 0.875rem;
   color: var(--text-secondary);
 }
@@ -869,11 +883,86 @@ table tr:hover {
 
 .blog-card-link {
   color: var(--accent);
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .blog-card-link:hover {
   color: var(--accent-hover);
+}
+
+.blog-pagination {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 32px;
+}
+
+.pagination-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 44px;
+  height: 44px;
+  border: 1px solid var(--border);
+  border-radius: 9999px;
+  padding: 0 16px;
+  background-color: white;
+  color: var(--text-primary);
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: border-color 0.2s, background-color 0.2s, color 0.2s;
+}
+
+.pagination-button:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.pagination-button.active {
+  background-color: var(--accent);
+  color: white;
+  border-color: var(--accent);
+}
+
+.pagination-button.disabled {
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+@media (max-width: 900px) {
+  .blog-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .blog-card {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 640px) {
+  .blog-card {
+    padding: 18px;
+  }
+
+  .blog-card-featured {
+    margin-bottom: 16px;
+  }
+
+  .blog-card-title {
+    font-size: 1.2rem;
+  }
+
+  .blog-card-excerpt {
+    font-size: 0.95rem;
+  }
+
+  .blog-card-meta {
+    justify-content: flex-start;
+    gap: 10px;
+  }
 }
 
 /* Blog Post */
@@ -2676,7 +2765,9 @@ table tr:hover {
     <div class="container">
       <div class="blog-grid">
         <div class="blog-card">
-          <div class="blog-card-featured">Featured</div>
+          <div class="blog-card-featured">
+            <img src="/images/blog/geo-seo-guide.jpg" alt="GEO SEO strategy for ranking in AI search engines" loading="lazy">
+          </div>
           <div class="blog-card-category">AI SEO</div>
           <h2 class="blog-card-title">
             <a href="geo-seo-rank-chatgpt-google-ai-search-2026.html">What Is GEO SEO? How to Rank in ChatGPT & Google AI Search (2026 Guide)</a>
@@ -2687,7 +2778,9 @@ table tr:hover {
         </div>
         
         <div class="blog-card">
-          <div class="blog-card-featured">Featured</div>
+          <div class="blog-card-featured">
+            <img src="/images/blog/resume-builder-guide.jpg" alt="Professional resume creation guide" loading="lazy">
+          </div>
           <div class="blog-card-category">Career</div>
           <h2 class="blog-card-title">
             <a href="resume-builder-guide.html">How to Create a Professional Resume (Step-by-Step Guide 2026)</a>
@@ -2698,7 +2791,9 @@ table tr:hover {
         </div>
         
         <div class="blog-card">
-          <div class="blog-card-featured">Featured</div>
+          <div class="blog-card-featured">
+            <img src="/images/blog/pdf-to-word-guide.jpg" alt="PDF to Word conversion guide" loading="lazy">
+          </div>
           <div class="blog-card-category">Productivity</div>
           <h2 class="blog-card-title">
             <a href="pdf-to-word-guide.html">How to Convert PDF to Word Online (Free & Easy Guide 2026)</a>
@@ -2709,7 +2804,9 @@ table tr:hover {
         </div>
         
         <div class="blog-card">
-          <div class="blog-card-featured">Featured</div>
+          <div class="blog-card-featured">
+            <img src="/images/blog/image-to-text-guide.jpg" alt="Image to text conversion using OCR technology" loading="lazy">
+          </div>
           <div class="blog-card-category">Technology</div>
           <h2 class="blog-card-title">
             <a href="image-to-text-guide.html">How to Convert Image to Text Online (Complete OCR Guide 2026)</a>
@@ -2720,7 +2817,9 @@ table tr:hover {
         </div>
         
         <div class="blog-card">
-          <div class="blog-card-featured">Featured</div>
+          <div class="blog-card-featured">
+            <img src="/images/blog/plagiarism-checker-guide.jpg" alt="Free online plagiarism checker tool" loading="lazy">
+          </div>
           <div class="blog-card-category">Content Writing</div>
           <h2 class="blog-card-title">
             <a href="free-plagiarism-checker-online-check-duplicate-content-easily.html">Free Plagiarism Checker Online – Check Duplicate Content Easily</a>
@@ -2731,7 +2830,9 @@ table tr:hover {
         </div>
         
         <div class="blog-card">
-          <div class="blog-card-featured">Featured</div>
+          <div class="blog-card-featured">
+            <img src="/images/blog/meta-tags-guide.jpg" alt="Meta tags explanation for SEO" loading="lazy">
+          </div>
           <div class="blog-card-category">SEO</div>
           <h2 class="blog-card-title">
             <a href="what-is-meta-tags-and-why-they-matter.html">What Are Meta Tags and Why Do They Matter for SEO?</a>
@@ -2742,7 +2843,9 @@ table tr:hover {
         </div>
         
         <div class="blog-card">
-          <div class="blog-card-featured">Featured</div>
+          <div class="blog-card-featured">
+            <img src="/images/blog/seo-guide-2026.jpg" alt="Complete SEO guide for 2026" loading="lazy">
+          </div>
           <div class="blog-card-category">SEO</div>
           <h2 class="blog-card-title">
             <a href="how-to-improve-website-seo-2026.html">How to Improve Your Website's SEO in 2026: A Complete Guide</a>
@@ -2751,57 +2854,13 @@ table tr:hover {
           <a href="how-to-improve-website-seo-2026.html" class="blog-card-link">Read More →</a>
           <p class="blog-card-date">April 10, 2026</p>
         </div>
-        
-        <div class="blog-card">
-          <div class="blog-card-featured">Featured</div>
-          <div class="blog-card-category">Technical SEO</div>
-          <h2 class="blog-card-title">
-            <a href="what-is-robots-txt.html">What Is robots.txt and How to Create One Correctly</a>
-          </h2>
-          <p class="blog-card-excerpt">Understand how robots.txt controls crawler access to your website and learn to create it correctly.</p>
-          <a href="what-is-robots-txt.html" class="blog-card-link">Read More →</a>
-          <p class="blog-card-date">April 5, 2026</p>
-        </div>
-        
-        <div class="blog-card">
-          <div class="blog-card-category">Health</div>
-          <h2 class="blog-card-title">
-            <a href="how-to-calculate-bmi.html">How to Calculate BMI Accurately and What It Means for Your Health</a>
-          </h2>
-          <p class="blog-card-excerpt">Learn to calculate your Body Mass Index accurately and understand what your BMI means for your overall health.</p>
-          <a href="how-to-calculate-bmi.html" class="blog-card-link">Read More →</a>
-          <p class="blog-card-date">March 28, 2026</p>
-        </div>
-        
-        <div class="blog-card">
-          <div class="blog-card-category">Social Media</div>
-          <h2 class="blog-card-title">
-            <a href="what-is-open-graph-and-why-it-matters.html">What Is Open Graph and Why Every Website Needs It</a>
-          </h2>
-          <p class="blog-card-excerpt">Discover how Open Graph tags control how your content appears when shared on social media platforms.</p>
-          <a href="what-is-open-graph-and-why-it-matters.html" class="blog-card-link">Read More →</a>
-          <p class="blog-card-date">March 20, 2026</p>
-        </div>
-        
-        <div class="blog-card">
-          <div class="blog-card-category">SEO</div>
-          <h2 class="blog-card-title">
-            <a href="keyword-density-what-it-is-and-how-to-optimize.html">Keyword Density: What It Is and How to Optimize It</a>
-          </h2>
-          <p class="blog-card-excerpt">Understand keyword density and learn how to optimize your content for search engines without keyword stuffing.</p>
-          <a href="keyword-density-what-it-is-and-how-to-optimize.html" class="blog-card-link">Read More →</a>
-          <p class="blog-card-date">March 15, 2026</p>
-        </div>
-        
-        <div class="blog-card">
-          <div class="blog-card-category">Technical SEO</div>
-          <h2 class="blog-card-title">
-            <a href="what-is-sitemap-xml.html">What Is a Sitemap and How to Generate One for Free</a>
-          </h2>
-          <p class="blog-card-excerpt">Learn what XML sitemaps are, why they matter for SEO, and how to generate one for your website for free.</p>
-          <a href="what-is-sitemap-xml.html" class="blog-card-link">Read More →</a>
-          <p class="blog-card-date">March 10, 2026</p>
-        </div>
+      </div>
+
+      <div class="blog-pagination">
+        <a class="pagination-button disabled">Previous</a>
+        <a href="index.html" class="pagination-button active">1</a>
+        <a href="page/2/" class="pagination-button">2</a>
+        <a href="page/2/" class="pagination-button">Next</a>
       </div>
     </div>
   </section>
