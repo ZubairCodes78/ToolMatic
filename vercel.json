@@ -109,6 +109,10 @@
       "destination": "/pages/blog/index.html"
     },
     {
+      "source": "/blog/page/:path*",
+      "destination": "/pages/blog/page/:path*"
+    },
+    {
       "source": "/blog/:path*",
       "destination": "/pages/blog/:path*.html"
     },
