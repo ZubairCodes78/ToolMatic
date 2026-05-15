@@ -2515,6 +2515,24 @@ table tr:hover {
       <a href="resume-builder.html" class="navbar-menu-cta">Resume Builder <span style="background-color:#F59E0B;color:white;padding:2px 8px;border-radius:9999px;font-size:0.75rem;margin-left:6px;">New</span></a>
     </div>
   </nav>
+  <script type="text/javascript">
+    (function (l) {
+      if (l.search[1] === "/") {
+        var decoded = l.search
+          .slice(1)
+          .split("&")
+          .map(function (s) {
+            return s.replace(/~and~/g, "&");
+          })
+          .join("?");
+        window.history.replaceState(
+          null,
+          null,
+          l.pathname.slice(0, -1) + decoded + l.hash
+        );
+      }
+    })(window.location);
+  </script>
 
   <!-- Hero Section -->
   <section class="section section-white">
