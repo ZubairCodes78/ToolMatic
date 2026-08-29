@@ -2,8 +2,8 @@ from pathlib import Path
 import re
 import sys
 
-root = Path(r'd:/ZUBAIR/ToolMatic')
-html_files = list(root.rglob('*.html'))
+root = Path(__file__).resolve().parent
+html_files = [f for f in root.rglob('*.html') if '.venv' not in f.parts and f.name != 'google442de89fc977bfee.html']
 pattern = re.compile(r'(?i)(?:href|src)="([^"]+)"')
 ignore_prefix = ('http://','https://','mailto:','tel:','#','javascript:')
 errors = []

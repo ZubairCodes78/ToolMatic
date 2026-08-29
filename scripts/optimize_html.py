@@ -1,8 +1,8 @@
-﻿import re
+import re
 from pathlib import Path
 
-ROOT = Path(r"d:\ZUBAIR\ToolMatic")
-HTML_FILES = list(ROOT.glob("**/*.html"))
+ROOT = Path(__file__).resolve().parent.parent
+HTML_FILES = [f for f in ROOT.glob("**/*.html") if '.venv' not in f.parts and f.name != 'google442de89fc977bfee.html']
 
 CRITICAL_CSS = r"""
 <style>
@@ -44,7 +44,7 @@ LINK_STYLESHEET_RE = re.compile(r'<link\s+rel=["\']stylesheet["\']\s+href=["\'](
 NOSCRIPT_BLOCK_RE = re.compile(r'<noscript>[\s\S]*?</noscript>', flags=re.IGNORECASE)
 SCRIPT_SRC_RE = re.compile(r'(<script\s+[^>]*src=["\']([^"\']+)["\'][^>]*)(>)', flags=re.IGNORECASE)
 
-SKIP_DEFER = ['googletagmanager.com', 'pagead2.googlesyndication.com']
+SKIP_DEFER = ['googletagmanager.com', 'pagead2.googlesyndication.com', 'profitableratecpmnetwork.com']
 
 for file_path in HTML_FILES:
     text = file_path.read_text(encoding='utf-8')
