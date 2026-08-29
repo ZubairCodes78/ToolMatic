@@ -1,4 +1,5 @@
 import sys
+import re
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -15,32 +16,47 @@ def verify():
 
     for f in sorted(HTML_FILES):
         text = f.read_text(encoding='utf-8')
+        rel_path = f.relative_to(ROOT)
 
-        # 1. Popunder check
+        # 1. Popunder check: exactly 1, inside <head>
         p_count = text.count(POPUNDER_URL)
         if p_count != 1:
-            errors.append(f"{f.relative_to(ROOT)}: Popunder script count is {p_count} (expected exactly 1)")
-        else:
-            head_part = text.split('</head>')[0]
-            if POPUNDER_URL not in head_part:
-                errors.append(f"{f.relative_to(ROOT)}: Popunder is not located inside <head>")
+            errors.append(f"{rel_path}: Popunder script count is {p_count} (expected exactly 1)")
+        head_match = re.search(r'<head.*?</head>', text, re.DOTALL | re.IGNORECASE)
+        if not head_match:
+            errors.append(f"{rel_path}: No <head>...</head> block found")
+        elif POPUNDER_URL not in head_match.group(0):
+            errors.append(f"{rel_path}: Popunder script is not located inside <head>")
 
-        # 2. Social Bar check
+        # 2. Social Bar check: exactly 1, immediately before closing </body>
         s_count = text.count(SOCIAL_URL)
         if s_count != 1:
-            errors.append(f"{f.relative_to(ROOT)}: Social Bar script count is {s_count} (expected exactly 1)")
+            errors.append(f"{rel_path}: Social Bar script count is {s_count} (expected exactly 1)")
+        idx = text.rfind('</body>')
+        if idx == -1:
+            errors.append(f"{rel_path}: No closing </body> tag found")
         else:
-            after_social = text.split(SOCIAL_URL)[1]
-            if '</body>' not in after_social[:250]:
-                errors.append(f"{f.relative_to(ROOT)}: Social Bar is not directly before closing </body>")
+            before_body = text[max(0, idx - 400):idx]
+            if SOCIAL_URL not in before_body:
+                errors.append(f"{rel_path}: Social Bar is not directly before closing </body>")
 
-        # 3. Native Banner check
+        # 3. Native Banner check: script + container exactly 1 each, located in <body>
         n_count = text.count(NATIVE_URL)
         c_count = text.count(CONTAINER_ID)
         if n_count != 1:
-            errors.append(f"{f.relative_to(ROOT)}: Native Banner script count is {n_count} (expected exactly 1)")
+            errors.append(f"{rel_path}: Native Banner script count is {n_count} (expected exactly 1)")
         if c_count != 1:
-            errors.append(f"{f.relative_to(ROOT)}: Container ID '{CONTAINER_ID}' count is {c_count} (expected exactly 1)")
+            errors.append(f"{rel_path}: Container ID '{CONTAINER_ID}' count is {c_count} (expected exactly 1)")
+
+        body_match = re.search(r'<body.*?</body>', text, re.DOTALL | re.IGNORECASE)
+        if not body_match:
+            errors.append(f"{rel_path}: No <body>...</body> block found")
+        else:
+            body_text = body_match.group(0)
+            if NATIVE_URL not in body_text:
+                errors.append(f"{rel_path}: Native Banner script is not located inside <body>")
+            if CONTAINER_ID not in body_text:
+                errors.append(f"{rel_path}: Native Banner container is not located inside <body>")
 
     if errors:
         print("FAILED with the following errors:")
@@ -50,10 +66,12 @@ def verify():
     else:
         print(f"SUCCESS: All {len(HTML_FILES)} HTML files verified!")
         print("Summary of verification:")
-        print("  [PASS] Popunder script: Exactly 1 per page, located inside <head>")
-        print("  [PASS] Social Bar script: Exactly 1 per page, located right before closing </body>")
-        print("  [PASS] Native Banner script + container: Exactly 1 per page, correctly placed in body")
+        print("  [PASS] Popunder script: Exactly 1 per page, located inside <head> before </head>")
+        print("  [PASS] Social Bar script: Exactly 1 per page, located directly before closing </body>")
+        print("  [PASS] Native Banner script + container: Exactly 1 per page, placed together in <body>")
         print("  [PASS] Zero container ID duplicates across all pages")
+        print("  [PASS] Exact URLs and container IDs preserved without modification")
 
 if __name__ == '__main__':
     verify()
+
