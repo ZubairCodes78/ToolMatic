@@ -21,7 +21,7 @@ from content_legal import LEGAL_PAGES
 
 ROOT = Path(__file__).resolve().parent.parent
 DOMAIN = "https://toolmatic.site"
-GA_ID = "G-3K5EHMCYEV"
+GA_ID = "G-CSTVK0Q8B4"
 ADSENSE_ID = "ca-pub-8943765451617871"
 EMAIL = "support@toolmatic.site"
 
