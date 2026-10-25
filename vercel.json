@@ -1,44 +1,95 @@
 {
+  "cleanUrls": true,
+  "trailingSlash": true,
   "headers": [
     {
       "source": "/(.*.css)",
-      "headers": [{ "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }]
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
     },
     {
       "source": "/(.*.js)",
-      "headers": [{ "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }]
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
     },
     {
-      "source": "/(.*.webp|.*.png|.*.jpg|.*.jpeg)",
-      "headers": [{ "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }]
+      "source": "/(.*.webp|.*.png|.*.jpg|.*.jpeg|.*.svg)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
     }
   ],
-  "cleanUrls": false,
-  "trailingSlash": false,
-  "rewrites": [
-    { "source": "/", "destination": "/index.html" },
-
-    { "source": "/resume-builder", "destination": "/resume-builder.html" },
-    { "source": "/image-to-text", "destination": "/image-to-text.html" },
-    { "source": "/pdf-to-word", "destination": "/pdf-to-word.html" },
-
-    { "source": "/about", "destination": "/pages/about.html" },
-    { "source": "/calculators", "destination": "/pages/calculators.html" },
-    { "source": "/contact", "destination": "/pages/contact.html" },
-    { "source": "/disclaimer", "destination": "/pages/disclaimer.html" },
-    { "source": "/privacy-policy", "destination": "/pages/privacy-policy.html" },
-    { "source": "/terms-of-service", "destination": "/pages/terms-of-service.html" },
-    { "source": "/seo-tools", "destination": "/pages/seo-tools.html" },
-
-    { "source": "/blog", "destination": "/pages/blog/index.html" },
-
-    { "source": "/blog/page/2", "destination": "/pages/blog/page/2/index.html" },
-    { "source": "/blog/page/3", "destination": "/pages/blog/page/3/index.html" },
-
-    { "source": "/blog/:slug.html", "destination": "/pages/blog/:slug.html" },
-    { "source": "/blog/:slug", "destination": "/pages/blog/:slug.html" },
-
-    { "source": "/tools/:slug.html", "destination": "/pages/tools/:slug.html" },
-    { "source": "/tools/:slug", "destination": "/pages/tools/:slug.html" }
+  "redirects": [
+    {
+      "source": "/tools/:path*",
+      "destination": "/image-compressor/",
+      "permanent": true
+    },
+    {
+      "source": "/id/penghitung-kata",
+      "destination": "/id/kompres-gambar/",
+      "permanent": true
+    },
+    {
+      "source": "/id/generator-meta-tag",
+      "destination": "/id/kompres-gambar/",
+      "permanent": true
+    },
+    {
+      "source": "/id/cek-kepadatan-kata-kunci",
+      "destination": "/id/kompres-gambar/",
+      "permanent": true
+    },
+    {
+      "source": "/id/kalkulator-bmi",
+      "destination": "/id/kompres-gambar/",
+      "permanent": true
+    },
+    {
+      "source": "/id/kalkulator-persentase",
+      "destination": "/id/kompres-gambar/",
+      "permanent": true
+    },
+    {
+      "source": "/id/kalkulator-umur",
+      "destination": "/id/kompres-gambar/",
+      "permanent": true
+    },
+    {
+      "source": "/id/cek-kemiripan-teks",
+      "destination": "/id/kompres-gambar/",
+      "permanent": true
+    },
+    {
+      "source": "/id/gambar-ke-teks",
+      "destination": "/id/kompres-gambar/",
+      "permanent": true
+    },
+    {
+      "source": "/id/pdf-ke-word",
+      "destination": "/id/kompres-gambar/",
+      "permanent": true
+    },
+    {
+      "source": "/id/pembuat-cv",
+      "destination": "/id/kompres-gambar/",
+      "permanent": true
+    },
+    {
+      "source": "/pages/:path*",
+      "destination": "/",
+      "permanent": true
+    }
   ]
 }

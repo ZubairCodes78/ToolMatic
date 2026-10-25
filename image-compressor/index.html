@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Free Image Compressor - Compress JPG, PNG, WebP, AVIF Online</title>
+  <meta name="description" content="Compress images online for free. 100% client-side privacy, batch upload up to 50 images, target KB size mode, and instant ZIP download.">
+  <link rel="canonical" href="https://toolmatic.site/image-compressor/">
+  <link rel="alternate" hreflang="id" href="https://toolmatic.site/id/kompres-gambar/">
+  <link rel="alternate" hreflang="en" href="https://toolmatic.site/image-compressor/">
+  <link rel="alternate" hreflang="x-default" href="https://toolmatic.site/id/kompres-gambar/">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://toolmatic.site/image-compressor/">
+  <meta property="og:title" content="Free Image Compressor - Compress JPG, PNG, WebP, AVIF Online">
+  <meta property="og:description" content="Compress images online for free. 100% client-side privacy, batch upload up to 50 images, target KB size mode, and instant ZIP download.">
+  <meta property="og:image" content="https://toolmatic.site/preview.webp">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://toolmatic.site/image-compressor/">
+  <meta name="twitter:title" content="Free Image Compressor - Compress JPG, PNG, WebP, AVIF Online">
+  <meta name="twitter:description" content="Compress images online for free. 100% client-side privacy, batch upload up to 50 images, target KB size mode, and instant ZIP download.">
+  <meta name="twitter:image" content="https://toolmatic.site/preview.webp">
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3K5EHMCYEV"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-3K5EHMCYEV');
+  </script>
+
+  <!-- Google AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8943765451617871" crossorigin="anonymous"></script>
+
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/compressor.css">
+    <link rel="stylesheet" href="/css/blog.css">
+    
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "SoftwareApplication",
+      "name": "Free Online Image Compressor",
+      "applicationCategory": "MultimediaApplication",
+      "operatingSystem": "Any",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://toolmatic.site/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Free Online Image Compressor",
+          "item": "https://toolmatic.site/image-compressor/"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How do I compress an image without losing quality?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "To compress an image without visible quality loss, set the compression quality slider to between 75% and 85%, or convert the file to modern WebP format. This eliminates imperceptible digital artifacts and metadata while preserving crisp edges, color depth, and sharpness."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are my images uploaded to any remote server?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No, your images are never uploaded to any server. ToolMatic uses 100% client-side HTML5 Canvas and WebAssembly algorithms running strictly inside your device's web browser. Your private photos remain completely on your computer or phone."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the best image format for websites in 2026?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "WebP is the recommended image format for websites in 2026. It provides 25% to 35% smaller file sizes than standard JPEG at identical perceived quality, supports transparent alpha backgrounds, and is natively supported by over 98% of all web browsers worldwide."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does the 'Compress for WhatsApp' preset work?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The WhatsApp preset automatically resizes your image to a maximum dimension of 1600 pixels (the standard HD photo resolution for WhatsApp) and compresses it to approximately 78% quality. This ensures your photos send instantly without heavy cellular data usage or blurry re-compression by messaging servers."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I compress multiple images at the same time?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, ToolMatic supports batch compression for up to 50 images at once. Simply drag and drop all your files together, and our multi-threaded queue will process them in seconds. You can then download all compressed images in a single organized ZIP archive."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I compress an image to under 100 KB or 200 KB?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Select 'Target Size' mode in our settings toolbar, choose the 100 KB or 200 KB chip (or type any custom number), and ToolMatic will automatically perform binary-search quality adjustments and proportional scaling to guarantee your output file stays beneath that exact byte threshold."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+  
+    <header class="navbar">
+      <div class="navbar-inner">
+        <a href="/en/" class="navbar-brand">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+          <span>Toolmatic</span>
+        </a>
+
+        <nav class="navbar-nav">
+          <a href="/image-compressor/" class="navbar-link">Image Compressor</a>
+          <a href="/image-converter/" class="navbar-link">Image Converter</a>
+          <a href="/blog/" class="navbar-link">Blog</a>
+
+          <!-- Visible Language Switcher Pill -->
+          <div class="lang-switcher" aria-label="Language Selector">
+            <a href="/image-compressor/" class="lang-btn active" hreflang="en" title="English">EN</a>
+            <span class="lang-sep">|</span>
+            <a href="/id/kompres-gambar/" class="lang-btn " hreflang="id" title="Bahasa Indonesia">ID</a>
+          </div>
+
+          <a href="/image-compressor/" class="navbar-cta">Compress Images</a>
+        </nav>
+
+        <!-- Mobile Controls (Visible on <= 900px) -->
+        <div class="navbar-mobile-controls">
+          <div class="lang-switcher lang-switcher-mobile" aria-label="Language Selector">
+            <a href="/image-compressor/" class="lang-btn active" hreflang="en" title="English">EN</a>
+            <span class="lang-sep">|</span>
+            <a href="/id/kompres-gambar/" class="lang-btn " hreflang="id" title="Bahasa Indonesia">ID</a>
+          </div>
+
+          <button class="navbar-toggle" aria-label="Toggle navigation menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Dropdown Menu -->
+      <div class="navbar-menu">
+        <a href="/image-compressor/" class="navbar-menu-link">Image Compressor</a>
+        <a href="/image-converter/" class="navbar-menu-link">Image Converter</a>
+        <a href="/blog/" class="navbar-menu-link">Blog & Guides</a>
+        
+        <div style="padding: 10px 12px; display:flex; align-items:center; justify-content:space-between; border-top: 1px solid #E2E8F0; margin-top: 6px;">
+          <span style="font-size:0.875rem; font-weight:600; color:#475569;">Select Language:</span>
+          <div class="lang-switcher">
+            <a href="/image-compressor/" class="lang-btn active" hreflang="en">EN</a>
+            <span class="lang-sep">|</span>
+            <a href="/id/kompres-gambar/" class="lang-btn " hreflang="id">ID</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    
+
+  <main>
+    
+        <section class="page-header-container">
+          <div class="container text-center">
+            <div class="page-header-inner">
+              <h1 class="page-header-title">Free Online Image Compressor</h1>
+              <p class="page-header-subtitle">Compress JPG, PNG, WebP, and AVIF photos up to 90% without losing quality. 100% client-side — your photos never leave your device.</p>
+            </div>
+          </div>
+        </section>
+        
+    
+    <section class="section" style="padding-top:0;">
+      <div class="container">
+        
+    <div class="compressor-wrapper">
+      <!-- Drop Zone -->
+      <div class="dropzone" id="compressorDropZone">
+        <input type="file" id="compressorFileInput" multiple accept="image/jpeg,image/png,image/webp,image/avif,.heic,.heif,image/bmp" style="display:none;">
+        <div class="dropzone-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+        </div>
+        <div class="dropzone-heading">Drag & drop your images here</div>
+        <div class="dropzone-subtext">or click to browse from device (Batch mode up to 50 files: JPG, PNG, WebP, AVIF, HEIC)</div>
+        
+        <div class="dropzone-actions">
+          <button type="button" class="btn btn-upload" id="compressorUploadTrigger">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+            <span>Upload Images</span>
+          </button>
+        </div>
+
+        <div class="privacy-banner">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+          <span>Your images never leave your device — everything happens in your browser.</span>
+        </div>
+      </div>
+
+      <!-- Settings Toolbar -->
+      <div class="compressor-toolbar">
+        <div class="toolbar-group">
+          <div class="toolbar-label">Compression Mode</div>
+          <div class="mode-pills">
+            <button type="button" class="mode-pill active" id="modeQuality">Quality</button>
+            <button type="button" class="mode-pill" id="modeTarget">Target Size</button>
+          </div>
+        </div>
+
+        <div class="toolbar-group" id="qualityContainer">
+          <div class="toolbar-label">Quality: <span id="qualityValue">80%</span></div>
+          <div class="slider-wrap">
+            <input type="range" id="qualitySlider" min="5" max="100" value="80" step="1">
+          </div>
+        </div>
+
+        <div class="toolbar-group" id="targetSizeContainer" style="display:none;">
+          <div class="toolbar-label">Target File Size (KB)</div>
+          <div class="target-chips">
+            <button type="button" class="target-chip" data-size="100">100 KB</button>
+            <button type="button" class="target-chip active" data-size="200">200 KB</button>
+            <button type="button" class="target-chip" data-size="500">500 KB</button>
+            <input type="number" id="targetSizeInput" class="input-custom" value="200" min="10" max="5000" style="width: 76px; padding: 4px 6px;">
+          </div>
+        </div>
+
+        <div class="toolbar-group">
+          <div class="toolbar-label">Output Format</div>
+          <select id="formatSelect" class="select-custom">
+            <option value="original">Keep Original</option>
+            <option value="image/webp" selected>WebP (Fastest & Smallest)</option>
+            <option value="image/jpeg">JPG / JPEG (Universal)</option>
+            <option value="image/png">PNG (Lossless Graphics)</option>
+            <option value="image/avif">AVIF (Next-Gen Modern)</option>
+          </select>
+        </div>
+
+        <div class="toolbar-group">
+          <div class="toolbar-label">Resize Dimensions</div>
+          <select id="resizeSelect" class="select-custom">
+            <option value="none">Original Dimensions</option>
+            <option value="preset-whatsapp">WhatsApp (1600px Max)</option>
+            <option value="preset-ig-post">Instagram Post (1080x1080)</option>
+            <option value="preset-ig-story">Instagram Story (1080x1920)</option>
+            <option value="preset-fb">Facebook Post (1200x630)</option>
+            <option value="preset-web">Website Hero (1200px Width)</option>
+            <option value="pct">50% Percent</option>
+            <option value="custom">Custom Width/Height</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Custom Resize Inputs -->
+      <div id="customResizeInputs" style="display:none; padding: 12px 20px; background: #F1F5F9; border-bottom: 1px solid var(--tool-border); gap: 12px; align-items: center; flex-wrap: wrap;">
+        <span style="font-size:0.875rem; font-weight:600; color:#334155;">Custom Dimensions (px):</span>
+        <input type="number" id="customWidthInput" class="input-custom" placeholder="Width (px)" style="width: 120px;">
+        <span>×</span>
+        <input type="number" id="customHeightInput" class="input-custom" placeholder="Height (px)" style="width: 120px;">
+        <span style="font-size: 0.8rem; color:#64748B;">(Aspect ratio automatically preserved)</span>
+      </div>
+
+      <!-- Live Progress Bar -->
+      <div class="compressor-progress" id="compressorProgress">
+        <div class="progress-track">
+          <div class="progress-fill" id="compressorProgressFill"></div>
+        </div>
+        <div class="progress-text" id="compressorProgressText">Processing images...</div>
+      </div>
+
+      <!-- Batch Summary Bar -->
+      <div class="batch-summary" id="batchSummary">
+        <div class="summary-stats">
+          <span class="stat-item">Total: <strong id="summaryCount">0</strong></span>
+          <span class="stat-item">Original: <strong id="summaryOriginal">0 MB</strong></span>
+          <span class="stat-item">Compressed: <strong id="summaryCompressed">0 MB</strong></span>
+          <span class="stat-saved" id="summarySaved">-0%</span>
+        </div>
+        <div class="summary-buttons">
+          <button type="button" class="btn btn-zip" id="downloadAllBtn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            <span>Download All as ZIP</span>
+          </button>
+          <button type="button" class="btn btn-clear" id="clearAllBtn">Clear All</button>
+        </div>
+      </div>
+
+      <!-- Batch List Container -->
+      <div class="batch-list" id="batchList"></div>
+    </div>
+    
+      </div>
+    </section>
+
+    <section class="section section-bg">
+      <div class="container container-narrow">
+        
+            <div class="in-short-box">
+              <div class="in-short-title">In Short</div>
+              <p class="in-short-text">ToolMatic's Image Compressor is a 100% client-side tool that reduces image file sizes by up to 90% using your browser's native Canvas API. Drag and drop up to 50 images at once, adjust quality, choose target file size (e.g. under 200 KB), resize dimensions, and download files individually or as a combined ZIP archive with zero server uploads.</p>
+            </div>
+
+            <h2>How to Compress Images Online Without Losing Quality</h2>
+            <p>Image compression reduces file weight in bytes without sacrificing visible clarity. Camera photos from modern smartphones easily reach 5 MB to 15 MB, making them too heavy for websites, email attachments, and messaging apps. By removing imperceptible high-frequency color variations and unnecessary metadata, file sizes drop by 70% to 90% while keeping visual edges crisp.</p>
+
+            <div class="steps-grid">
+              <div class="step-card">
+                <div class="step-num">1</div>
+                <div class="step-title">Upload or Drag & Drop Images</div>
+                <p class="step-desc">Select up to 50 photos in JPG, PNG, WebP, AVIF, or HEIC format. You can also paste images directly from your clipboard with Ctrl+V.</p>
+              </div>
+              <div class="step-card">
+                <div class="step-num">2</div>
+                <div class="step-title">Choose Quality or Target Size</div>
+                <p class="step-desc">Keep the default 80% quality for optimal visual clarity, or pick "Target Size" mode to force files under 100 KB or 200 KB.</p>
+              </div>
+              <div class="step-card">
+                <div class="step-num">3</div>
+                <div class="step-title">Download Single or Batch ZIP</div>
+                <p class="step-desc">Preview savings percentages and dimensions instantly. Download files individually or click "Download All as ZIP" to export your entire batch.</p>
+              </div>
+            </div>
+
+            <h2>Image Format Comparison: Which Output Should You Pick?</h2>
+            <div class="table-responsive">
+              <table class="comparison-table">
+                <thead>
+                  <tr>
+                    <th>Format</th>
+                    <th>Best For</th>
+                    <th>Transparency</th>
+                    <th>Average Compression</th>
+                    <th>Browser Support</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>WebP</strong></td>
+                    <td>Websites, blog articles, social media</td>
+                    <td>Yes (Alpha)</td>
+                    <td>25%–35% smaller than JPG</td>
+                    <td>98%+ (All modern browsers)</td>
+                  </tr>
+                  <tr>
+                    <td><strong>JPEG / JPG</strong></td>
+                    <td>Photographs, legacy systems, print</td>
+                    <td>No</td>
+                    <td>Standard baseline</td>
+                    <td>100% Universal</td>
+                  </tr>
+                  <tr>
+                    <td><strong>PNG</strong></td>
+                    <td>Logos, screenshots, vector graphics</td>
+                    <td>Yes (Full 8-bit / 24-bit)</td>
+                    <td>Lossless (larger file size)</td>
+                    <td>100% Universal</td>
+                  </tr>
+                  <tr>
+                    <td><strong>AVIF</strong></td>
+                    <td>Next-generation modern web apps</td>
+                    <td>Yes (Alpha & HDR)</td>
+                    <td>40%–50% smaller than JPG</td>
+                    <td>93%+ (Chrome, Firefox, Safari)</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="tool-promo-box">
+              <div class="tool-promo-content">
+                <h3>Need to Convert Image Formats?</h3>
+                <p>Easily convert JPG to WebP, PNG to JPG, or WebP to AVIF in batch mode with our standalone Image Converter.</p>
+              </div>
+              <a href="/image-converter/" class="btn btn-primary">Open Image Converter</a>
+            </div>
+
+            <div class="takeaway-box">
+              <div class="takeaway-title">Key Takeaways for Optimal Compression</div>
+              <ul class="takeaway-list">
+                <li><strong>Recommended Setting:</strong> Convert to WebP at 80% quality for the best compromise between sharpness and lightweight bytes.</li>
+                <li><strong>WhatsApp Optimal Size:</strong> Standard WhatsApp images look best when capped at 1600px width and compressed under 200 KB.</li>
+                <li><strong>100% Privacy Guarantee:</strong> No image data ever leaves your computer or mobile phone. All processing occurs locally via browser hardware acceleration.</li>
+              </ul>
+            </div>
+            
+
+        <!-- FAQ Section -->
+        <div class="faq-section">
+          <h2 class="faq-title">Frequently Asked Questions (FAQ)</h2>
+          
+        <div class="faq-card">
+          <div class="faq-header">
+            <h3 class="faq-question">How do I compress an image without losing quality?</h3>
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-body">
+            <p class="faq-direct-answer">To compress an image without visible quality loss, set the compression quality slider to between 75% and 85%, or convert the file to modern WebP format. This eliminates imperceptible digital artifacts and metadata while preserving crisp edges, color depth, and sharpness.</p>
+          </div>
+        </div>
+        
+        <div class="faq-card">
+          <div class="faq-header">
+            <h3 class="faq-question">Are my images uploaded to any remote server?</h3>
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-body">
+            <p class="faq-direct-answer">No, your images are never uploaded to any server. ToolMatic uses 100% client-side HTML5 Canvas and WebAssembly algorithms running strictly inside your device's web browser. Your private photos remain completely on your computer or phone.</p>
+          </div>
+        </div>
+        
+        <div class="faq-card">
+          <div class="faq-header">
+            <h3 class="faq-question">What is the best image format for websites in 2026?</h3>
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-body">
+            <p class="faq-direct-answer">WebP is the recommended image format for websites in 2026. It provides 25% to 35% smaller file sizes than standard JPEG at identical perceived quality, supports transparent alpha backgrounds, and is natively supported by over 98% of all web browsers worldwide.</p>
+          </div>
+        </div>
+        
+        <div class="faq-card">
+          <div class="faq-header">
+            <h3 class="faq-question">How does the 'Compress for WhatsApp' preset work?</h3>
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-body">
+            <p class="faq-direct-answer">The WhatsApp preset automatically resizes your image to a maximum dimension of 1600 pixels (the standard HD photo resolution for WhatsApp) and compresses it to approximately 78% quality. This ensures your photos send instantly without heavy cellular data usage or blurry re-compression by messaging servers.</p>
+          </div>
+        </div>
+        
+        <div class="faq-card">
+          <div class="faq-header">
+            <h3 class="faq-question">Can I compress multiple images at the same time?</h3>
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-body">
+            <p class="faq-direct-answer">Yes, ToolMatic supports batch compression for up to 50 images at once. Simply drag and drop all your files together, and our multi-threaded queue will process them in seconds. You can then download all compressed images in a single organized ZIP archive.</p>
+          </div>
+        </div>
+        
+        <div class="faq-card">
+          <div class="faq-header">
+            <h3 class="faq-question">How do I compress an image to under 100 KB or 200 KB?</h3>
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-body">
+            <p class="faq-direct-answer">Select 'Target Size' mode in our settings toolbar, choose the 100 KB or 200 KB chip (or type any custom number), and ToolMatic will automatically perform binary-search quality adjustments and proportional scaling to guarantee your output file stays beneath that exact byte threshold.</p>
+          </div>
+        </div>
+        
+        </div>
+      </div>
+    </section>
+    
+  </main>
+
+  
+    <!-- Compliant Ad Container -->
+    <div class="container">
+      <div class="ad-container">
+        <div class="ad-label">ADVERTISEMENT</div>
+        <div class="ad-slot-box">
+          <span><!-- Google AdSense Responsive Unit: ca-pub-8943765451617871 --></span>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <!-- Col 1: Brand & Mission -->
+          <div class="footer-brand-col">
+            <a href="/en/" class="footer-brand-title">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+              <span>Toolmatic</span>
+            </a>
+            <p>Fast, modern, and 100% client-side free image utilities. Your photos never leave your device.</p>
+            <div class="footer-privacy-badge">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              <span>100% Client-Side Privacy</span>
+            </div>
+          </div>
+
+          <!-- Col 2: Image Tools (ONLY 2 TOOLS) -->
+          <div>
+            <div class="footer-heading">Image Tools</div>
+            <ul class="footer-links">
+              <li><a href="/image-compressor/">Image Compressor</a></li>
+              <li><a href="/image-converter/">Image Converter</a></li>
+            </ul>
+          </div>
+
+          <!-- Col 3: Legal & Company -->
+          <div>
+            <div class="footer-heading">Company & Legal</div>
+            <ul class="footer-links">
+              <li><a href="/about/">About Us</a></li>
+              <li><a href="/contact/">Contact</a></li>
+              <li><a href="/privacy-policy/">Privacy Policy</a></li>
+              <li><a href="/terms-of-service/">Terms of Service</a></li>
+              <li><a href="/disclaimer/">Disclaimer</a></li>
+            </ul>
+          </div>
+
+          <!-- Col 4: Resources & Language -->
+          <div>
+            <div class="footer-heading">Guides & Language</div>
+            <ul class="footer-links">
+              <li><a href="/blog/">Blog & Image Guides</a></li>
+              <li style="margin-top:12px;"><a href="/image-compressor/" hreflang="en">English (EN)</a></li>
+              <li><a href="/id/kompres-gambar/" hreflang="id">Bahasa Indonesia (ID)</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div>
+            &copy; 2026 Toolmatic.site — All rights reserved. Free for personal and commercial projects.
+          </div>
+          <div class="footer-legal-bar">
+            <span>Google AdSense & DoubleClick Cookie Compliant</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+  <script src="/js/main.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+<script src="/js/compressor.js" defer></script>
+
+</body>
+</html>

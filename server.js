@@ -3,94 +3,63 @@ const fs = require('fs');
 const path = require('path');
 const url = require('url');
 
-// Rewrite rules from vercel.json
-const rewrites = [
-  { source: '/', destination: '/index.html' },
-  { source: '/resume-builder', destination: '/resume-builder.html' },
-  { source: '/resume-builder.html', destination: '/resume-builder.html' },
-  { source: '/image-to-text', destination: '/image-to-text.html' },
-  { source: '/image-to-text.html', destination: '/image-to-text.html' },
-  { source: '/pdf-to-word', destination: '/pdf-to-word.html' },
-  { source: '/pdf-to-word.html', destination: '/pdf-to-word.html' },
-  { source: '/about', destination: '/pages/about.html' },
-  { source: '/about.html', destination: '/pages/about.html' },
-  { source: '/calculators', destination: '/pages/calculators.html' },
-  { source: '/calculators.html', destination: '/pages/calculators.html' },
-  { source: '/contact', destination: '/pages/contact.html' },
-  { source: '/contact.html', destination: '/pages/contact.html' },
-  { source: '/disclaimer', destination: '/pages/disclaimer.html' },
-  { source: '/disclaimer.html', destination: '/pages/disclaimer.html' },
-  { source: '/privacy-policy', destination: '/pages/privacy-policy.html' },
-  { source: '/privacy-policy.html', destination: '/pages/privacy-policy.html' },
-  { source: '/terms-of-service', destination: '/pages/terms-of-service.html' },
-  { source: '/terms-of-service.html', destination: '/pages/terms-of-service.html' },
-  { source: '/seo-tools', destination: '/pages/seo-tools.html' },
-  { source: '/seo-tools.html', destination: '/pages/seo-tools.html' },
-  { source: '/blog', destination: '/pages/blog/index.html' },
-  { source: '/blog/', destination: '/pages/blog/index.html' }
-];
+const PORT = 3000;
+const ROOT = __dirname;
 
-function applyRewrites(reqPath) {
-  // Check exact matches
-  for (const rewrite of rewrites) {
-    if (reqPath === rewrite.source) {
-      return rewrite.destination;
-    }
-  }
-  
-  // Check pattern matches for /blog/:path* and /tools/:path*
-  if (reqPath.startsWith('/blog/') && reqPath !== '/blog/' && reqPath !== '/blog') {
-    const pathPart = reqPath.substring(6); // Remove '/blog/'
-    return `/pages/blog/${pathPart}.html`;
-  }
-  
-  if (reqPath.startsWith('/tools/')) {
-    const pathPart = reqPath.substring(7); // Remove '/tools/'
-    return `/pages/tools/${pathPart}.html`;
-  }
-  
-  return reqPath;
-}
+const MIME_TYPES = {
+  '.html': 'text/html; charset=utf-8',
+  '.css': 'text/css; charset=utf-8',
+  '.js': 'application/javascript; charset=utf-8',
+  '.json': 'application/json; charset=utf-8',
+  '.png': 'image/png',
+  '.jpg': 'image/jpeg',
+  '.jpeg': 'image/jpeg',
+  '.webp': 'image/webp',
+  '.avif': 'image/avif',
+  '.svg': 'image/svg+xml',
+  '.xml': 'application/xml; charset=utf-8',
+  '.txt': 'text/plain; charset=utf-8',
+  '.ico': 'image/x-icon'
+};
 
 const server = http.createServer((req, res) => {
   const parsedUrl = url.parse(req.url);
-  let filePath = applyRewrites(parsedUrl.pathname);
-  
-  if (filePath === '/') filePath = '/index.html';
-  if (!filePath.startsWith('.')) filePath = '.' + filePath;
+  let pathname = decodeURIComponent(parsedUrl.pathname);
 
-  const extname = String(path.extname(filePath)).toLowerCase();
-  const mimeTypes = {
-    '.html': 'text/html',
-    '.js': 'text/javascript',
-    '.css': 'text/css',
-    '.json': 'application/json',
-    '.png': 'image/png',
-    '.jpg': 'image/jpg',
-    '.svg': 'image/svg+xml'
-  };
+  // Default to index.html for root or directories
+  let filePath = path.join(ROOT, pathname);
 
-  const contentType = mimeTypes[extname] || 'application/octet-stream';
-
-  fs.readFile(filePath, (error, content) => {
-    if (error) {
-      if (error.code === 'ENOENT') {
-        fs.readFile('./index.html', (error, content) => {
-          res.writeHead(200, { 'Content-Type': 'text/html' });
-          res.end(content, 'utf-8');
-        });
-      } else {
-        res.writeHead(500);
-        res.end('Server Error: ' + error.code);
+  fs.stat(filePath, (err, stats) => {
+    if (!err && stats.isDirectory()) {
+      filePath = path.join(filePath, 'index.html');
+    } else if (err && !path.extname(filePath)) {
+      // Try directory index or .html extension
+      if (fs.existsSync(path.join(filePath, 'index.html'))) {
+        filePath = path.join(filePath, 'index.html');
+      } else if (fs.existsSync(filePath + '.html')) {
+        filePath = filePath + '.html';
       }
-    } else {
-      res.writeHead(200, { 'Content-Type': contentType });
-      res.end(content, 'utf-8');
     }
+
+    fs.readFile(filePath, (readErr, content) => {
+      if (readErr) {
+        res.writeHead(404, { 'Content-Type': 'text/html; charset=utf-8' });
+        res.end('<h1>404 Not Found</h1><p>The requested file does not exist.</p>');
+        return;
+      }
+
+      const ext = path.extname(filePath).toLowerCase();
+      const contentType = MIME_TYPES[ext] || 'application/octet-stream';
+
+      res.writeHead(200, {
+        'Content-Type': contentType,
+        'Cache-Control': 'no-cache'
+      });
+      res.end(content);
+    });
   });
 });
 
-server.listen(3000, () => {
-  console.log('Server running at http://localhost:3000/');
+server.listen(PORT, () => {
+  console.log(`ToolMatic local server running at http://localhost:${PORT}/`);
 });
-

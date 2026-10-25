@@ -1,161 +1,94 @@
-// Toolmatic Main JavaScript
+/**
+ * ToolMatic - Main Site JavaScript
+ * Handles navigation, FAQ accordions, copy buttons, tabs, and analytics initialization
+ */
 
-// Navigation Toggle
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
+  'use strict';
+
+  // 1. Mobile Menu Toggle
   const navbarToggle = document.querySelector('.navbar-toggle');
   const navbarMenu = document.querySelector('.navbar-menu');
 
   if (navbarToggle && navbarMenu) {
-    navbarToggle.addEventListener('click', function() {
+    navbarToggle.addEventListener('click', function (e) {
+      e.stopPropagation();
       navbarToggle.classList.toggle('active');
       navbarMenu.classList.toggle('open');
     });
-  }
 
-  // Close mobile menu when clicking a link
-  const navbarMenuLinks = document.querySelectorAll('.navbar-menu-link, .navbar-menu-cta');
-  navbarMenuLinks.forEach(link => {
-    link.addEventListener('click', function() {
-      if (navbarToggle && navbarMenu) {
+    document.addEventListener('click', function (e) {
+      if (!navbarMenu.contains(e.target) && !navbarToggle.contains(e.target)) {
         navbarToggle.classList.remove('active');
         navbarMenu.classList.remove('open');
       }
     });
-  });
 
-  // Copy to Clipboard functionality
-  const copyButtons = document.querySelectorAll('.copy-btn');
-  copyButtons.forEach(button => {
-    button.addEventListener('click', function() {
-      const targetId = this.getAttribute('data-target');
-      const targetElement = document.getElementById(targetId);
-      
-      if (targetElement) {
-        const textToCopy = targetElement.textContent || targetElement.value;
-        
-        navigator.clipboard.writeText(textToCopy).then(function() {
-          const originalText = button.textContent;
-          button.textContent = 'Copied ✓';
-          
-          setTimeout(function() {
-            button.textContent = originalText;
-          }, 2000);
-        }).catch(function(err) {
-          console.error('Failed to copy: ', err);
-        });
-      }
-    });
-  });
-
-  // Smooth scroll to output
-  const scrollButtons = document.querySelectorAll('.scroll-to-output');
-  scrollButtons.forEach(button => {
-    button.addEventListener('click', function() {
-      const targetId = this.getAttribute('data-target');
-      const targetElement = document.getElementById(targetId);
-      
-      if (targetElement) {
-        targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      }
-    });
-  });
-
-  // Tab functionality
-  const tabs = document.querySelectorAll('.tab');
-  tabs.forEach(tab => {
-    tab.addEventListener('click', function() {
-      const tabGroup = this.closest('.tabs');
-      const tabContents = tabGroup.nextElementSibling;
-      
-      // Remove active class from all tabs in this group
-      tabGroup.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
-      
-      // Add active class to clicked tab
-      this.classList.add('active');
-      
-      // Hide all tab contents
-      tabContents.querySelectorAll('.tab-content').forEach(content => {
-        content.classList.remove('active');
+    navbarMenu.querySelectorAll('a').forEach(function (link) {
+      link.addEventListener('click', function () {
+        navbarToggle.classList.remove('active');
+        navbarMenu.classList.remove('open');
       });
-      
-      // Show corresponding tab content
-      const tabId = this.getAttribute('data-tab');
-      const targetContent = document.getElementById(tabId);
-      if (targetContent) {
-        targetContent.classList.add('active');
-      }
+    });
+  }
+
+  // 2. FAQ Accordions (AEO / Voice Search UX)
+  const faqHeaders = document.querySelectorAll('.faq-header');
+  faqHeaders.forEach(function (header) {
+    header.addEventListener('click', function () {
+      const card = header.closest('.faq-card');
+      if (!card) return;
+      const body = card.querySelector('.faq-body');
+      const icon = card.querySelector('.faq-icon');
+
+      const isOpen = body && body.classList.contains('open');
+
+      // Toggle current
+      if (body) body.classList.toggle('open', !isOpen);
+      if (icon) icon.classList.toggle('open', !isOpen);
     });
   });
 
-  // Accordion functionality
-  const accordionHeaders = document.querySelectorAll('.accordion-header');
-  accordionHeaders.forEach(header => {
-    header.addEventListener('click', function() {
-      const content = this.nextElementSibling;
-      const icon = this.querySelector('.accordion-icon');
-      
-      content.classList.toggle('open');
-      icon.classList.toggle('open');
+  // 3. Copy to Clipboard
+  const copyButtons = document.querySelectorAll('.copy-btn');
+  copyButtons.forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      const targetId = btn.getAttribute('data-target');
+      const targetElem = document.getElementById(targetId);
+      if (!targetElem) return;
+
+      const text = targetElem.value !== undefined ? targetElem.value : targetElem.innerText;
+      if (!text) return;
+
+      navigator.clipboard.writeText(text).then(function () {
+        const originalText = btn.innerHTML;
+        btn.innerHTML = '<span>Copied ✓</span>';
+        btn.classList.add('btn-copied');
+
+        setTimeout(function () {
+          btn.innerHTML = originalText;
+          btn.classList.remove('btn-copied');
+        }, 2000);
+      }).catch(function (err) {
+        console.error('Copy failed:', err);
+      });
     });
   });
 
-  // Set active nav link based on current page
-  const currentPath = window.location.pathname;
-  const navLinks = document.querySelectorAll('.navbar-link, .navbar-menu-link');
-  
-  navLinks.forEach(link => {
-    const linkPath = new URL(link.href).pathname;
-    if (currentPath === linkPath || (currentPath.includes(linkPath) && linkPath !== '/')) {
-      link.classList.add('active');
-    }
+  // 4. Tabs
+  const tabButtons = document.querySelectorAll('.tab-btn');
+  tabButtons.forEach(function (tab) {
+    tab.addEventListener('click', function () {
+      const tabGroup = tab.closest('.tabs-container');
+      if (!tabGroup) return;
+
+      const targetTabId = tab.getAttribute('data-tab');
+      tabGroup.querySelectorAll('.tab-btn').forEach(t => t.classList.remove('active'));
+      tabGroup.querySelectorAll('.tab-pane').forEach(p => p.classList.remove('active'));
+
+      tab.classList.add('active');
+      const pane = document.getElementById(targetTabId);
+      if (pane) pane.classList.add('active');
+    });
   });
 });
-
-// Utility function to show error messages
-function showError(elementId, message) {
-  const errorElement = document.getElementById(elementId);
-  if (errorElement) {
-    errorElement.textContent = message;
-    errorElement.classList.add('visible');
-  }
-}
-
-// Utility function to hide error messages
-function hideError(elementId) {
-  const errorElement = document.getElementById(elementId);
-  if (errorElement) {
-    errorElement.classList.remove('visible');
-  }
-}
-
-// Utility function to validate URL
-function isValidUrl(string) {
-  try {
-    const url = new URL(string);
-    return url.protocol === 'http:' || url.protocol === 'https:';
-  } catch (_) {
-    return false;
-  }
-}
-
-// Utility function to format date
-function formatDate(date) {
-  const year = date.getFullYear();
-  const month = String(date.getMonth() + 1).padStart(2, '0');
-  const day = String(date.getDate()).padStart(2, '0');
-  return `${year}-${month}-${day}`;
-}
-
-// Utility function to download text as file
-function downloadTextAsFile(text, filename) {
-  const blob = new Blob([text], { type: 'text/plain' });
-  const url = URL.createObjectURL(blob);
-  const a = document.createElement('a');
-  a.href = url;
-  a.download = filename;
-  document.body.appendChild(a);
-  a.click();
-  document.body.removeChild(a);
-  URL.revokeObjectURL(url);
-}
-
