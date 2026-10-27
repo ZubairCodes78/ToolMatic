@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lossy vs Lossless Compression Explained: Differences & When to Use</title>
+  <title>Lossy vs Lossless Compression Explained: Key Differences</title>
   <meta name="description" content="Understand the technical difference between lossy and lossless image compression. Learn which algorithm to choose for photographs, logos, and medical graphics.">
   <link rel="canonical" href="https://toolmatic.site/blog/lossy-vs-lossless-compression-explained/">
   <link rel="alternate" hreflang="id" href="https://toolmatic.site/id/blog/perbedaan-lossy-dan-lossless-compression/">
@@ -13,37 +13,53 @@
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://toolmatic.site/blog/lossy-vs-lossless-compression-explained/">
-  <meta property="og:title" content="Lossy vs Lossless Compression Explained: Differences & When to Use">
+  <meta property="og:title" content="Lossy vs Lossless Compression Explained: Key Differences">
   <meta property="og:description" content="Understand the technical difference between lossy and lossless image compression. Learn which algorithm to choose for photographs, logos, and medical graphics.">
   <meta property="og:image" content="https://toolmatic.site/preview.webp">
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:url" content="https://toolmatic.site/blog/lossy-vs-lossless-compression-explained/">
-  <meta name="twitter:title" content="Lossy vs Lossless Compression Explained: Differences & When to Use">
+  <meta name="twitter:title" content="Lossy vs Lossless Compression Explained: Key Differences">
   <meta name="twitter:description" content="Understand the technical difference between lossy and lossless image compression. Learn which algorithm to choose for photographs, logos, and medical graphics.">
   <meta name="twitter:image" content="https://toolmatic.site/preview.webp">
 
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-CSTVK0Q8B4"></script>
+  <!-- Deferred Third-Party Tracking & Google AdSense for Mobile Core Web Vitals -->
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'G-CSTVK0Q8B4');
+
+    (function() {
+      var loaded = false;
+      function loadAnalyticsAndAds() {
+        if (loaded) return;
+        loaded = true;
+        var ga = document.createElement('script');
+        ga.src = 'https://www.googletagmanager.com/gtag/js?id=G-CSTVK0Q8B4';
+        ga.async = true;
+        document.head.appendChild(ga);
+
+        var ads = document.createElement('script');
+        ads.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8943765451617871';
+        ads.async = true;
+        ads.crossOrigin = 'anonymous';
+        document.head.appendChild(ads);
+      }
+      if ('requestIdleCallback' in window) {
+        requestIdleCallback(function() { setTimeout(loadAnalyticsAndAds, 1200); });
+      } else {
+        setTimeout(loadAnalyticsAndAds, 1500);
+      }
+      ['scroll', 'mousemove', 'touchstart', 'keydown'].forEach(function(evt) {
+        window.addEventListener(evt, loadAnalyticsAndAds, { once: true, passive: true });
+      });
+    })();
   </script>
 
-  <!-- Google AdSense -->
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8943765451617871" crossorigin="anonymous"></script>
-
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-  
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/navbar.css">
-    <link rel="stylesheet" href="/css/footer.css">
-    <link rel="stylesheet" href="/css/compressor.css">
-    <link rel="stylesheet" href="/css/blog.css">
-    
+  <link rel="stylesheet" href="/css/bundle.min.css">
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -332,7 +348,7 @@
       </div>
     </footer>
     
-  <script src="/js/main.js" defer></script>
+  <script src="/js/main.min.js" defer></script>
 
 </body>
 </html>

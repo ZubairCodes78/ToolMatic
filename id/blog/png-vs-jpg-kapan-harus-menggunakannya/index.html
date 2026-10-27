@@ -24,26 +24,42 @@
   <meta name="twitter:description" content="Panduan praktis memilih format PNG atau JPG. Contoh penggunaan untuk logo transparan, foto pemandangan, dan screenshot.">
   <meta name="twitter:image" content="https://toolmatic.site/preview.webp">
 
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-CSTVK0Q8B4"></script>
+  <!-- Deferred Third-Party Tracking & Google AdSense for Mobile Core Web Vitals -->
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'G-CSTVK0Q8B4');
+
+    (function() {
+      var loaded = false;
+      function loadAnalyticsAndAds() {
+        if (loaded) return;
+        loaded = true;
+        var ga = document.createElement('script');
+        ga.src = 'https://www.googletagmanager.com/gtag/js?id=G-CSTVK0Q8B4';
+        ga.async = true;
+        document.head.appendChild(ga);
+
+        var ads = document.createElement('script');
+        ads.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8943765451617871';
+        ads.async = true;
+        ads.crossOrigin = 'anonymous';
+        document.head.appendChild(ads);
+      }
+      if ('requestIdleCallback' in window) {
+        requestIdleCallback(function() { setTimeout(loadAnalyticsAndAds, 1200); });
+      } else {
+        setTimeout(loadAnalyticsAndAds, 1500);
+      }
+      ['scroll', 'mousemove', 'touchstart', 'keydown'].forEach(function(evt) {
+        window.addEventListener(evt, loadAnalyticsAndAds, { once: true, passive: true });
+      });
+    })();
   </script>
 
-  <!-- Google AdSense -->
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8943765451617871" crossorigin="anonymous"></script>
-
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-  
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/navbar.css">
-    <link rel="stylesheet" href="/css/footer.css">
-    <link rel="stylesheet" href="/css/compressor.css">
-    <link rel="stylesheet" href="/css/blog.css">
-    
+  <link rel="stylesheet" href="/css/bundle.min.css">
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -292,7 +308,7 @@
       </div>
     </footer>
     
-  <script src="/js/main.js" defer></script>
+  <script src="/js/main.min.js" defer></script>
 
 </body>
 </html>

@@ -44,7 +44,7 @@ LEGAL_PAGES = {
             """
         },
         "id": {
-            "title": "Tentang ToolMatic - Kompres & Konversi Gambar Online 100% Privat",
+            "title": "Tentang ToolMatic – Kompres & Konversi Gambar Privat",
             "desc": "Pelajari misi ToolMatic dalam menyediakan alat kompresi dan konversi gambar cepat, modern, dan 100% client-side di mana foto Anda tidak pernah keluar dari browser.",
             "h1": "Tentang ToolMatic",
             "subtitle": "Utilitas online cepat, gratis, dan mengutamakan privasi untuk kompresi dan konversi format gambar.",
@@ -143,7 +143,7 @@ LEGAL_PAGES = {
     },
     "privacy-policy": {
         "en": {
-            "title": "Privacy Policy - ToolMatic (Client-Side Privacy & AdSense Cookies)",
+            "title": "Privacy Policy – ToolMatic Privacy & AdSense Cookies",
             "desc": "ToolMatic Privacy Policy. Learn how your images never leave your device, and review our Google AdSense and DoubleClick cookie compliance clauses.",
             "h1": "Privacy Policy",
             "subtitle": "Effective Date: October 25, 2026. Last Updated: October 2026.",
@@ -190,7 +190,7 @@ LEGAL_PAGES = {
             """
         },
         "id": {
-            "title": "Kebijakan Privasi - ToolMatic (Privasi Client-Side & Cookie AdSense)",
+            "title": "Kebijakan Privasi – ToolMatic & Cookie AdSense",
             "desc": "Kebijakan Privasi ToolMatic. Pelajari bagaimana foto Anda tidak pernah meninggalkan perangkat Anda, serta kepatuhan cookie Google AdSense dan DoubleClick.",
             "h1": "Kebijakan Privasi",
             "subtitle": "Berlaku Efektif: 25 Oktober 2026. Diperbarui: Oktober 2026.",
@@ -286,7 +286,7 @@ LEGAL_PAGES = {
     },
     "disclaimer": {
         "en": {
-            "title": "Disclaimer - ToolMatic Image Compression & Information Notices",
+            "title": "Disclaimer – ToolMatic Image Compression Notices",
             "desc": "Read the official disclaimer for ToolMatic.site. Covers tool usage, external links, and informational content notices.",
             "h1": "Disclaimer",
             "subtitle": "Important notices regarding tools, file conversion, and content accuracy.",

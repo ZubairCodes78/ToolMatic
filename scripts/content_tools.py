@@ -333,7 +333,7 @@ TOOLS_DATA = {
             ]
         },
         "id": {
-            "title": "Kompres Gambar Online Gratis - WebP, JPG, PNG, AVIF (100% Aman)",
+            "title": "Kompres Gambar Online Gratis – WebP, JPG, PNG, AVIF",
             "desc": "Kompres gambar online gratis tanpa kurangi kualitas. 100% aman di browser tanpa upload server, batch foto, preset WhatsApp, target KB, dan unduh ZIP.",
             "h1": "Kompres Gambar Online Gratis",
             "subtitle": "Kecilkan ukuran foto JPG, PNG, WebP, dan AVIF hingga 90% tanpa pecah. 100% di browser — gambar Anda tidak pernah keluar dari perangkat.",
@@ -523,7 +523,7 @@ TOOLS_DATA = {
             ]
         },
         "id": {
-            "title": "Konversi Gambar Online Gratis - Ubah Format JPG, PNG, WebP, AVIF",
+            "title": "Konversi Gambar Online Gratis – Ubah JPG, PNG, WebP, AVIF",
             "desc": "Ubah format foto antara JPG, PNG, WebP, dan AVIF online gratis. 100% aman di browser tanpa upload server, batch hingga 50 file, dan unduh ZIP.",
             "h1": "Konversi Gambar Online Gratis",
             "subtitle": "Ubah format foto JPG, PNG, WebP, dan AVIF secara massal. 100% aman di browser — gambar tidak pernah keluar dari perangkat Anda.",

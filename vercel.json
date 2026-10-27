@@ -1,6 +1,5 @@
 {
   "cleanUrls": true,
-  "trailingSlash": true,
   "headers": [
     {
       "source": "/(.*.css)",
@@ -32,64 +31,85 @@
   ],
   "redirects": [
     {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.toolmatic.site"
+        }
+      ],
+      "destination": "https://toolmatic.site/:path*",
+      "statusCode": 301
+    },
+    {
+      "source": "/index.html",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/index.php",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
       "source": "/tools/:path*",
       "destination": "/image-compressor/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/id/penghitung-kata",
       "destination": "/id/kompres-gambar/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/id/generator-meta-tag",
       "destination": "/id/kompres-gambar/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/id/cek-kepadatan-kata-kunci",
       "destination": "/id/kompres-gambar/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/id/kalkulator-bmi",
       "destination": "/id/kompres-gambar/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/id/kalkulator-persentase",
       "destination": "/id/kompres-gambar/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/id/kalkulator-umur",
       "destination": "/id/kompres-gambar/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/id/cek-kemiripan-teks",
       "destination": "/id/kompres-gambar/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/id/gambar-ke-teks",
       "destination": "/id/kompres-gambar/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/id/pdf-ke-word",
       "destination": "/id/kompres-gambar/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/id/pembuat-cv",
       "destination": "/id/kompres-gambar/",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/pages/:path*",
       "destination": "/",
-      "permanent": true
+      "statusCode": 301
     }
   ]
 }

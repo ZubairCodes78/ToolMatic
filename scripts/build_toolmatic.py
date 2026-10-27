@@ -184,21 +184,15 @@ def render_html_page(
     is_id = lang == "id"
     html_lang = "id" if is_id else "en"
 
-    css_links = """
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/navbar.css">
-    <link rel="stylesheet" href="/css/footer.css">
-    <link rel="stylesheet" href="/css/compressor.css">
-    <link rel="stylesheet" href="/css/blog.css">
-    """
+    css_links = '<link rel="stylesheet" href="/css/bundle.min.css">'
 
-    scripts_html = '<script src="/js/main.js" defer></script>\n'
+    scripts_html = '<script src="/js/main.min.js" defer></script>\n'
     if is_compressor or is_converter:
-        scripts_html += '<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>\n'
+        scripts_html += '<script src="/js/jszip.min.js" defer></script>\n'
     if is_compressor:
-        scripts_html += '<script src="/js/compressor.js" defer></script>\n'
+        scripts_html += '<script src="/js/compressor.min.js" defer></script>\n'
     if is_converter:
-        scripts_html += '<script src="/js/converter.js" defer></script>\n'
+        scripts_html += '<script src="/js/converter.min.js" defer></script>\n'
 
     schema_markup = ""
     if json_ld:
@@ -246,17 +240,39 @@ def render_html_page(
   <meta name="twitter:description" content="{desc}">
   <meta name="twitter:image" content="{DOMAIN}/preview.webp">
 
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id={GA_ID}"></script>
+  <!-- Deferred Third-Party Tracking & Google AdSense for Mobile Core Web Vitals -->
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){{dataLayer.push(arguments);}}
     gtag('js', new Date());
     gtag('config', '{GA_ID}');
-  </script>
 
-  <!-- Google AdSense -->
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={ADSENSE_ID}" crossorigin="anonymous"></script>
+    (function() {{
+      var loaded = false;
+      function loadAnalyticsAndAds() {{
+        if (loaded) return;
+        loaded = true;
+        var ga = document.createElement('script');
+        ga.src = 'https://www.googletagmanager.com/gtag/js?id={GA_ID}';
+        ga.async = true;
+        document.head.appendChild(ga);
+
+        var ads = document.createElement('script');
+        ads.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={ADSENSE_ID}';
+        ads.async = true;
+        ads.crossOrigin = 'anonymous';
+        document.head.appendChild(ads);
+      }}
+      if ('requestIdleCallback' in window) {{
+        requestIdleCallback(function() {{ setTimeout(loadAnalyticsAndAds, 1200); }});
+      }} else {{
+        setTimeout(loadAnalyticsAndAds, 1500);
+      }}
+      ['scroll', 'mousemove', 'touchstart', 'keydown'].forEach(function(evt) {{
+        window.addEventListener(evt, loadAnalyticsAndAds, {{ once: true, passive: true }});
+      }});
+    }})();
+  </script>
 
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   {css_links}
@@ -282,7 +298,7 @@ def generate_homepage(lang="id"):
     id_url = "/"
     canonical_url = f"{DOMAIN}{id_url if is_id else en_url}"
 
-    title = "ToolMatic - Kompres Gambar Online Gratis & Konversi Format (100% Aman)" if is_id else "ToolMatic - Free Online Image Compressor & Converter (100% Client-Side)"
+    title = "ToolMatic – Kompres & Konversi Gambar Online Gratis" if is_id else "ToolMatic – Free Online Image Compressor & Converter"
     desc = "Kompres gambar online gratis tanpa kurangi kualitas. 100% aman di browser tanpa upload server, batch foto hingga 50 file, preset WhatsApp, dan unduh ZIP." if is_id else "100% free client-side image compressor and converter. Compress and convert JPG, PNG, WebP, and AVIF photos with target KB size mode and zero server uploads."
 
     h1 = "Kompres Gambar Online Gratis (100% Privat di Browser)" if is_id else "Free Online Image Compressor (100% Client-Side Privacy)"
@@ -530,7 +546,7 @@ def generate_blog_index(lang="en"):
     id_url = "/id/blog/"
     canonical_url = f"{DOMAIN}{id_url if is_id else en_url}"
 
-    title = "Blog & Panduan Gambar Web ToolMatic (Tips SEO & Kompresi)" if is_id else "ToolMatic Blog - Web Optimization, Image Compression & SEO Guides"
+    title = "Blog & Panduan Gambar Web ToolMatic (Tips SEO & Kompresi)" if is_id else "ToolMatic Blog – Image Compression & SEO Guides"
     desc = "Kumpulan panduan lengkap dan artikel seputar kompresi gambar, SEO gambar, ukuran foto media sosial, dan optimasi kecepatan website." if is_id else "Explore in-depth articles on image compression, next-gen WebP formats, Core Web Vitals optimization, and image SEO strategies."
 
     h1 = "Blog & Panduan Gambar Web" if is_id else "ToolMatic Blog & Image Guides"
@@ -897,7 +913,6 @@ Sitemap: {DOMAIN}/sitemap.xml
     # 8. Generate vercel.json & _redirects
     vercel_config = {
         "cleanUrls": True,
-        "trailingSlash": True,
         "headers": [
             {
                 "source": "/(.*.css)",
@@ -913,23 +928,33 @@ Sitemap: {DOMAIN}/sitemap.xml
             }
         ],
         "redirects": [
-            {"source": "/tools/:path*", "destination": "/image-compressor/", "permanent": True},
-            {"source": "/id/penghitung-kata", "destination": "/id/kompres-gambar/", "permanent": True},
-            {"source": "/id/generator-meta-tag", "destination": "/id/kompres-gambar/", "permanent": True},
-            {"source": "/id/cek-kepadatan-kata-kunci", "destination": "/id/kompres-gambar/", "permanent": True},
-            {"source": "/id/kalkulator-bmi", "destination": "/id/kompres-gambar/", "permanent": True},
-            {"source": "/id/kalkulator-persentase", "destination": "/id/kompres-gambar/", "permanent": True},
-            {"source": "/id/kalkulator-umur", "destination": "/id/kompres-gambar/", "permanent": True},
-            {"source": "/id/cek-kemiripan-teks", "destination": "/id/kompres-gambar/", "permanent": True},
-            {"source": "/id/gambar-ke-teks", "destination": "/id/kompres-gambar/", "permanent": True},
-            {"source": "/id/pdf-ke-word", "destination": "/id/kompres-gambar/", "permanent": True},
-            {"source": "/id/pembuat-cv", "destination": "/id/kompres-gambar/", "permanent": True},
-            {"source": "/pages/:path*", "destination": "/", "permanent": True}
+            {
+                "source": "/:path*",
+                "has": [{"type": "host", "value": "www.toolmatic.site"}],
+                "destination": "https://toolmatic.site/:path*",
+                "statusCode": 301
+            },
+            {"source": "/index.html", "destination": "/", "statusCode": 301},
+            {"source": "/index.php", "destination": "/", "statusCode": 301},
+            {"source": "/tools/:path*", "destination": "/image-compressor/", "statusCode": 301},
+            {"source": "/id/penghitung-kata", "destination": "/id/kompres-gambar/", "statusCode": 301},
+            {"source": "/id/generator-meta-tag", "destination": "/id/kompres-gambar/", "statusCode": 301},
+            {"source": "/id/cek-kepadatan-kata-kunci", "destination": "/id/kompres-gambar/", "statusCode": 301},
+            {"source": "/id/kalkulator-bmi", "destination": "/id/kompres-gambar/", "statusCode": 301},
+            {"source": "/id/kalkulator-persentase", "destination": "/id/kompres-gambar/", "statusCode": 301},
+            {"source": "/id/kalkulator-umur", "destination": "/id/kompres-gambar/", "statusCode": 301},
+            {"source": "/id/cek-kemiripan-teks", "destination": "/id/kompres-gambar/", "statusCode": 301},
+            {"source": "/id/gambar-ke-teks", "destination": "/id/kompres-gambar/", "statusCode": 301},
+            {"source": "/id/pdf-ke-word", "destination": "/id/kompres-gambar/", "statusCode": 301},
+            {"source": "/id/pembuat-cv", "destination": "/id/kompres-gambar/", "statusCode": 301},
+            {"source": "/pages/:path*", "destination": "/", "statusCode": 301}
         ]
     }
     (ROOT / "vercel.json").write_text(json.dumps(vercel_config, indent=2), encoding="utf-8")
 
-    redirects_content = """# Legacy 301 Redirects
+    redirects_content = """# Canonical and Index 301 Redirects
+/index.html / 301
+/index.php / 301
 /tools/* /image-compressor/ 301
 /id/penghitung-kata/* /id/kompres-gambar/ 301
 /id/generator-meta-tag/* /id/kompres-gambar/ 301

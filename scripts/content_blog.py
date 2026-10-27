@@ -15,7 +15,7 @@ BLOG_POSTS = [
         "read_time_en": "6 min read",
         "read_time_id": "6 menit baca",
         "en": {
-            "title": "How to Compress Images Without Losing Quality (2026 Complete Guide)",
+            "title": "How to Compress Images Without Losing Quality (2026 Guide)",
             "desc": "Learn how to compress JPG, PNG, and WebP images by up to 90% without visible loss in sharpness or color. Detailed step-by-step techniques and settings.",
             "h1": "How to Compress Images Without Losing Quality: The Definitive 2026 Guide",
             "intro": "Discover the exact settings, modern formats, and client-side tools that reduce image file sizes drastically while maintaining crystal-clear visual fidelity.",
@@ -137,7 +137,7 @@ BLOG_POSTS = [
             ]
         },
         "id": {
-            "title": "Cara Kompres Gambar Tanpa Mengurangi Kualitas (Panduan 2026)",
+            "title": "Cara Kompres Gambar Tanpa Kurangi Kualitas (Panduan 2026)",
             "desc": "Pelajari cara memperkecil ukuran foto JPG, PNG, dan WebP hingga 90% tanpa terlihat buram atau pecah. Langkah praktis dan setelan terbaik.",
             "h1": "Cara Kompres Gambar Tanpa Mengurangi Kualitas: Panduan Lengkap 2026",
             "intro": "Ketahui pengaturan kualitas ideal, format modern, dan cara mengecilkan ukuran foto secara drastis dengan tampilan yang tetap tajam dan jernih.",
@@ -199,7 +199,7 @@ BLOG_POSTS = [
         "read_time_en": "7 min read",
         "read_time_id": "7 menit baca",
         "en": {
-            "title": "JPG vs PNG vs WebP vs AVIF: Which Format Should You Use in 2026?",
+            "title": "JPG vs PNG vs WebP vs AVIF: Best Image Format in 2026",
             "desc": "Complete comparison of JPG, PNG, WebP, and AVIF image formats. Compare compression ratios, browser compatibility, transparency, and SEO performance.",
             "h1": "JPG vs PNG vs WebP vs AVIF: The Ultimate 2026 Image Format Showdown",
             "intro": "Unravel the differences between the four primary web image formats to choose the perfect extension for speed, quality, and search engine optimization.",
@@ -292,7 +292,7 @@ BLOG_POSTS = [
             ]
         },
         "id": {
-            "title": "JPG vs PNG vs WebP vs AVIF: Mana Format Gambar Terbaik 2026?",
+            "title": "JPG vs PNG vs WebP vs AVIF: Format Gambar Terbaik 2026",
             "desc": "Perbandingan lengkap format foto JPG, PNG, WebP, dan AVIF. Ketahui kelebihan ukuran file, transparansi, dan kecepatan muat untuk website Anda.",
             "h1": "JPG vs PNG vs WebP vs AVIF: Format Gambar Terbaik di Tahun 2026",
             "intro": "Pahami perbedaan keempat format gambar populer untuk memilih ekstensi yang paling ringan dan berkualitas tinggi bagi kebutuhan Anda.",
@@ -366,7 +366,7 @@ BLOG_POSTS = [
         "read_time_en": "5 min read",
         "read_time_id": "5 menit baca",
         "en": {
-            "title": "How to Reduce Image Size for WhatsApp (Send HD Photos Instantly)",
+            "title": "How to Reduce Image Size for WhatsApp (Send HD Photos)",
             "desc": "Discover how to compress and resize photos for WhatsApp so they send instantly without blurry re-compression or massive mobile data consumption.",
             "h1": "How to Reduce Image Size for WhatsApp Without Blurry Quality",
             "intro": "Stop WhatsApp from ruining your pictures. Learn the exact resolution limits and compression settings to send crisp, high-definition photos fast.",
@@ -433,7 +433,7 @@ BLOG_POSTS = [
             ]
         },
         "id": {
-            "title": "Cara Memperkecil Ukuran Foto untuk WhatsApp (Hasil Tetap Jernih)",
+            "title": "Cara Memperkecil Ukuran Foto WhatsApp (Hasil Tetap Jernih)",
             "desc": "Panduan kompres foto untuk WhatsApp agar tidak pecah dan cepat terkirim. Gunakan resolusi 1600px dan bobot di bawah 200 KB hemat kuota.",
             "h1": "Cara Memperkecil Ukuran Foto untuk WhatsApp Tanpa Buram",
             "intro": "Ketahui rahasia mengirim foto di WhatsApp agar tetap tajam, tidak pecah, dan hemat kuota internet.",
@@ -466,7 +466,7 @@ BLOG_POSTS = [
         "read_time_en": "8 min read",
         "read_time_id": "8 menit baca",
         "en": {
-            "title": "How to Compress Images for Your Website (Pass Core Web Vitals)",
+            "title": "How to Compress Website Images (Pass Core Web Vitals)",
             "desc": "Boost website speed and pass Google Core Web Vitals (LCP under 2.5s). Comprehensive guide to optimizing banner photos, product galleries, and thumbnails.",
             "h1": "How to Compress Images for Your Website to Supercharge Page Speed",
             "intro": "Uncompressed images account for over 60% of total web page weight. Learn how to optimize hero banners, e-commerce products, and blog visuals for peak SEO performance.",
@@ -536,7 +536,7 @@ BLOG_POSTS = [
             ]
         },
         "id": {
-            "title": "Cara Kompres Gambar untuk Website agar Cepat (Lolos Core Web Vitals)",
+            "title": "Cara Kompres Gambar untuk Website (Lolos Core Web Vitals)",
             "desc": "Tingkatkan kecepatan website dan lolos uji Google Core Web Vitals. Panduan lengkap kompres foto banner, produk e-commerce, dan artikel blog.",
             "h1": "Cara Kompres Gambar untuk Website agar Loading Cepat & Naik Peringkat",
             "intro": "Gambar yang belum dikompres menyumbang lebih dari 60% bobot loading website. Pelajari cara mengoptimalkannya untuk SEO Google.",
@@ -568,7 +568,7 @@ BLOG_POSTS = [
         "read_time_en": "6 min read",
         "read_time_id": "6 menit baca",
         "en": {
-            "title": "Lossy vs Lossless Compression Explained: Differences & When to Use",
+            "title": "Lossy vs Lossless Compression Explained: Key Differences",
             "desc": "Understand the technical difference between lossy and lossless image compression. Learn which algorithm to choose for photographs, logos, and medical graphics.",
             "h1": "Lossy vs Lossless Compression Explained in Simple Terms",
             "intro": "Demystify data compression: explore how lossy and lossless algorithms work, their impact on image fidelity, and when to apply each method.",
@@ -658,7 +658,7 @@ BLOG_POSTS = [
         "read_time_en": "5 min read",
         "read_time_id": "5 menit baca",
         "en": {
-            "title": "How to Convert JPG to WebP Online (Batch Mode & High Quality)",
+            "title": "How to Convert JPG to WebP Online (High Quality Batch)",
             "desc": "Step-by-step guide on converting JPG images to WebP online for free. Save up to 35% file size with universal browser compatibility.",
             "h1": "How to Convert JPG to WebP Online in Seconds",
             "intro": "Upgrade your images to Google's preferred format. Learn how to batch convert JPG files to WebP client-side without quality loss.",
@@ -708,7 +708,7 @@ BLOG_POSTS = [
         "read_time_en": "7 min read",
         "read_time_id": "7 menit baca",
         "en": {
-            "title": "Best Image Sizes for Instagram, Facebook & YouTube in 2026 (Cheatsheet)",
+            "title": "Best Image Sizes for Social Media in 2026 (Cheatsheet)",
             "desc": "Up-to-date 2026 social media image dimensions cheatsheet. Exact pixel resolutions for Instagram posts, stories, Facebook covers, and YouTube banners.",
             "h1": "Best Image Sizes for Instagram, Facebook, and YouTube in 2026",
             "intro": "Never post pixelated or awkwardly cropped graphics again. Here is your definitive 2026 social media dimensions cheatsheet.",
@@ -772,7 +772,7 @@ BLOG_POSTS = [
             ]
         },
         "id": {
-            "title": "Ukuran Gambar Terbaik Media Sosial 2026 (Instagram, Facebook & YouTube)",
+            "title": "Ukuran Gambar Terbaik Media Sosial 2026 (Panduan Lengkap)",
             "desc": "Panduan ukuran foto media sosial terbaru 2026. Resolusi tepat untuk postingan Instagram, story, cover Facebook, dan thumbnail YouTube.",
             "h1": "Panduan Ukuran Gambar Terbaik Media Sosial Tahun 2026",
             "intro": "Pastikan foto Anda tampil tajam dan tidak terpotong dengan panduan resolusi resmi media sosial tahun 2026.",
@@ -801,7 +801,7 @@ BLOG_POSTS = [
         "read_time_en": "6 min read",
         "read_time_id": "6 menit baca",
         "en": {
-            "title": "How to Resize Images Without Losing Quality (Downscaling vs Upscaling)",
+            "title": "How to Resize Images Without Losing Quality (2026 Guide)",
             "desc": "Learn how to resize digital photos without blurriness or distortion. Understand aspect ratio lock and high-quality bicubic downscaling algorithms.",
             "h1": "How to Resize Images Without Distortion or Blurriness",
             "intro": "Master the art of image resizing. Discover how to downscale large camera photos while preserving sharp edges, colors, and correct aspect ratios.",
@@ -948,7 +948,7 @@ BLOG_POSTS = [
         "read_time_en": "5 min read",
         "read_time_id": "5 menit baca",
         "en": {
-            "title": "How to Compress Multiple Images at Once (Batch Compression Guide)",
+            "title": "How to Compress Multiple Images at Once (Batch Guide)",
             "desc": "Save hours of time by compressing dozens of images simultaneously. Learn how to batch compress up to 50 photos in your browser with instant ZIP download.",
             "h1": "How to Batch Compress Multiple Images at Once for Free",
             "intro": "Compressing images one by one is exhausting. Learn how to process entire folders of photos in seconds using 100% private client-side batching.",
@@ -968,7 +968,7 @@ BLOG_POSTS = [
             ]
         },
         "id": {
-            "title": "Cara Kompres Banyak Gambar Sekaligus (Batch Mode & Unduh ZIP)",
+            "title": "Cara Kompres Banyak Gambar Sekaligus (Batch & Unduh ZIP)",
             "desc": "Hemat waktu Anda dengan mengecilkan puluhan foto sekaligus. Panduan batch kompres foto gratis di browser dengan unduhan ZIP instan.",
             "h1": "Cara Kompres Banyak Foto Sekaligus dalam Hitungan Detik",
             "intro": "Mengecilkan foto satu per satu sangat melelahkan. Gunakan fitur batch kompresi ToolMatic untuk memproses puluhan foto secara bersamaan.",
@@ -1046,7 +1046,7 @@ BLOG_POSTS = [
         "read_time_en": "5 min read",
         "read_time_id": "5 menit baca",
         "en": {
-            "title": "How to Reduce Photo Size on Mobile (iPhone & Android Without Apps)",
+            "title": "How to Reduce Photo Size on Mobile (iPhone & Android)",
             "desc": "Compress photos directly on your smartphone browser without downloading shady app store utilities. 100% free, private, and works on Android and iOS.",
             "h1": "How to Reduce Photo Size on iPhone and Android Without Installing Apps",
             "intro": "Do not clog your phone memory with adware-riddled compressor apps. Learn how to compress mobile photos directly in Safari or Chrome for free.",
@@ -1066,7 +1066,7 @@ BLOG_POSTS = [
             ]
         },
         "id": {
-            "title": "Cara Mengecilkan Ukuran Foto di HP (Android & iPhone Tanpa Aplikasi)",
+            "title": "Cara Mengecilkan Ukuran Foto di HP (Android & iPhone)",
             "desc": "Kompres foto langsung di browser HP tanpa perlu instal aplikasi tambahan. Cepat, 100% aman, gratis, dan bisa untuk pendaftaran online.",
             "h1": "Cara Mengecilkan Ukuran Foto di HP Tanpa Perlu Unduh Aplikasi",
             "intro": "Jangan penuhi memori HP Anda dengan aplikasi penuh iklan. Kompres foto Anda langsung dari browser Chrome atau Safari secara gratis.",
@@ -1095,7 +1095,7 @@ BLOG_POSTS = [
         "read_time_en": "7 min read",
         "read_time_id": "7 menit baca",
         "en": {
-            "title": "Image SEO: How Optimised Images Rank Higher on Google (Complete Checklist)",
+            "title": "Image SEO: How Optimised Images Rank Higher on Google",
             "desc": "Unlock hidden traffic from Google Image Search. Complete guide to image file naming, alt tags, schema markup, and responsive srcset attributes.",
             "h1": "Image SEO: How to Rank at the Top of Google Images and Search Results",
             "intro": "Google Image Search drives over 20% of all global search queries. Learn how to optimize your images to capture massive organic organic search traffic.",
@@ -1131,7 +1131,7 @@ BLOG_POSTS = [
             ]
         },
         "id": {
-            "title": "SEO Gambar: Cara Gambar Teroptimasi Menduduki Peringkat Atas Google",
+            "title": "SEO Gambar: Cara Gambar Meraih Peringkat Atas di Google",
             "desc": "Panduan lengkap SEO gambar untuk mendatangkan ribuan pengunjung dari Google Image Search. Penamaan file, alt text, dan kompresi WebP.",
             "h1": "SEO Gambar: Panduan Lengkap Meraih Peringkat 1 di Google Images",
             "intro": "Banyak pemilik website melupakan potensi pencarian gambar. Pelajari cara mengoptimalkan foto agar menduduki posisi teratas di Google.",

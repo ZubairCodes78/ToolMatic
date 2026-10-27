@@ -1,4 +1,6 @@
-# Legacy 301 Redirects
+# Canonical and Index 301 Redirects
+/index.html / 301
+/index.php / 301
 /tools/* /image-compressor/ 301
 /id/penghitung-kata/* /id/kompres-gambar/ 301
 /id/generator-meta-tag/* /id/kompres-gambar/ 301

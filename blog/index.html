@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ToolMatic Blog - Web Optimization, Image Compression & SEO Guides</title>
+  <title>ToolMatic Blog – Image Compression & SEO Guides</title>
   <meta name="description" content="Explore in-depth articles on image compression, next-gen WebP formats, Core Web Vitals optimization, and image SEO strategies.">
   <link rel="canonical" href="https://toolmatic.site/blog/">
   <link rel="alternate" hreflang="id" href="https://toolmatic.site/id/blog/">
@@ -13,37 +13,53 @@
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://toolmatic.site/blog/">
-  <meta property="og:title" content="ToolMatic Blog - Web Optimization, Image Compression & SEO Guides">
+  <meta property="og:title" content="ToolMatic Blog – Image Compression & SEO Guides">
   <meta property="og:description" content="Explore in-depth articles on image compression, next-gen WebP formats, Core Web Vitals optimization, and image SEO strategies.">
   <meta property="og:image" content="https://toolmatic.site/preview.webp">
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:url" content="https://toolmatic.site/blog/">
-  <meta name="twitter:title" content="ToolMatic Blog - Web Optimization, Image Compression & SEO Guides">
+  <meta name="twitter:title" content="ToolMatic Blog – Image Compression & SEO Guides">
   <meta name="twitter:description" content="Explore in-depth articles on image compression, next-gen WebP formats, Core Web Vitals optimization, and image SEO strategies.">
   <meta name="twitter:image" content="https://toolmatic.site/preview.webp">
 
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-CSTVK0Q8B4"></script>
+  <!-- Deferred Third-Party Tracking & Google AdSense for Mobile Core Web Vitals -->
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'G-CSTVK0Q8B4');
+
+    (function() {
+      var loaded = false;
+      function loadAnalyticsAndAds() {
+        if (loaded) return;
+        loaded = true;
+        var ga = document.createElement('script');
+        ga.src = 'https://www.googletagmanager.com/gtag/js?id=G-CSTVK0Q8B4';
+        ga.async = true;
+        document.head.appendChild(ga);
+
+        var ads = document.createElement('script');
+        ads.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8943765451617871';
+        ads.async = true;
+        ads.crossOrigin = 'anonymous';
+        document.head.appendChild(ads);
+      }
+      if ('requestIdleCallback' in window) {
+        requestIdleCallback(function() { setTimeout(loadAnalyticsAndAds, 1200); });
+      } else {
+        setTimeout(loadAnalyticsAndAds, 1500);
+      }
+      ['scroll', 'mousemove', 'touchstart', 'keydown'].forEach(function(evt) {
+        window.addEventListener(evt, loadAnalyticsAndAds, { once: true, passive: true });
+      });
+    })();
   </script>
 
-  <!-- Google AdSense -->
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8943765451617871" crossorigin="anonymous"></script>
-
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-  
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/navbar.css">
-    <link rel="stylesheet" href="/css/footer.css">
-    <link rel="stylesheet" href="/css/compressor.css">
-    <link rel="stylesheet" href="/css/blog.css">
-    
+  <link rel="stylesheet" href="/css/bundle.min.css">
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -130,7 +146,7 @@
           
         <a href="/blog/how-to-compress-images-without-losing-quality/" class="blog-card">
           <span class="blog-card-tag">Image Compression</span>
-          <h2 class="blog-card-title">How to Compress Images Without Losing Quality (2026 Complete Guide)</h2>
+          <h2 class="blog-card-title">How to Compress Images Without Losing Quality (2026 Guide)</h2>
           <p class="blog-card-excerpt">Learn how to compress JPG, PNG, and WebP images by up to 90% without visible loss in sharpness or color. Detailed step-by-step techniques and settings.</p>
           <div class="blog-card-footer">
             <span>2026-10-20</span>
@@ -140,7 +156,7 @@
         
         <a href="/blog/jpg-vs-png-vs-webp-vs-avif/" class="blog-card">
           <span class="blog-card-tag">Format Comparison</span>
-          <h2 class="blog-card-title">JPG vs PNG vs WebP vs AVIF: Which Format Should You Use in 2026?</h2>
+          <h2 class="blog-card-title">JPG vs PNG vs WebP vs AVIF: Best Image Format in 2026</h2>
           <p class="blog-card-excerpt">Complete comparison of JPG, PNG, WebP, and AVIF image formats. Compare compression ratios, browser compatibility, transparency, and SEO performance.</p>
           <div class="blog-card-footer">
             <span>2026-10-18</span>
@@ -150,7 +166,7 @@
         
         <a href="/blog/how-to-reduce-image-size-for-whatsapp/" class="blog-card">
           <span class="blog-card-tag">Messaging & Social</span>
-          <h2 class="blog-card-title">How to Reduce Image Size for WhatsApp (Send HD Photos Instantly)</h2>
+          <h2 class="blog-card-title">How to Reduce Image Size for WhatsApp (Send HD Photos)</h2>
           <p class="blog-card-excerpt">Discover how to compress and resize photos for WhatsApp so they send instantly without blurry re-compression or massive mobile data consumption.</p>
           <div class="blog-card-footer">
             <span>2026-10-15</span>
@@ -160,7 +176,7 @@
         
         <a href="/blog/how-to-compress-images-for-your-website/" class="blog-card">
           <span class="blog-card-tag">Web Performance</span>
-          <h2 class="blog-card-title">How to Compress Images for Your Website (Pass Core Web Vitals)</h2>
+          <h2 class="blog-card-title">How to Compress Website Images (Pass Core Web Vitals)</h2>
           <p class="blog-card-excerpt">Boost website speed and pass Google Core Web Vitals (LCP under 2.5s). Comprehensive guide to optimizing banner photos, product galleries, and thumbnails.</p>
           <div class="blog-card-footer">
             <span>2026-10-12</span>
@@ -170,7 +186,7 @@
         
         <a href="/blog/lossy-vs-lossless-compression-explained/" class="blog-card">
           <span class="blog-card-tag">Technical Guide</span>
-          <h2 class="blog-card-title">Lossy vs Lossless Compression Explained: Differences & When to Use</h2>
+          <h2 class="blog-card-title">Lossy vs Lossless Compression Explained: Key Differences</h2>
           <p class="blog-card-excerpt">Understand the technical difference between lossy and lossless image compression. Learn which algorithm to choose for photographs, logos, and medical graphics.</p>
           <div class="blog-card-footer">
             <span>2026-10-10</span>
@@ -180,7 +196,7 @@
         
         <a href="/blog/how-to-convert-jpg-to-webp/" class="blog-card">
           <span class="blog-card-tag">Format Conversion</span>
-          <h2 class="blog-card-title">How to Convert JPG to WebP Online (Batch Mode & High Quality)</h2>
+          <h2 class="blog-card-title">How to Convert JPG to WebP Online (High Quality Batch)</h2>
           <p class="blog-card-excerpt">Step-by-step guide on converting JPG images to WebP online for free. Save up to 35% file size with universal browser compatibility.</p>
           <div class="blog-card-footer">
             <span>2026-10-08</span>
@@ -190,7 +206,7 @@
         
         <a href="/blog/best-image-sizes-for-instagram-facebook-youtube-2026/" class="blog-card">
           <span class="blog-card-tag">Social Media</span>
-          <h2 class="blog-card-title">Best Image Sizes for Instagram, Facebook & YouTube in 2026 (Cheatsheet)</h2>
+          <h2 class="blog-card-title">Best Image Sizes for Social Media in 2026 (Cheatsheet)</h2>
           <p class="blog-card-excerpt">Up-to-date 2026 social media image dimensions cheatsheet. Exact pixel resolutions for Instagram posts, stories, Facebook covers, and YouTube banners.</p>
           <div class="blog-card-footer">
             <span>2026-10-05</span>
@@ -200,7 +216,7 @@
         
         <a href="/blog/how-to-resize-images-without-losing-quality/" class="blog-card">
           <span class="blog-card-tag">Image Resizing</span>
-          <h2 class="blog-card-title">How to Resize Images Without Losing Quality (Downscaling vs Upscaling)</h2>
+          <h2 class="blog-card-title">How to Resize Images Without Losing Quality (2026 Guide)</h2>
           <p class="blog-card-excerpt">Learn how to resize digital photos without blurriness or distortion. Understand aspect ratio lock and high-quality bicubic downscaling algorithms.</p>
           <div class="blog-card-footer">
             <span>2026-10-02</span>
@@ -230,7 +246,7 @@
         
         <a href="/blog/how-to-compress-multiple-images-at-once/" class="blog-card">
           <span class="blog-card-tag">Batch Processing</span>
-          <h2 class="blog-card-title">How to Compress Multiple Images at Once (Batch Compression Guide)</h2>
+          <h2 class="blog-card-title">How to Compress Multiple Images at Once (Batch Guide)</h2>
           <p class="blog-card-excerpt">Save hours of time by compressing dozens of images simultaneously. Learn how to batch compress up to 50 photos in your browser with instant ZIP download.</p>
           <div class="blog-card-footer">
             <span>2026-09-20</span>
@@ -250,7 +266,7 @@
         
         <a href="/blog/how-to-reduce-photo-size-on-mobile/" class="blog-card">
           <span class="blog-card-tag">Mobile Tips</span>
-          <h2 class="blog-card-title">How to Reduce Photo Size on Mobile (iPhone & Android Without Apps)</h2>
+          <h2 class="blog-card-title">How to Reduce Photo Size on Mobile (iPhone & Android)</h2>
           <p class="blog-card-excerpt">Compress photos directly on your smartphone browser without downloading shady app store utilities. 100% free, private, and works on Android and iOS.</p>
           <div class="blog-card-footer">
             <span>2026-09-10</span>
@@ -260,7 +276,7 @@
         
         <a href="/blog/image-seo-how-optimised-images-rank-higher/" class="blog-card">
           <span class="blog-card-tag">SEO Strategy</span>
-          <h2 class="blog-card-title">Image SEO: How Optimised Images Rank Higher on Google (Complete Checklist)</h2>
+          <h2 class="blog-card-title">Image SEO: How Optimised Images Rank Higher on Google</h2>
           <p class="blog-card-excerpt">Unlock hidden traffic from Google Image Search. Complete guide to image file naming, alt tags, schema markup, and responsive srcset attributes.</p>
           <div class="blog-card-footer">
             <span>2026-09-05</span>
@@ -354,7 +370,7 @@
       </div>
     </footer>
     
-  <script src="/js/main.js" defer></script>
+  <script src="/js/main.min.js" defer></script>
 
 </body>
 </html>
