@@ -1,5 +1,4 @@
 {
-  "cleanUrls": true,
   "headers": [
     {
       "source": "/(.*.css)",
@@ -31,14 +30,25 @@
   ],
   "redirects": [
     {
-      "source": "/:path*",
+      "source": "/",
       "has": [
         {
           "type": "host",
           "value": "www.toolmatic.site"
         }
       ],
-      "destination": "https://toolmatic.site/:path*",
+      "destination": "https://toolmatic.site/",
+      "statusCode": 301
+    },
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.toolmatic.site"
+        }
+      ],
+      "destination": "https://toolmatic.site/$1",
       "statusCode": 301
     },
     {
@@ -49,6 +59,16 @@
     {
       "source": "/index.php",
       "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/(.*)/index.html",
+      "destination": "/$1/",
+      "statusCode": 301
+    },
+    {
+      "source": "/(.*)/index.php",
+      "destination": "/$1/",
       "statusCode": 301
     },
     {

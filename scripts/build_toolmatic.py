@@ -912,7 +912,6 @@ Sitemap: {DOMAIN}/sitemap.xml
 
     # 8. Generate vercel.json & _redirects
     vercel_config = {
-        "cleanUrls": True,
         "headers": [
             {
                 "source": "/(.*.css)",
@@ -929,13 +928,21 @@ Sitemap: {DOMAIN}/sitemap.xml
         ],
         "redirects": [
             {
-                "source": "/:path*",
+                "source": "/",
                 "has": [{"type": "host", "value": "www.toolmatic.site"}],
-                "destination": "https://toolmatic.site/:path*",
+                "destination": "https://toolmatic.site/",
+                "statusCode": 301
+            },
+            {
+                "source": "/(.*)",
+                "has": [{"type": "host", "value": "www.toolmatic.site"}],
+                "destination": "https://toolmatic.site/$1",
                 "statusCode": 301
             },
             {"source": "/index.html", "destination": "/", "statusCode": 301},
             {"source": "/index.php", "destination": "/", "statusCode": 301},
+            {"source": "/(.*)/index.html", "destination": "/$1/", "statusCode": 301},
+            {"source": "/(.*)/index.php", "destination": "/$1/", "statusCode": 301},
             {"source": "/tools/:path*", "destination": "/image-compressor/", "statusCode": 301},
             {"source": "/id/penghitung-kata", "destination": "/id/kompres-gambar/", "statusCode": 301},
             {"source": "/id/generator-meta-tag", "destination": "/id/kompres-gambar/", "statusCode": 301},
